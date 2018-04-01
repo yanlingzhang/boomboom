@@ -35,7 +35,7 @@
     </view>
 
     <view class="title-cell"><text class="line"></text><text class="title-name">人气推荐</text><text class="line"></text></view>
-    
+
     <view class="shop-around-list">
         <view class="shop-around-cell clearfix" wx:key="">
             <navigator url="">

@@ -1,0 +1,90 @@
+@import "../../common/base.wxss";
+Page{
+    background: #fff;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.brand-image{
+    width: 100%;
+}
+.brand-name{
+    text-align: center;
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    color: #000;
+    justify-content:center;
+    font-size: 28rpx;
+}
+.sort-zone{
+    background: #fff;
+    display: flex;
+    padding: 16rpx 0;
+    border-top: 2rpx solid #bbbbbb;
+    border-bottom: 2rpx solid #bbbbbb;
+}
+.sort-cell{
+    height: 48rpx;
+    line-height: 48rpx;
+    flex: 1;
+    font-size:24rpx;
+    text-align: center;
+    color: #111;
+}
+.triangle-down{
+    width: 10rpx;
+    height: 10rpx;
+    margin-left: 10rpx;
+}
+.product-list{
+    padding: 10rpx;
+}
+.product-cell{
+    width: 49%;
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+.product-cell:nth-child(2n){
+    float: right;
+}
+.product-cell:nth-child(2n+1){
+    float: left;
+}
+.product-info{
+    padding: 0 5rpx 5rpx 5rpx;
+    border: 1px solid #bbbbbb;
+    border-top:none;
+    margin-top: 0;
+    position: relative;
+    top: -8rpx;
+    box-sizing: border-box;
+}
+.product-detail{
+    padding: 0 5rpx 10rpx 5rpx;
+    margin-top: 10rpx;
+}
+.price{
+    color: #000;
+    font-size: 26rpx;
+    float: right;
+}
+.sell-num{
+    float: left;
+    font-size: 24rpx;
+    color: #bbbbbb;
+}
+.product-name{
+    font-size:28rpx;
+    color: #111;
+    display: -webkit-box;
+    line-height: 40rpx;
+    padding: 0 5rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}

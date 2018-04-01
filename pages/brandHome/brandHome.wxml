@@ -1,0 +1,31 @@
+<scroll-view class="container" sroll-y>
+    <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="brand-image" mode="widthFix"></image>
+    <view class="brand-name">品牌名称</view>
+    <view class="sort-zone">
+        <view class="sort-cell">综合</view>
+        <view class="sort-cell">销量</view>
+        <view class="sort-cell">价格<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_down_select@2x.png"></image></view>
+    </view>
+    <view class="product-list">
+        <view class="product-cell">
+            <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="brand-image" mode="widthFix"></image>
+            <view class="product-info">
+                <view class="product-name">发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破</view>
+                <view class="product-detail clearfix">
+                    <text class="sell-num">销量：120</text>
+                    <text class="price">￥369.00</text>
+                </view>
+            </view>
+        </view>
+        <view class="product-cell">
+            <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="brand-image" mode="widthFix"></image>
+            <view class="product-info">
+                <view class="product-name">发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破</view>
+                <view class="product-detail clearfix">
+                    <text class="sell-num">销量：120</text>
+                    <text class="price">￥369.00</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
