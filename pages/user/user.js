@@ -11,7 +11,12 @@ Page({
         }
     },
     data: {
-        showPresent: true,
+        showPopup: true,
+    },
+    togglePopup() {
+        this.setData({
+            showPopup: !this.data.showPopup
+        })
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;
