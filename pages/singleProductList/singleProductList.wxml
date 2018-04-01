@@ -1,0 +1,61 @@
+<scroll-view class="container" scroll-y scroll-top="{{scrollTop}}">
+    <view class="search-zone">
+        <input placeholder="xxx" class="search-input"/>
+        <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="icon-search"></image>
+    </view>
+    <image bindtap="goTop" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="totop-btn"></image>
+    <view class="sort-zone">
+        <view class="sort-cell">综合</view>
+        <view class="sort-cell">销量</view>
+        <view class="sort-cell">价格<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_down_select@2x.png"></image></view>
+        <view class="sort-cell" bindtap="toggleKey" data-key="showSelect">筛选<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_down_select@2x.png"></image></view>
+        <view class="sort-select" wx:if="{{showSelect}}">
+            <view class="sort-coupon">
+                可使用抵扣券
+                <switch bindchange="switch1Change" class="switch-btn"/>
+            </view>
+            <view class="sort-title">品牌</view>
+            <scroll-view scroll-y class="brand-list">
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="product-list">
+        <view class="product-cell">
+            <view class="image-zone">
+                <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="brand-image" mode="widthFix"></image>
+                <view class="coupon-use">用券</view>
+            </view>
+            <view class="product-info">
+                <view class="product-name">发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破</view>
+                <view class="product-detail clearfix">
+                    <text class="sell-num">销量：120</text>
+                    <text class="price">￥369.00</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
