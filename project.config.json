@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -61,11 +61,18 @@
 					"pathName": "pages/productDetail/productDetail",
 					"query": ""
 				},
+        {
+          "id": -1,
+          "name": "commentList",
+          "pathName": "pages/commentList/commentList",
+          "query": ""
+				},
 				{
-					"id": -1,
-					"name": "commentList",
-					"pathName": "pages/commentList/commentList"
-				}
+          "id": -1,
+          "name": "user",
+          "pathName": "pages/user/user",
+          "query": ""
+        }
 			]
 		}
 	}
