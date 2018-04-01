@@ -1,0 +1,4 @@
+@import "../../common/base.wxss";
+Page{
+    background: #fff;
+}
