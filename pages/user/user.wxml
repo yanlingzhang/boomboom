@@ -1,0 +1,11 @@
+<view class="container">
+    <view class="mask" wx:if="{{showPresent}}">
+        <view class="present-zone float-zone">
+            欢迎来到粤通商城，赶快来领取您的新人礼包吧！
+            <view class="get-btn">
+                拆
+            </view>
+            <image bindtap="toggleKey" data-key="showPresent" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png" class="close-btn"></image>
+        </view>
+    </view>
+</view>

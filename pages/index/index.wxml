@@ -1,3 +1,57 @@
 <view class="container">
+    <swiper autoplay="{{true}}" indicator-dots="{{true}}">
+        <block wx:for="{{bannerData}}" wx:key="">
+            <swiper-item>
+                <image class="banner-img" src="{{item.url}}" data-content="{{item.content}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <scroll-view class="brand-list" scroll-x>
+        <view class="brand-cell" wx:for="{{brandData}}" wx:key="">
+            <navigator url="">
+                <image src="{{item.url}}"></image>
+                <text>{{item.name}}</text>
+            </navigator>
+        </view>
+    </scroll-view>
 
+    <view class="title-cell"><text class="line"></text><text class="title-name">热门问题</text><text class="line"></text></view>
+
+    <scroll-view class="shop-list" scroll-x>
+        <view class="shop-cell" wx:for="{{scrollShopData}}" wx:key="">
+            <navigator url="">
+                <image src="{{item.url}}"></image>
+            </navigator>
+        </view>
+    </scroll-view>
+    <view class="mask" wx:if="{{showPresent}}">
+        <view class="present-zone float-zone">
+            欢迎来到粤通商城，赶快来领取您的新人礼包吧！
+            <view class="get-btn">
+                拆
+            </view>
+            <image bindtap="toggleKey" data-key="showPresent" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png" class="close-btn"></image>
+        </view>
+    </view>
+
+    <view class="title-cell"><text class="line"></text><text class="title-name">人气推荐</text><text class="line"></text></view>
+    
+    <view class="shop-around-list">
+        <view class="shop-around-cell clearfix" wx:key="">
+            <navigator url="">
+                <image class="shop-logo" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png" mode="aspectFit"></image>
+                <view class="shop-detail">
+                    <view class="shop-name-zone">
+                        <view class="shop-name">发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破</view>
+                        <view class="shop-discount">可用券抵扣50%</view>
+                    </view>
+                    <view class="buy-zone">
+                        <text class="price">￥369.00</text>
+                        <text class="sell-num">销量：120</text>
+                        <text class="buy-btn">购买</text>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
 </view>

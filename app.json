@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,8 +21,20 @@
         "text": "首页"
       },
       {
+        "pagePath": "pages/index/index",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "来一发"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "购物车"
+      },
+      {
         "pagePath": "pages/user/user",
-        "text": "我的"
+        "text": "我的喜炮"
       }
     ]
   }
