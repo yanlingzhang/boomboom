@@ -1,0 +1,180 @@
+@import "../../common/base.wxss";
+Page{
+    background: #fff;
+}
+.banner-img{
+    height: 320rpx;
+    width: 100%;
+}
+.collect-btn{
+    color: #333;
+    width: 100rpx;
+    line-height: 88rpx;
+    height: 88rpx;
+    text-align: center;
+    border-right: 1px solid #111111;
+}
+.tocart-btn{
+    color: #333;
+    width: 100rpx;
+    line-height: 88rpx;
+    height: 88rpx;
+    text-align: center;
+}
+.buy-btn{
+    width: 300rpx;
+    line-height: 88rpx;
+    height: 88rpx;
+    text-align: center;
+    color: #fff;
+    background: #ec5a72;
+}
+.cart-btn{
+    background: #f2bf67;
+    width: 250rpx;
+    line-height: 88rpx;
+    height: 88rpx;
+    text-align: center;
+    color: #fff;
+}
+.bottom-btn{
+    position: fixed;
+    z-index:100;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font-size:28rpx;
+    background: #fff;
+    border-top: 1rpx solid #eee;
+}
+.comment-cell{
+    border-bottom: 2rpx solid #eee;
+    font-size:24rpx;
+    color: #333;
+    padding-top: 30rpx;
+    padding-bottom: 20rpx;
+}
+.comment-detail{
+    padding: 0 24rpx;
+}
+.comment-cont{
+    line-height: 42rpx;
+}
+.user-headimg{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 20rpx;
+}
+.comment-info{
+    width: 600rpx;
+}
+.user-name{
+    margin-right: 30rpx;
+}
+.comment-star{
+    margin-right: 10rpx;
+    margin-top: -5rpx;
+}
+.star-img{
+    width: 24rpx;
+    height: 24rpx;
+    margin-right: 9rpx;
+    float: left;
+}
+.bottom-hints{
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    font-size:30rpx;
+    margin-top: 10rpx;
+    color: #999;
+}
+.comment-total{
+    padding-left: 20rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #111111;
+    font-size: 24rpx;
+    border-bottom: 1px solid #333;
+    border-top: 10rpx solid #111;
+}
+.buy-handle{
+    padding: 0 28rpx;
+    font-size: 28rpx;
+    color: #111111;
+    height: 102rpx;
+    line-height: 102rpx;
+    border-top: 10rpx solid #111111;
+}
+.input-num{
+    text-align: center;
+    color: #111;
+    font-size: 26rpx;
+    border: 1px solid #eee;
+    width: 160rpx;
+    height: 52rpx;
+    line-height: 52rpx;
+    margin: 0 20rpx;
+}
+.btn-num{
+    border: 1px solid #111111;
+    border-radius: 50%;
+    width: 48rpx;
+    height: 48rpx;
+    text-align: center;
+    font-size: 30rpx;
+    line-height: 48rpx;
+}
+.buy-zone{
+    margin-top: 30rpx;
+}
+.product-info{
+    padding: 30rpx;
+    position: relative;
+}
+.product-price{
+    font-size: 27rpx;
+    color: #111111;
+    margin-right: 30rpx;
+}
+.product-fee{
+    font-size: 24rpx;
+    color: #666;
+    margin-right: 30rpx;
+}
+.product-coupon{
+    color: red;
+    font-size: 28rpx;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+.product-name{
+    font-size: 28rpx;
+    line-height: 40rpx;
+    width: 610rpx;
+}
+.share-img{
+    position: absolute;
+    top: 30rpx;
+    right: 30rpx;
+    z-index: 10;
+    width: 48rpx;
+    height: 48rpx;
+    padding: 10rpx;
+}
+.textimg-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #999999;
+    padding: 30rpx 0;
+}
+.line{
+    width: 280rpx;
+    height: 1rpx;
+    background: #111111;
+}
+.textimg-word{
+    font-size: 26rpx;
+    margin: 0 20rpx;
+}

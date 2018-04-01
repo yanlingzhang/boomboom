@@ -4,6 +4,8 @@
     "pages/brandHome/brandHome",
     "pages/classification/classification",
     "pages/productList/productList",
+    "pages/commentList/commentList",
+    "pages/productDetail/productDetail",
     "pages/singleProductList/singleProductList",
     "pages/user/user"
   ],
