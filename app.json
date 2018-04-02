@@ -7,6 +7,7 @@
     "pages/commentList/commentList",
     "pages/productDetail/productDetail",
     "pages/singleProductList/singleProductList",
+    "pages/cart/cart",
     "pages/user/user"
   ],
   "window": {
@@ -35,7 +36,7 @@
         "text": "来一发"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/cart/cart",
         "text": "购物车"
       },
       {
