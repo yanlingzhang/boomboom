@@ -1,17 +1,39 @@
 const api = require('../../config/api.js');
 const util = require('../../utils/util.js');
+const { Field, Toast, extend } = require('../../zanui/index');
 
 //获取应用实例
 const app = getApp()
-Page({
+Page(extend({}, Toast, Field, {
     onShareAppMessage: function (res) {
         return {
-            title: '纹饰美容',
-            path: '/pages/index/index'
+            title: '意见反馈',
+            path: '/pages/feedback/feedback'
         }
     },
     data: {
         showPopup: true,
+    },
+
+    handleZanFieldChange({ componentId, detail }) {
+    /*
+    * componentId 即为在模板中传入的 componentId
+    * 用于在一个页面上使用多个 tab 时，进行区分
+    * detail 即输入框中的内容
+    */
+    /*
+    * 处理函数可以直接 return 一个字符串，将替换输入框的内容。
+    */
+       return detail
+    },
+    // 输入框聚焦时触发
+    handleZanFieldFocus({ componentId, detail }) {},
+    // 输入框失焦时触发
+    handleZanFieldBlur({ componentId, detail }) {},
+    submitFeedBack(){
+        this.showZanToast({
+            title: '提交成功'
+        });
     },
     togglePopup() {
         this.setData({
@@ -41,4 +63,4 @@ Page({
     onUnload: function () {
         // 页面关闭
     },
-})
+}))

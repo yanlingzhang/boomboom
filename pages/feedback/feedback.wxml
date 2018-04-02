@@ -1,0 +1,16 @@
+<import src="/zanui/field/index.wxml" />
+<import src="/zanui/toast/index.wxml" />
+<view class="container">
+    <view class="zan-panel">
+        <template
+        is="zan-field"
+        data="{{ ...config.notitle, value: textareaValue, type: 'textarea', placeholder: '请输入内容', focus: true }}"></template>
+    </view>
+
+    <view class="zan-btns">
+        <button
+        class="zan-btn zan-btn--primary"
+        bindtap="submitFeedBack">提交反馈</button>
+    </view>
+    <template is="zan-toast" data="{{ zanToast }}"></template>
+</view>
