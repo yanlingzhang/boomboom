@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -83,6 +83,18 @@
 					"id": -1,
 					"name": "orderSubmit",
 					"pathName": "pages/orderSubmit/orderSubmit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "orderPay",
+					"pathName": "pages/orderPay/orderPay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/user/user",
 					"query": ""
 				}
 			]
