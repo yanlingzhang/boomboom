@@ -18,7 +18,10 @@
     "pages/recordsConsumption/recordsConsumption",
     "pages/deductionVolume/deductionVolume",
     "pages/myCollection/myCollection",
-    "pages/feedback/feedback"
+    "pages/feedback/feedback",
+    "pages/editAddress/editAddress",
+    "pages/addAddress/addAddress",
+    "pages/manageAddress/manageAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",

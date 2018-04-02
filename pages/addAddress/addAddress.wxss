@@ -1,0 +1,10 @@
+Page{
+    background: #f7f7f7;
+}
+
+.zan-panel {
+  padding: 10px;
+}
+.zan-switch {
+  margin-right: 8px;
+}

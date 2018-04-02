@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="zan-row">
+        <view class="zan-col zan-col-12">
+            小米
+        </view>
+        <view class="zan-col zan-col-12">
+            xxxx
+        </view>
+    </view>
+    <view class="zan-row">
+        <view class="zan-col zan-col-24">
+            小米xxxx
+        </view>
+    </view>
+    <view class="zan-row">
+        <view class="zan-col zan-col-12">
+            <radio></radio>
+            默认地址
+        </view>
+        <view class="zan-col zan-col-12">
+            <view class="zan-col zan-col-12">
+                编辑
+            </view>
+            <view class="zan-col zan-col-12">
+                删除
+            </view>
+        </view>
+    </view>
+</view>

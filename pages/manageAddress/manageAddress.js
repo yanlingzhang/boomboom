@@ -6,8 +6,8 @@ const app = getApp()
 Page({
     onShareAppMessage: function (res) {
         return {
-            title: '纹饰美容',
-            path: '/pages/index/index'
+            title: '管理收货地址',
+            path: '/pages/manageAddress/manageAddress'
         }
     },
     data: {

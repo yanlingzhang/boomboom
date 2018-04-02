@@ -41,7 +41,7 @@
         <view class="user-center__list">
           <view class="zan-row">
             <view class="zan-col zan-col-8">
-              <navigator url="/pages/deductionVolume/deductionVolume" navigate hover-class="className">
+              <navigator url="/pages/deductionVolume/deductionVolume" navigate>
                 抵扣卷
               </navigator>
             </view>
