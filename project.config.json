@@ -61,6 +61,12 @@
 					"pathName": "pages/productDetail/productDetail",
 					"query": ""
 				},
+        {
+          "id": -1,
+          "name": "commentList",
+          "pathName": "pages/commentList/commentList",
+          "query": ""
+				},
 				{
 					"id": -1,
 					"name": "commentList",
