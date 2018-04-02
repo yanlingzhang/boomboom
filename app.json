@@ -16,6 +16,7 @@
     "pages/obtainRecord/obtainRecord",
     "pages/giftCard/giftCard",
     "pages/recordsConsumption/recordsConsumption",
+    "pages/deductionVolume/deductionVolume",
     "pages/myCollection/myCollection",
     "pages/feedback/feedback"
   ],

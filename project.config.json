@@ -86,8 +86,8 @@
 				},
 		        {
 					"id": -1,
-					"name": "feedback",
-					"pathName": "pages/feedback/feedback"
+					"name": "user",
+					"pathName": "pages/user/user"
 		    }
 			]
 		}
