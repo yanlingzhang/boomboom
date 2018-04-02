@@ -1,0 +1,37 @@
+<scroll-view scroll-y class="container">
+    <view class="cart-cell clearfix">
+        <view class="select-zone fn-left">
+            <image bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png"></image>
+        </view>
+        <view class="border-zone fn-right">
+            <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png" mode="aspectFit"></image>
+            <view class="fn-left product-info">
+                <view class="product-name">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
+                <view class="product-brand">xxx品牌</view>
+                <view class="product-style">代金券最多抵扣50%</view>
+                <view class="product-price">¥ 65
+                    <view class="handle-section fn-right">
+                        <view class="handle-zone">
+                            <view class="cut">-</view>
+                            <input value="1" class="number" disabled="true" type="number" />
+                            <view class="add">+</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+<view class="bottom-hints" wx:if="{{productNum == 0}}">
+    暂无订购任何服务/产品，现在就去看看！
+</view>
+
+<view class="cal-zone clearfix">
+    <view class="select-all fn-left">
+        <image bindtap="selectAllProduct" wx:if="{{!selectAll}}" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png"></image>
+        <image bindtap="selectAllProduct" wx:if="{{selectAll}}" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz@2x.png"></image>
+        全选
+    </view>
+    <view class="fn-left price-cal">总计：<text class="price-total">¥ 0</text></view>
+    <view class="fn-right go-cal" bindtap="">结算</view>
+</view>
