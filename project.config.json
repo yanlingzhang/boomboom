@@ -61,7 +61,7 @@
 					"pathName": "pages/productDetail/productDetail",
 					"query": ""
 				},
-		        {
+		    {
 					"id": -1,
 					"name": "commentList",
 					"pathName": "pages/commentList/commentList",
@@ -86,9 +86,9 @@
 				},
 		        {
 					"id": -1,
-					"name": "giftCard",
-					"pathName": "pages/giftCard/giftCard"
-		        }
+					"name": "feedback",
+					"pathName": "pages/feedback/feedback"
+		    }
 			]
 		}
 	}

@@ -6,17 +6,12 @@ const app = getApp()
 Page({
     onShareAppMessage: function (res) {
         return {
-            title: '纹饰美容',
-            path: '/pages/index/index'
+            title: '我的收藏',
+            path: '/pages/myCollection/myCollection'
         }
     },
     data: {
         showPopup: true,
-    },
-    togglePopup() {
-        this.setData({
-            showPopup: !this.data.showPopup
-        })
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;

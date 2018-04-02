@@ -15,7 +15,9 @@
     "pages/paySuccess/paySuccess",
     "pages/obtainRecord/obtainRecord",
     "pages/giftCard/giftCard",
-    "pages/recordsConsumption/recordsConsumption"
+    "pages/recordsConsumption/recordsConsumption",
+    "pages/myCollection/myCollection",
+    "pages/feedback/feedback"
   ],
   "window": {
     "backgroundTextStyle": "light",
