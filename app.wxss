@@ -1,4 +1,5 @@
 @import "/zanui/index.wxss";
+@import "/common/base.wxss";
 
 html, body{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",SimSun, sans-serif;

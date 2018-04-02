@@ -9,7 +9,8 @@
     "pages/singleProductList/singleProductList",
     "pages/cart/cart",
     "pages/orderSubmit/orderSubmit",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/myorder/myorder"
   ],
   "window": {
     "backgroundTextStyle": "light",

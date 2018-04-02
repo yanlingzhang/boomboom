@@ -1,31 +1,76 @@
 <view class="container">
     <view class="user-center">
         <view class="user-center__message">
-            头像 用户名
+          <view class="zan-row">
+            <view class="zan-col zan-col-12">
+              头像
+            </view>
+            <view class="zan-col zan-col-12">
+              用户名
+            </view>
+          </view>
         </view>
         <view class="user-center__order">
-            <view>
-                我的订单
-                <navigator url="" redirect hover-class="className">
-                    全部订单
-                </navigator>
+            <view class="user-center__myorder">
+              <view class="zan-row">
+                <view class="zan-col zan-col-12">
+                  我的订单
+                </view>
+                <view class="zan-col zan-col-12 zan-pull-right">
+                  全部订单
+                </view>
+              </view>
             </view>
-            <view>
-                <view>待付款</view>
-                <view>待发货</view>
-                <view>待收货</view>
-                <view>退货退款</view>
+            <view class="user-center__order__list">
+              <view class="zan-row">
+                <view class="zan-col zan-col-6">
+                  待付款
+                </view>
+                <view class="zan-col zan-col-6">
+                  待发货
+                </view>
+                <view class="zan-col zan-col-6">
+                  待收货
+                </view>
+                <view class="zan-col zan-col-6">
+                  退货退款
+                </view>
+              </view>
             </view>
         </view>
         <view class="user-center__list">
-            <navigator url="">抵扣卷</navigator>
-            <navigator url="">礼品卡</navigator>
-            <navigator url="">我的收藏</navigator>
-            <navigator url="">地址管理</navigator>
-            <navigator url="">意见反馈</navigator>
-            <navigator url="">常见问题</navigator>
-            <navigator url="">代理佣金</navigator>
-            <navigator url="">平台客服</navigator>
+          <view class="zan-row">
+            <view class="zan-col zan-col-8">
+              抵扣卷
+            </view>
+            <view class="zan-col zan-col-8">
+              礼品卡
+            </view>
+            <view class="zan-col zan-col-8">
+              我的收藏
+            </view>
+          </view>
+          <view class="zan-row">
+            <view class="zan-col zan-col-8">
+              地址管理
+            </view>
+            <view class="zan-col zan-col-8">
+              意见反馈
+            </view>
+            <view class="zan-col zan-col-8">
+              常见问题
+            </view>
+          </view>
+          <view class="zan-row">
+            <view class="zan-col zan-col-8">
+              代理佣金
+            </view>
+            <view class="zan-col zan-col-8">
+              平台客服
+            </view>
+            <view class="zan-col zan-col-8">
+            </view>
+          </view>
         </view>
     </view>
 </view>

@@ -6,17 +6,9 @@ const app = getApp()
 Page({
     onShareAppMessage: function (res) {
         return {
-            title: '纹饰美容',
-            path: '/pages/index/index'
+            title: '抵扣卷',
+            path: '/pages/deductionVolume/deductionVolume'
         }
-    },
-    data: {
-        showPopup: true,
-    },
-    togglePopup() {
-        this.setData({
-            showPopup: !this.data.showPopup
-        })
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;
