@@ -1,0 +1,130 @@
+@import "../../common/base.wxss";
+Page{
+    background: #fff;
+}
+.address-detail {
+    padding: 0 32rpx 0 30rpx;
+    position: relative;
+    border-bottom:10rpx solid #bbbbbb;
+}
+.tri-img{
+    position: absolute;
+    z-index:10;
+    right: 32rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90rpx;
+    height: 90rpx;
+}
+.address-user{
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size:28rpx;
+    color: #333333;
+}
+.address-tel{
+    float: right;
+    font-size:28rpx;
+    color: #333333;
+}
+.address-info{
+    font-size:28rpx;
+    color: #000;
+    line-height: 90rpx;
+}
+.loc-img{
+    width: 80rpx;
+    height: 90rpx;
+}
+.cart-cell{
+    position: relative;
+    padding: 40rpx 0 0 30rpx;
+    z-index:10;
+    border-bottom: 10rpx solid #eee;
+}
+.cart-cell:last-child .border-zone{
+    border-bottom: none;
+}
+.border-zone{
+    border-bottom: 2rpx solid #ccc;
+    width: 750rpx;
+    box-sizing: border-box;
+    padding-bottom: 20rpx;
+    padding-right: 24rpx;
+}
+.product-img{
+    max-width: 80rpx;
+    max-height: 80rpx;
+    margin-right: 30rpx;
+}
+.product-info{
+    width: 580rpx;
+    line-height: 1.5;
+}
+.product-name-text{
+    width: 400rpx;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.product-name{
+    font-size:28rpx;
+    color: #111;
+    line-height: 40rpx;
+}
+.product-price{
+    font-size:28rpx;
+    color: #ec5a72;
+}
+.product-img{
+    max-width: 80rpx;
+    max-height: 80rpx;
+    margin-right: 30rpx;
+}
+.product-brand{
+    font-size:28rpx;
+}
+.product-style{
+    color: #999;
+    font-size:24rpx;
+}
+.handle-section{
+    position: relative;
+    color: #000;
+}
+.handle-zone{
+    width: 235rpx;
+    height: 52rpx;
+    border: 1rpx solid #ccc;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 15rpx auto;
+}
+.cut{
+    width: 70rpx;
+    height: 100%;
+    text-align: center;
+    line-height: 50rpx;
+    font-size:28rpx;
+    box-sizing: border-box;
+}
+.number{
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    line-height: 68.75rpx;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+    font-size:24rpx;
+    box-sizing: border-box;
+}
+.add{
+    width: 80rpx;
+    height: 100%;
+    box-sizing: border-box;
+    font-size:28rpx;
+    text-align: center;
+    line-height: 50rpx;
+}

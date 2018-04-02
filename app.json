@@ -8,6 +8,7 @@
     "pages/productDetail/productDetail",
     "pages/singleProductList/singleProductList",
     "pages/cart/cart",
+    "pages/orderSubmit/orderSubmit",
     "pages/user/user"
   ],
   "window": {
