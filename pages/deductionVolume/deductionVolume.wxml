@@ -3,14 +3,18 @@
     <text>28</text>
     <view class="zan-cell">
       <view class="zan-cell__bd">
-        <view>获得记录</view>
-        <view class="zan-arrow"></view>
+        <navigator url="/pages/obtainRecord/obtainRecord" navigate>
+          <view>获得记录</view>
+          <view class="zan-arrow"></view>
+        </navigator>
       </view>
     </view>
     <view class="zan-cell">
       <view class="zan-cell__bd">
-        <view>消费记录</view>
-        <view class="zan-arrow"></view>
+        <navigator url="/pages/recordsConsumption/recordsConsumption" navigate>
+          <view>消费记录</view>
+          <view class="zan-arrow"></view>
+        </navigator>
       </view>
     </view>
     <text>抵扣卷使用说明</text>

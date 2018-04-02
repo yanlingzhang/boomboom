@@ -21,7 +21,8 @@
     "pages/feedback/feedback",
     "pages/editAddress/editAddress",
     "pages/addAddress/addAddress",
-    "pages/manageAddress/manageAddress"
+    "pages/manageAddress/manageAddress",
+    "pages/commonProblems/commonProblems"
   ],
   "window": {
     "backgroundTextStyle": "light",

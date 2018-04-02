@@ -19,11 +19,16 @@
         </view>
         <view class="zan-col zan-col-12">
             <view class="zan-col zan-col-12">
+              <navigator url="/pages/editAddress/editAddress" navigate>
                 编辑
+              </navigator>
             </view>
             <view class="zan-col zan-col-12">
                 删除
             </view>
         </view>
     </view>
+    <navigator url="/pages/addAddress/addAddress" navigate>
+      <button>新增地址</button>
+    </navigator>
 </view>

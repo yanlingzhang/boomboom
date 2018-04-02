@@ -28,7 +28,12 @@
         <view class="zan-panel">
             <template is="zan-switch" data="{{ ...sync, componentId: 'sync' }}" />
         </view>
+        <view class="body-view">
+          <switch checked bindchange="switch1Change"/>
+          <switch bindchange="switch2Change"/>
+      </view>
     </view>
+    <button type="primary">保存</button>
     <button class="zan-btn zan-btn--primary">保存</button>
   </view>
 </view>
