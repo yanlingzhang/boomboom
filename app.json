@@ -8,9 +8,12 @@
     "pages/productDetail/productDetail",
     "pages/singleProductList/singleProductList",
     "pages/cart/cart",
+    "pages/orderPay/orderPay",
     "pages/orderSubmit/orderSubmit",
     "pages/user/user",
-    "pages/myorder/myorder"
+    "pages/myorder/myorder",
+    "pages/paySuccess/paySuccess",
+    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "light",

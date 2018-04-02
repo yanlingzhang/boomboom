@@ -1,0 +1,51 @@
+@import "../../common/base.wxss";
+Page{
+    background: #f7f7f7;
+}
+.container{
+
+}
+.icon-success{
+    width: 118rpx;
+    height: 118rpx;
+    margin: 0 auto 10rpx;
+    display: block;
+}
+.money-info{
+    text-align: center;
+    color: #111111;
+    font-size:28rpx;
+}
+.coupon-info{
+    text-align: center;
+    color: #111111;
+    width: 664rpx;
+    font-size:28rpx;
+    margin: 20rpx auto 10rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border: 1px solid #111111;
+}
+.pay-info{
+    background: #fff;
+    padding-top: 48rpx;
+    padding-bottom: 10rpx;
+    border-bottom: 10rpx solid #111111;
+}
+.btn-zone{
+    width: 750rpx;
+    margin: 0 auto;
+    padding: 36rpx;
+    background: #fff;
+}
+.btn-cell{
+    width: 330rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 28rpx;
+    background: #fff;
+    color: #111111;
+    text-align: center;
+    border: 1rpx solid #bbbbbb;
+    font-size:24rpx;
+}
