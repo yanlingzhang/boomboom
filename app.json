@@ -10,6 +10,7 @@
     "pages/cart/cart",
     "pages/orderPay/orderPay",
     "pages/orderSubmit/orderSubmit",
+    "pages/paySuccess/paySuccess",
     "pages/user/user"
   ],
   "window": {
