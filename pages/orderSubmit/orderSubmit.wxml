@@ -10,26 +10,74 @@
             广州发发的弗兰克马施蒂利克
         </view>
     </view>
-    <view class="cart-cell clearfix">
-        <view class="border-zone">
-            <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png" mode="aspectFit"></image>
-            <view class="fn-left product-info">
-                <view class="product-name clearfix">
-                    <view class="product-name-text fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
-                    <view class="product-price fn-right">¥ 65</view>
-                </view>
-                <view class="product-brand">xxx品牌</view>
-                <view class="product-style">
-                    <view class="fn-left">代金券最多抵扣50%</view>
-                    <view class="handle-section fn-right">
-                        <view class="handle-zone">
-                            <view class="cut">-</view>
-                            <input value="1" class="number" disabled="true" type="number" />
-                            <view class="add">+</view>
+    <view class="cart-list">
+        <view class="cart-cell">
+            <view class="border-zone clearfix">
+                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png" mode="aspectFit"></image>
+                <view class="fn-left product-info">
+                    <view class="product-name clearfix">
+                        <view class="product-name-text fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
+                        <view class="product-price fn-right">¥ 65</view>
+                    </view>
+                    <view class="product-brand">xxx品牌</view>
+                    <view class="product-style">
+                        <view class="fn-left">代金券最多抵扣50%</view>
+                        <view class="handle-section fn-right">
+                            <view class="handle-zone">
+                                <view class="cut">-</view>
+                                <input value="1" class="number" disabled="true" type="number" />
+                                <view class="add">+</view>
+                            </view>
                         </view>
                     </view>
                 </view>
             </view>
         </view>
+        <view class="cart-cell">
+            <view class="border-zone clearfix">
+                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png" mode="aspectFit"></image>
+                <view class="fn-left product-info">
+                    <view class="product-name clearfix">
+                        <view class="product-name-text fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
+                        <view class="product-price fn-right">¥ 65</view>
+                    </view>
+                    <view class="product-brand">xxx品牌</view>
+                    <view class="product-style">
+                        <view class="fn-left">代金券最多抵扣50%</view>
+                        <view class="handle-section fn-right">
+                            <view class="handle-zone">
+                                <view class="cut">-</view>
+                                <input value="1" class="number" disabled="true" type="number" />
+                                <view class="add">+</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="price-cal">
+        <view class="price-cell">
+            <view class="price-type">商品总价</view>
+            <view class="price-detail">¥ 10</view>
+        </view>
+        <view class="price-cell">
+            <view class="price-type">抵扣券</view>
+            <view class="price-detail">¥ 10</view>
+        </view>
+        <view class="price-cell">
+            <view class="price-type">运费</view>
+            <view class="price-detail">¥ 10</view>
+        </view>
+        <view class="price-cell">
+            <view class="price-type">实付款</view>
+            <view class="price-detail">¥ 43.80</view>
+        </view>
+    </view>
+</view>
+<view class="submit-zone">
+    <text class="price-all">¥ 43.80</text>（已优惠￥10）
+    <view class="submit-btn fn-right">
+        提交订单
     </view>
 </view>

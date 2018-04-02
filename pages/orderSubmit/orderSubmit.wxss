@@ -1,11 +1,12 @@
 @import "../../common/base.wxss";
 Page{
-    background: #fff;
+    background: #f7f7f7;
 }
 .address-detail {
     padding: 0 32rpx 0 30rpx;
     position: relative;
     border-bottom:10rpx solid #bbbbbb;
+    background: #fff;
 }
 .tri-img{
     position: absolute;
@@ -36,17 +37,20 @@ Page{
     width: 80rpx;
     height: 90rpx;
 }
+.cart-list{
+    border-bottom: 10rpx solid #eee;
+    background: #fff;
+}
 .cart-cell{
     position: relative;
     padding: 40rpx 0 0 30rpx;
     z-index:10;
-    border-bottom: 10rpx solid #eee;
+    border-bottom: 1rpx solid #eee;
 }
 .cart-cell:last-child .border-zone{
     border-bottom: none;
 }
 .border-zone{
-    border-bottom: 2rpx solid #ccc;
     width: 750rpx;
     box-sizing: border-box;
     padding-bottom: 20rpx;
@@ -127,4 +131,50 @@ Page{
     font-size:28rpx;
     text-align: center;
     line-height: 50rpx;
+}
+.price-cal{
+    font-size:24rpx;
+    background: #fff;
+}
+.price-cell{
+    padding: 0 24rpx;
+    display: flex;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 2rpx solid #eee;
+}
+.price-type,.price-detail{
+    flex: 1;
+}
+.price-detail{
+    text-align: right;
+    color: #ec5a72;
+}
+.price-type{
+    color: #333;
+}
+.submit-zone{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    height: 90rpx;
+    line-height: 90rpx;
+}
+.price-all{
+    color: #red;
+    padding-left: 30rpx;
+}
+.submit-btn{
+    font-size:28rpx;
+    background: #333333;
+    color: #fff;
+    height: 90rpx;
+    width: 180rpx;
+    text-align: center;
+    line-height: 90rpx;
+}
+.container{
+    padding-bottom: 90rpx;
 }
