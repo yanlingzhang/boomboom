@@ -13,7 +13,9 @@
     "pages/user/user",
     "pages/myorder/myorder",
     "pages/paySuccess/paySuccess",
-    "pages/user/user"
+    "pages/obtainRecord/obtainRecord",
+    "pages/giftCard/giftCard",
+    "pages/recordsConsumption/recordsConsumption"
   ],
   "window": {
     "backgroundTextStyle": "light",

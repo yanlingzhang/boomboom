@@ -1,0 +1,69 @@
+<import src="/zanui/tab/index.wxml" />
+<view class="container">
+    <view style="margin: 20px 0">
+	    <template
+	      is="zan-tab"
+	      data="{{ ...tab, componentId: 'tab' }}">
+	    </template>
+	</view>
+	<view class="zan-cell" wx:if="{{showPopup}}">
+		<view class="zan-cell__bd">
+		<view class="zan-cell__text">茅台</view>
+		<view class="zan-cell__desc">2018-09</view>
+		</view>
+		<view class="zan-cell__ft">
+		<view class="zan-cell__text">x2</view>
+		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
+		</view>
+		</view>
+		<view class="zan-cell">
+		<view class="zan-cell__bd">
+		<view class="zan-cell__text">茅台</view>
+		<view class="zan-cell__desc">2018-09</view>
+		</view>
+		<view class="zan-cell__ft">
+		<view class="zan-cell__text">x2</view>
+		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
+		</view>
+		</view>
+		<view class="zan-cell">
+		<view class="zan-cell__bd">
+		<view class="zan-cell__text">茅台</view>
+		<view class="zan-cell__desc">2018-09</view>
+		</view>
+		<view class="zan-cell__ft">
+		<view class="zan-cell__text">x2</view>
+		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
+		</view>
+	</view>
+	<view class="zan-cell" wx:if="{{showPopups}}">
+		<view class="zan-cell__bd">
+		<view class="zan-cell__text">茅台2</view>
+		<view class="zan-cell__desc">2018-09</view>
+		</view>
+		<view class="zan-cell__ft">
+		<view class="zan-cell__text">x2</view>
+		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
+		</view>
+		</view>
+		<view class="zan-cell">
+		<view class="zan-cell__bd">
+		<view class="zan-cell__text">茅台</view>
+		<view class="zan-cell__desc">2018-09</view>
+		</view>
+		<view class="zan-cell__ft">
+		<view class="zan-cell__text">x2</view>
+		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
+		</view>
+		</view>
+		<view class="zan-cell">
+		<view class="zan-cell__bd">
+		<view class="zan-cell__text">茅台</view>
+		<view class="zan-cell__desc">2018-09</view>
+		</view>
+		<view class="zan-cell__ft">
+		<view class="zan-cell__text">x2</view>
+		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
+		</view>
+	</view>	
+</view>

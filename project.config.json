@@ -61,7 +61,7 @@
 					"pathName": "pages/productDetail/productDetail",
 					"query": ""
 				},
-				{
+		        {
 					"id": -1,
 					"name": "commentList",
 					"pathName": "pages/commentList/commentList",
@@ -84,32 +84,11 @@
 					"name": "orderSubmit",
 					"pathName": "pages/orderSubmit/orderSubmit"
 				},
-        {
-          "id": -1,
-          "name": "myorder",
-          "pathName": "pages/myorder/myorder"
-        },{
+		        {
 					"id": -1,
-					"pathName": "pages/orderSubmit/orderSubmit",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "orderPay",
-					"pathName": "pages/orderPay/orderPay",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "user",
-					"pathName": "pages/user/user",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "paySuccess",
-					"pathName": "pages/paySuccess/paySuccess"
-				}
+					"name": "giftCard",
+					"pathName": "pages/giftCard/giftCard"
+		        }
 			]
 		}
 	}

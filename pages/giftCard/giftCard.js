@@ -1,17 +1,39 @@
 const api = require('../../config/api.js');
 const util = require('../../utils/util.js');
+const { Tab, extend } = require('../../zanui/index');
 
 //获取应用实例
 const app = getApp()
-Page({
+Page(extend({}, Tab, {
     onShareAppMessage: function (res) {
         return {
-            title: '纹饰美容',
-            path: '/pages/index/index'
+            title: '礼品卡',
+            path: '/pages/giftCard/giftCard'
         }
     },
     data: {
         showPopup: true,
+        showPopups: false,
+        tab: {
+        list: [{
+          id: 'all',
+          title: '我的礼品卡'
+        }, {
+          id: 'topay',
+          title: '礼包记录'
+        }],
+        selectedId: 'all'
+      }
+    },
+    handleZanTabChange(e) {
+      var componentId = e.componentId;
+      var selectedId = e.selectedId;
+
+      this.setData({
+        [`${componentId}.selectedId`]: selectedId,
+        showPopup: !this.data.showPopup,
+        showPopups: !this.data.showPopups,
+      });
     },
     togglePopup() {
         this.setData({
@@ -41,4 +63,4 @@ Page({
     onUnload: function () {
         // 页面关闭
     },
-})
+}))

@@ -1,0 +1,10 @@
+<view class="container">
+   <view class="zan-cell">
+      <view class="zan-cell__bd">
+        <view class="zan-cell__text">平台赠送</view>
+        <view class="zan-cell__desc">购买茅台</view>
+        <view class="zan-cell__desc">2018-09</view>
+      </view>
+      <view class="zan-cell__ft">¥15</view>
+    </view>
+</view>
