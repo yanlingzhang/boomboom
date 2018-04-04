@@ -11,7 +11,8 @@ Page({
         }
     },
     data: {
-        showPresent: false,
+        showPresent: true,
+        showPresentResult:false,
         bannerData: [
             {url: 'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner_01.jpg'},
             {url: 'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner_01.jpg'},
@@ -36,6 +37,12 @@ Page({
         var key = event.currentTarget.dataset.key;
         this.setData({
             [key]: !this.data[key]
+        })
+    },
+    openPresent:function () {
+        this.setData({
+            showPresentResult: !this.data.showPresentResult,
+            showPresent:!this.data.showPresent
         })
     },
     onLoad: function (options) {

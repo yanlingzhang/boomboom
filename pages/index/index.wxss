@@ -3,32 +3,111 @@ Page{
     background: #f7f7f7;
 }
 .present-zone{
-    width: 74%;
+    width: 428rpx;
     border-radius: 20rpx;
-    border: 1rpx solid #bbbbbb;
-    background: #fff;
-    padding: 66rpx;
-    font-size: 28rpx;
+    font-size: 30rpx;
+    color: #fff9a9;
     text-align: center;
     position: relative;
 }
-.get-btn{
-    font-size: 72rpx;
+.present-zone2{
+    width: 581rpx;
+    border-radius: 20rpx;
+    font-size: 30rpx;
     color: #fff;
-    width: 200rpx;
-    height: 200rpx;
-    line-height: 200rpx;
+    text-align: center;
+    position: relative;
+}
+.present-name-zone{
+    text-align: left;
+    color:#e52845;
+}
+.present-num{
+    margin-top: 10rpx;
+}
+.present-text-zone2{
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:10;
+    top:260rpx;
+    width: 100%;
+    line-height: 40rpx;
+    position: absolute;
+}
+.present-text-zone{
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:10;
+    top:94rpx;
+    width: 100%;
+    line-height: 40rpx;
+    position: absolute;
+}
+.present-open-btn{
+    width: 233rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    position: absolute;
+    z-index:10;
+    left: 50%;
+    top:400rpx;
+    transform: translateX(-50%);
+    font-size:34rpx;
+    color: #000;
+    background:#f6e832;
+}
+.present-open-btn2{
+    width: 233rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    font-size:34rpx;
+    color: #000;
     margin: 30rpx auto 0;
-    background: #E51C23;
-    border-radius: 50%;
+    background:#f6e832;
+}
+.present-list{
+    margin-top: 40rpx;
+}
+.present-cell{
+    margin: 0 auto 10rpx;
+    width: 535rpx;
+    padding: 25rpx 30rpx 0 30rpx;
+    height: 132rpx;
+    background: url('https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/present_bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+.img-present{
+    width: 80rpx;
+    height: 80rpx;
+}
+.img-present-bg{
+    width: 100%;
+    height: 529rpx;
+}
+.img-present-bg2{
+    width: 100%;
+    height: 720rpx;
+}
+.img-open{
+    width: 132rpx;
+    height: 132rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:10;
+    top:98rpx;
+    position: absolute;
 }
 .close-btn{
     position: absolute;
     z-index: 1;
-    right: 7rpx;
-    top: 7rpx;
-    width: 48rpx;
-    height: 48rpx;
+    right: -32rpx;
+    top: -72rpx;
+    width: 64rpx;
+    height: 64rpx;
 }
 .banner-img{
     height: 350rpx;

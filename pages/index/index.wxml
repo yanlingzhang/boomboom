@@ -34,16 +34,6 @@
             </navigator>
         </view>
     </scroll-view>
-    <view class="mask" wx:if="{{showPresent}}">
-        <view class="present-zone float-zone">
-            欢迎来到粤通商城，赶快来领取您的新人礼包吧！
-            <view class="get-btn">
-                拆
-            </view>
-            <image bindtap="toggleKey" data-key="showPresent" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png" class="close-btn"></image>
-        </view>
-    </view>
-
     <view class="title-cell">
         <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/header-2.jpg" class="header-img"></image>
     </view>
@@ -61,5 +51,53 @@
             </view>
         </view>
     </view>
-
+    <view class="mask" wx:if="{{showPresent}}">
+        <view class="present-zone float-zone">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png" class="img-present-bg"></image>
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_unpack.png" class="img-open"></image>
+            <view class="present-text-zone2">
+                <view>欢迎来到粤通商城</view>
+                <view>赶快来领取您的新人礼包吧~</view>
+            </view>
+            <view class="present-open-btn" bindtap="openPresent">
+                立即拆开
+            </view>
+            <image bindtap="toggleKey" data-key="showPresent" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
+        </view>
+    </view>
+    <view class="mask" wx:if="{{showPresentResult}}">
+        <view class="present-zone2 float-zone">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop2.png" class="img-present-bg2"></image>
+            <view class="present-text-zone">
+                <view>恭喜您获得商城赠送礼品酒</view>
+                <view class="present-list">
+                    <view class="present-cell clearfix">
+                        <view class="present-name-zone fn-left">
+                            <view class="present-name">新升级 吉祥红兑换券（1瓶）</view>
+                            <view class="present-num">X1</view>
+                        </view>
+                        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" class="img-present fn-right"></image>
+                    </view>
+                    <view class="present-cell clearfix">
+                        <view class="present-name-zone fn-left">
+                            <view class="present-name">新升级 吉祥红兑换券（1瓶）</view>
+                            <view class="present-num">X1</view>
+                        </view>
+                        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" class="img-present fn-right"></image>
+                    </view>
+                    <view class="present-cell clearfix">
+                        <view class="present-name-zone fn-left">
+                            <view class="present-name">新升级 吉祥红兑换券（1瓶）</view>
+                            <view class="present-num">X1</view>
+                        </view>
+                        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" class="img-present fn-right"></image>
+                    </view>
+                </view>
+                <view class="present-open-btn2">
+                    欢迎使用
+                </view>
+            </view>
+            <image bindtap="toggleKey" data-key="showPresentResult" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
+        </view>
+    </view>
 </view>
