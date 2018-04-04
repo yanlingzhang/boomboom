@@ -1,22 +1,32 @@
 <view class="container">
-    <swiper autoplay="{{true}}" indicator-dots="{{true}}">
+    <swiper autoplay="{{true}}" indicator-dots="{{true}}" indicator-color="#d3d2d2" indicator-active-color="#e52846">
         <block wx:for="{{bannerData}}" wx:key="">
             <swiper-item>
                 <image class="banner-img" src="{{item.url}}" data-content="{{item.content}}"></image>
             </swiper-item>
         </block>
     </swiper>
-    <scroll-view class="brand-list" scroll-x>
-        <view class="brand-cell" wx:for="{{brandData}}" wx:key="">
-            <navigator url="">
-                <image src="{{item.url}}"></image>
-                <text>{{item.name}}</text>
-            </navigator>
-        </view>
-    </scroll-view>
-
-    <view class="title-cell"><text class="line"></text><text class="title-name">热门问题</text><text class="line"></text></view>
-
+    <swiper autoplay="{{false}}" class="brand-list" indicator-dots="{{true}}" indicator-color="#f2f2f2" indicator-active-color="#cccccc">
+        <swiper-item>
+            <view class="brand-cell" wx:for="{{brandData}}" wx:key="">
+                <navigator openType="switchTab" url="/pages/classification/classification">
+                    <image src="{{item.url}}"></image>
+                    <text>{{item.name}}</text>
+                </navigator>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view class="brand-cell" wx:for="{{brandData}}" wx:key="">
+                <navigator url="/pages/classification/classification">
+                    <image src="{{item.url}}"></image>
+                    <text>{{item.name}}</text>
+                </navigator>
+            </view>
+        </swiper-item>
+    </swiper>
+    <view class="title-cell">
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/header-1.jpg" class="header-img"></image>
+    </view>
     <scroll-view class="shop-list" scroll-x>
         <view class="shop-cell" wx:for="{{scrollShopData}}" wx:key="">
             <navigator url="">
@@ -30,28 +40,26 @@
             <view class="get-btn">
                 拆
             </view>
-            <image bindtap="toggleKey" data-key="showPresent" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png" class="close-btn"></image>
+            <image bindtap="toggleKey" data-key="showPresent" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png" class="close-btn"></image>
         </view>
     </view>
 
-    <view class="title-cell"><text class="line"></text><text class="title-name">人气推荐</text><text class="line"></text></view>
+    <view class="title-cell">
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/header-2.jpg" class="header-img"></image>
+    </view>
 
-    <view class="shop-around-list">
-        <view class="shop-around-cell clearfix" wx:key="">
-            <navigator url="">
-                <image class="shop-logo" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png" mode="aspectFit"></image>
-                <view class="shop-detail">
-                    <view class="shop-name-zone">
-                        <view class="shop-name">发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破</view>
-                        <view class="shop-discount">可用券抵扣50%</view>
-                    </view>
-                    <view class="buy-zone">
-                        <text class="price">￥369.00</text>
-                        <text class="sell-num">销量：120</text>
-                        <text class="buy-btn">购买</text>
-                    </view>
+    <view class="recommend-list clearfix">
+        <view class="recommend-cell">
+            <image class="product-img" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg"></image>
+            <view class="product-info">
+                <view class="product-name">产品名字产品名字产品名字产品名字产品名字</view>
+                <view class="recommend-price-zone clearfix">
+                    <view class="product-price fn-left">￥<text class="price-text">145</text></view>
+                    <view class="product-coupon fn-right">抵扣50%</view>
                 </view>
-            </navigator>
+                <view class="sell-num">销量666</view>
+            </view>
         </view>
     </view>
+
 </view>

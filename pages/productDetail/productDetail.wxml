@@ -7,7 +7,7 @@
         </block>
     </swiper>
     <view class="product-info">
-        <image class="share-img" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png"></image>
+        <image class="share-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
         <view class="product-name">正宗低糖5斤花雕绍兴黄酒瓶坛装整箱装手工陈年酿老酒糯米酒礼酒</view>
         <view class="product-coupon">可用券抵扣50%</view>
         <view class="product-detail">
@@ -29,15 +29,15 @@
     </view>
     <view class="comment-cell">
         <view class="comment-detail clearfix">
-            <image class="user-headimg fn-left" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png"></image>
+            <image class="user-headimg fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
             <view class="comment-info fn-left">
                 <view class="comment-star clearfix">
                     <text class="user-name fn-left">xxxxx</text>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
                 </view>
                 <view class="comment-cont">加入购物车加入购物车加入加入购物车加入购物车加入</view>
             </view>
@@ -59,8 +59,8 @@
         </view>
     </view>
     <view class="bottom-btn clearfix">
-        <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png" class="collect-btn fn-left" bindtap="collect"></image>
-        <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png" class="tocart-btn fn-left" bindtap="tocart"></image>
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png" class="collect-btn fn-left" bindtap="collect"></image>
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png" class="tocart-btn fn-left" bindtap="tocart"></image>
         <view class="cart-btn fn-left" bindtap="addToCart">加入购物车</view>
         <view class="buy-btn fn-left" bindtap="buyNow">立即购买</view>
     </view>

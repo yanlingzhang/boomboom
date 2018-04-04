@@ -1,14 +1,14 @@
 <scroll-view class="container" scroll-y scroll-top="{{scrollTop}}">
     <view class="search-zone">
         <input placeholder="xxx" class="search-input"/>
-        <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="icon-search"></image>
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png" class="icon-search"></image>
     </view>
-    <image bindtap="goTop" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="totop-btn"></image>
+    <image bindtap="goTop" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png" class="totop-btn"></image>
     <view class="sort-zone">
         <view class="sort-cell">综合</view>
         <view class="sort-cell">销量</view>
-        <view class="sort-cell">价格<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_down_select@2x.png"></image></view>
-        <view class="sort-cell" bindtap="toggleKey" data-key="showSelect">筛选<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_down_select@2x.png"></image></view>
+        <view class="sort-cell">价格<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_down_select@2x.png"></image></view>
+        <view class="sort-cell" bindtap="toggleKey" data-key="showSelect">筛选<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_down_select@2x.png"></image></view>
         <view class="sort-select" wx:if="{{showSelect}}">
             <view class="sort-coupon">
                 可使用抵扣券
@@ -63,7 +63,7 @@
     <view class="product-list">
         <view class="product-cell">
             <view class="image-zone">
-                <image src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png" class="brand-image" mode="widthFix"></image>
+                <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png" class="brand-image" mode="widthFix"></image>
                 <view class="coupon-use">用券</view>
             </view>
             <view class="product-info">

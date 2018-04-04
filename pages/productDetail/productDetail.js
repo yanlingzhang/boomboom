@@ -13,7 +13,7 @@ Page({
     data: {
         comment:[],
         selectNum:1,
-        bannerData:[{url:'https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png'}],
+        bannerData:[{url:'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png'}],
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;

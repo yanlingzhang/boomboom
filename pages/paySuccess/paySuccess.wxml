@@ -1,6 +1,6 @@
 <view class="container">
     <view class="pay-info">
-        <image class="icon-success" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png"></image>
+        <image class="icon-success" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png"></image>
         <view class="money-info">
             ￥43.80
         </view>

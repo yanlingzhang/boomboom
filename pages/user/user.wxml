@@ -1,7 +1,7 @@
 <view class="container">
     <view class="user-center">
         <view class="user-center__message">
-          <image class="user-center__head" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/banner12@2x.png"></image>
+          <image class="user-center__head" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png"></image>
             <view class="user-center__username text-right">
               用户名
             </view>

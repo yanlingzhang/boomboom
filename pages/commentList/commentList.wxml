@@ -4,21 +4,21 @@
     </view>
     <view class="comment-cell">
         <view class="comment-detail clearfix">
-            <image class="user-headimg fn-left" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png"></image>
+            <image class="user-headimg fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
             <view class="comment-info fn-left">
                 <view class="comment-star clearfix">
                     <text class="user-name fn-left">xxxxx</text>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
                 </view>
                 <view class="comment-cont">加入购物车加入购物车加入加入购物车加入购物车加入</view>
                 <view class="comment-image clearfix">
-                    <image class="comment-image-cell fn-left" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png"></image>
-                    <image class="comment-image-cell fn-left" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png"></image>
-                    <image class="comment-image-cell fn-left" src="https://www.weiyoutong.cn/weiyoutong/Public/Home/images/nail/close_btn.png"></image>
+                    <image class="comment-image-cell fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
+                    <image class="comment-image-cell fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
+                    <image class="comment-image-cell fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
                 </view>
                 <view class="comment-time">2018/03/30</view>
             </view>

@@ -1,19 +1,19 @@
 <view class="container" scroll-y>
     <view class="address-detail">
-        <image class="tri-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png"></image>
+        <image class="tri-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png"></image>
         <view class="address-user">
             收货人：鹿天天
             <text class="address-tel">1312222222</text>
         </view>
         <view class="address-info">
-            <image class="loc-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png"></image>
+            <image class="loc-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png"></image>
             广州发发的弗兰克马施蒂利克
         </view>
     </view>
     <view class="cart-list">
         <view class="cart-cell">
             <view class="border-zone clearfix">
-                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png" mode="aspectFit"></image>
+                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png" mode="aspectFit"></image>
                 <view class="fn-left product-info">
                     <view class="product-name clearfix">
                         <view class="product-name-text fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
@@ -35,7 +35,7 @@
         </view>
         <view class="cart-cell">
             <view class="border-zone clearfix">
-                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/nail/btn_xzxz_k@2x.png" mode="aspectFit"></image>
+                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png" mode="aspectFit"></image>
                 <view class="fn-left product-info">
                     <view class="product-name clearfix">
                         <view class="product-name-text fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
