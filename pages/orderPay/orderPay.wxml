@@ -2,20 +2,18 @@
     <view class="pay-detail">
         支付剩余时间
         <view class="time-zone">
-            <text class="time-cell">2</text>
-            <text class="time-cell">3</text>
-            <text>: </text>
-            <text class="time-cell">5</text>
-            <text class="time-cell">9</text>
+            <text class="time-cell">23</text>小时
+            <text class="time-cell">59</text>分
+            <text class="time-cell">09</text>秒
         </view>
     </view>
     <view class="order-number">
         订单编号：5646161984
     </view>
     <view class="price-cal">
-        <view class="price-cell">
-            <view class="price-type">需支付</view>
-            <view class="price-detail">¥ 10</view>
+        <view class="price-cell active">
+            <view class="price-type active">需支付</view>
+            <view class="price-detail active">¥ 43.80</view>
         </view>
     </view>
     <view class="pay-btn">

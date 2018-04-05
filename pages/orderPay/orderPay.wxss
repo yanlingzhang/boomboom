@@ -1,18 +1,21 @@
 @import "../../common/base.wxss";
 Page{
-    background: #f7f7f7;
+    background: #f2f2f2;
 }
 .price-cal{
     font-size:24rpx;
     background: #fff;
-    border-top: 10rpx solid #eee;
+    margin-top: 4rpx;
+}
+.price-cell.active{
+    border-top: 4rpx solid #f2f2f2;
 }
 .price-cell{
     padding: 0 24rpx;
     display: flex;
-    height: 80rpx;
-    line-height: 80rpx;
-    border-bottom: 2rpx solid #eee;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 2rpx solid #f2f2f2;
 }
 .price-type,.price-detail{
     flex: 1;
@@ -21,44 +24,66 @@ Page{
     text-align: right;
     color: #ec5a72;
 }
+.price-type{
+    color: #333;
+    font-size: 26rpx;
+}
+.price-type.active{
+    font-size: 30rpx;
+    font-weight: bold;
+}
 .order-number{
-    height: 90rpx;
-    line-height: 90rpx;
-    font-size:28rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size:26rpx;
     color: #111;
     background: #fff;
-    padding: 0 15rpx;
-    border-top: 1rpx solid #eee;
+    padding: 0 20rpx;
+    margin-top: 20rpx;
+}
+.price-detail{
+    text-align: right;
+    color: #333;
+    font-size: 26rpx;
+}
+.price-detail.active{
+    font-size: 26rpx;
+    color: #e52845;
+    font-weight: bold;
 }
 .pay-detail{
     text-align: center;
     background: #fff;
     font-size:28rpx;
     color: #111111;
-    padding: 30rpx 0 10rpx 0;
+    padding: 50rpx 0 57rpx 0;
 }
 .time-zone{
     font-size:24rpx;
-    color: #333333;
+    color: #666;
     margin-top: 20rpx;
 }
 .time-cell{
-    width: 40rpx;
-    height: 40rpx;
+    width: 45rpx;
+    height: 45rpx;
+    color: #666;
+    font-size: 28rpx;
     text-align: center;
-    line-height: 40rpx;
+    line-height: 45rpx;
+    font-weight: bold;
     margin-right: 10rpx;
-    border: 1rpx solid #111111;
+    border: 1rpx solid #ccc;
     display: inline-block;
 }
 .pay-btn{
-    width: 652rpx;
-    height: 84rpx;
-    line-height: 84rpx;
+    width: 600rpx;
+    height: 70rpx;
+    font-weight: bold;
+    line-height: 70rpx;
     text-align: center;
     color: #fff;
-    font-size:40rpx;
-    background: #111;
-    margin: 60rpx auto 0;
-    border-radius: 400rpx;
+    font-size:36rpx;
+    background: #e52845;
+    margin: 160rpx auto 0;
+    border-radius: 35rpx;
 }
