@@ -12,8 +12,29 @@ Page({
     },
     data: {
         comment:[],
+        showCartZone:false,
         selectNum:1,
-        bannerData:[{url:'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png'}],
+        bannerData:[
+            {url:'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/productDetail_01.jpg'},
+            {url:'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/productDetail_01.jpg'}
+        ],
+    },
+    closeMask:function(event){
+        if(event.target.dataset.action == 'close'){
+            this.setData({
+                showCartZone : false
+            })
+        }
+    },
+    addNum:function(){
+        this.setData({
+            selectNum : ++this.data.selectNum
+        })
+    },
+    cutNum: function () {
+        this.setData({
+            selectNum : this.data.selectNum > 1 ? --this.data.selectNum : 1
+        })
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;
@@ -23,7 +44,7 @@ Page({
     },
     onLoad: function (options) {
         wx.setNavigationBarTitle({
-            title:'产品详情'
+            title:'商品详情'
         })
     },
     onReady: function () {
