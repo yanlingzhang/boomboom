@@ -6,13 +6,15 @@
       data="{{ ...tab, componentId: 'tab' }}">
     </template>
   </view>
-  <block wx:for="{{order}}" wx:key="{{index}}">
+  <block wx:if="{{order.length > 0}}" wx:for="{{order}}" wx:key="{{index}}">
     <view class="myorder-tabs__status">
       <view class="zan-panel zan-panel--without-border">
-        <view class="zan-cell">
-          <view class="zan-cell__bd">{{item.number}}</view>
-          <view class="zan-cell__ft">{{item.status}}</view>
-        </view>
+        <navigator url="/pages/myorderDetail/myorderDetail" navigate>
+          <view class="zan-cell">
+            <view class="zan-cell__bd">{{item.number}}</view>
+            <view class="zan-cell__ft">{{item.status}}</view>
+          </view>
+        </navigator>
       </view>
       <block wx:for="{{item.shop}}" wx:key="{{index}}">
         <view class="zan-card">
@@ -49,6 +51,15 @@
         <button class="zan-btn zan-btn--small zan-btn--plain">取消订单</button>
         <button class="zan-btn zan-btn--small zan-btn--warn zan-btn--plain">确认付款</button>
       </view>
+    </view>
+  </block>
+  <block wx:if="{{order.length == 0}}">
+    <view class="myorder-number__no">
+      <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_shopcar.png"
+              mode="aspectFit"
+            ></image>
+      <view>你还没有相关订单</view>
+      <view>快去逛逛吧</view>
     </view>
   </block>
 </view>
