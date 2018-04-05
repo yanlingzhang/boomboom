@@ -20,7 +20,7 @@ Page({
     },
     onLoad: function (options) {
         wx.setNavigationBarTitle({
-            title:'提交订单'
+            title:'确认订单'
         })
     },
     onReady: function () {
