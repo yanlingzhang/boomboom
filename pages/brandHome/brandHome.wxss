@@ -1,90 +1,243 @@
 @import "../../common/base.wxss";
-Page{
-    background: #fff;
-}
 .container{
     width: 100%;
     height: 100%;
+    position: fixed;
+    z-index: 1;
 }
-.brand-image{
+.bg-red{
+    background: #e52846;
+}
+.bg-white{
+    background: #f2f2f2;
+}
+.brand-image {
     width: 100%;
-}
-.brand-name{
-    text-align: center;
-    height: 60rpx;
-    display: flex;
-    align-items: center;
-    color: #000;
-    justify-content:center;
-    font-size: 28rpx;
 }
 .sort-zone{
     background: #fff;
     display: flex;
-    padding: 16rpx 0;
-    border-top: 2rpx solid #bbbbbb;
-    border-bottom: 2rpx solid #bbbbbb;
-}
-.sort-cell{
-    height: 48rpx;
-    line-height: 48rpx;
-    flex: 1;
-    font-size:24rpx;
-    text-align: center;
-    color: #111;
-}
-.triangle-down{
-    width: 10rpx;
-    height: 10rpx;
-    margin-left: 10rpx;
-}
-.product-list{
-    padding: 10rpx;
-}
-.product-cell{
-    width: 49%;
-    float: left;
-    box-sizing: border-box;
-    margin-bottom: 20rpx;
-}
-.product-cell:nth-child(2n){
-    float: right;
-}
-.product-cell:nth-child(2n+1){
-    float: left;
-}
-.product-info{
-    padding: 0 5rpx 5rpx 5rpx;
-    border: 1px solid #bbbbbb;
-    border-top:none;
-    margin-top: 0;
     position: relative;
     top: -8rpx;
-    box-sizing: border-box;
 }
-.product-detail{
-    padding: 0 5rpx 10rpx 5rpx;
-    margin-top: 10rpx;
+.sort-select{
+    position: absolute;
+    top: 86rpx;
+    width: 100%;
+    height: 650rpx;
+    z-index: 10;
+    background: #fff;
 }
-.price{
-    color: #000;
+.sort-cell{
+    height: 86rpx;
+    line-height: 86rpx;
+    flex: 1;
+    font-size:30rpx;
+    text-align: center;
+    color: #333;
+}
+.triangle-down{
+    width: 27rpx;
+    height: 29rpx;
+    margin-left: 5rpx;
+    position: relative;
+    top: 4rpx;
+}
+.search-zone{
+    position: relative;
+    width: 89.6%;
+    margin: 0 auto;
+}
+.search-input{
+    height: 68rpx;
+    line-height: 68rpx;
+    border-radius: 32rpx;
+    margin: 0 auto;
     font-size: 26rpx;
+    text-indent: 40rpx;
+    display: block;
+    margin-bottom: 20rpx;
+    background: #fff;
+}
+.icon-search{
+    position: absolute;
+    right: 20rpx;
+    top:5rpx;
+    width: 36rpx;
+    height: 36rpx;
+    z-index: 10;
+    padding: 10rpx;
+    box-sizing: content-box;
+}
+
+
+
+.sort-coupon{
+    height: 86rpx;
+    line-height: 86rpx;
+    padding-left: 20rpx;
+    font-size: 28rpx;
+    color: #e52846;
+    border-bottom: 1px solid #f2f2f2;
+}
+.sort-title{
+    height: 86rpx;
+    line-height: 86rpx;
+    padding-left: 20rpx;
+    font-size: 28rpx;
+    color: #333;
+    border-bottom: 1px solid #f2f2f2;
+}
+.switch-btn{
     float: right;
 }
-.sell-num{
+.brand-nav{
+    width: 160rpx;
+    left: 0;
+    top: 172rpx;
+    height: 450rpx;
+    position: absolute;
+}
+.nav-cell{
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+    font-size: 28rpx;
+    color: #333333;
+    background: #fff;
+}
+.nav-cell.active{
+    background: #f2f2f2;
+}
+.brand-list{
+    width: 564rpx;
+    right: 0;
+    top: 172rpx;
+    box-sizing: border-box;
+    height: 450rpx;
+    position: absolute;
+}
+.brand-list2{
+    width: 750rpx;
+    right: 0;
+    top: 172rpx;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    height: 450rpx;
+    position: absolute;
+}
+.brand-cell{
     float: left;
+    width: 169rpx;
+    margin-right: 20rpx;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 24rpx;
-    color: #bbbbbb;
+    background: #f2f2f2;
+    border-radius: 10rpx;
+    margin-top: 20rpx;
+}
+.now-brand-cell{
+    width: 169rpx;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24rpx;
+    background: #f2f2f2;
+    border-radius: 10rpx;
+    margin-top: 20rpx;
+    color: #e52846;
+    margin-left: 20rpx;
+    background-image: url('https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/classify_cancel.png');
+    background-repeat: no-repeat;
+    background-size: 36rpx 36rpx;
+    background-position: bottom right;
+}
+.brand-cell2{
+    float: left;
+    width: 162rpx;
+    margin-right: 20rpx;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24rpx;
+    background: #f2f2f2;
+    border-radius: 10rpx;
+    margin-top: 20rpx;
+}
+.totop-btn{
+    width: 130rpx;
+    height: 130rpx;
+    position: fixed;
+    bottom: 50rpx;
+    right: 20rpx;
+    z-index: 100;
+    border-radius: 50%;
+}
+.sort-cell.active{
+    color: #e52846;
+}
+.recommend-cell:nth-child(2n){
+    float: right;
+}
+.recommend-cell:nth-child(2n+1){
+    float: left;
+}
+.recommend-cell{
+    width: 372rpx;
+    margin-bottom: 10rpx;
+    background: #fff;
+}
+.product-img{
+    max-width: 372rpx;
+    max-height: 372rpx;
+}
+.product-info{
+    padding: 10rpx 20rpx 20rpx;
 }
 .product-name{
-    font-size:28rpx;
-    color: #111;
-    display: -webkit-box;
-    line-height: 40rpx;
-    padding: 0 5rpx;
-    word-break: break-all;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp:2;
+    text-overflow: ellipsis;
     overflow: hidden;
-    text-overflow:ellipsis;
+    white-space: nowrap;
+    color: #333333;
+    font-size:28rpx;
+}
+.product-price{
+    color: #e52845;
+    height: 36rpx;
+    font-size:24rpx;
+    line-height: 36rpx;
+    font-weight: bold;
+}
+.price-text{
+    font-size:30rpx;
+}
+.sell-num{
+    color: #999999;
+    font-size:22rpx;
+    margin-top: 10rpx;
+}
+.recommend-price-zone{
+    margin-top: 20rpx;
+}
+.product-coupon{
+    color: #fff;
+    text-align: center;
+    width: 120rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    font-size:22rpx;
+    background: url('https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_deduction.png') no-repeat;
+    background-size: 100% 100%;
 }

@@ -186,7 +186,7 @@ Page{
     max-height: 372rpx;
 }
 .product-info{
-    padding: 20rpx;
+    padding: 10rpx 20rpx 20rpx;
 }
 .product-name{
     text-overflow: ellipsis;

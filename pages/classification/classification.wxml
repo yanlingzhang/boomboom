@@ -3,43 +3,19 @@
         <view class="nav-cell active">全部</view>
         <view class="nav-cell">零食</view>
         <view class="nav-cell">酒类</view>
-        <view class="nav-cell">全部</view>
-        <view class="nav-cell">零食</view>
-        <view class="nav-cell">酒类</view>
-        <view class="nav-cell">全部</view>
-        <view class="nav-cell">零食</view>
-        <view class="nav-cell">酒类</view>
-        <view class="nav-cell">全部</view>
-        <view class="nav-cell">零食</view>
-        <view class="nav-cell">酒类</view>
-        <view class="nav-cell">全部</view>
-        <view class="nav-cell">零食</view>
-        <view class="nav-cell">酒类</view>
     </scroll-view>
     <scroll-view scroll-y class="brand-list">
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
-        <view class="brand-cell">全部</view>
-        <view class="brand-cell">零食</view>
-        <view class="brand-cell">酒类</view>
+        <navigator url="/pages/brandHome/brandHome?id=" class="brand-cell">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/type_01.jpg" class="type-img"></image>
+        </navigator>
+        <navigator url="/pages/brandHome/brandHome?id=" class="brand-cell">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/type_02.jpg" class="type-img"></image>
+        </navigator>
+        <navigator url="/pages/brandHome/brandHome?id=" class="brand-cell">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/type_03.jpg" class="type-img"></image>
+        </navigator>
+        <navigator url="/pages/brandHome/brandHome?id=" class="brand-cell">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/type_04.jpg" class="type-img"></image>
+        </navigator>
     </scroll-view>
 </view>

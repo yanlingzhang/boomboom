@@ -1,30 +1,64 @@
-<scroll-view class="container" sroll-y>
-    <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png" class="brand-image" mode="widthFix"></image>
-    <view class="brand-name">品牌名称</view>
-    <view class="sort-zone">
-        <view class="sort-cell">综合</view>
-        <view class="sort-cell">销量</view>
-        <view class="sort-cell">价格<image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_down_select@2x.png"></image></view>
+<scroll-view class="container bg-red" sroll-y>
+    <view class="search-zone">
+        <input placeholder="请输入搜索商品" class="search-input"/>
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_search.png" class="icon-search"></image>
     </view>
-    <view class="product-list">
-        <view class="product-cell">
-            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png" class="brand-image" mode="widthFix"></image>
-            <view class="product-info">
-                <view class="product-name">发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破</view>
-                <view class="product-detail clearfix">
-                    <text class="sell-num">销量：120</text>
-                    <text class="price">￥369.00</text>
-                </view>
-            </view>
+    <image bindtap="goTop" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_zdup.png" class="totop-btn"></image>
+    <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/brand_banner.jpg" class="brand-image" mode="widthFix"></image>
+    <view class="sort-zone">
+        <view class="sort-cell active">综合</view>
+        <view class="sort-cell">销量</view>
+        <view class="sort-cell">价格
+            <image class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_moneydownup.png"></image>
+            <image wx:if="{{false}}" class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_moneyup1.png"></image>
+            <image wx:if="{{false}}" class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_moneydowm1.png"></image>
         </view>
-        <view class="product-cell">
-            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png" class="brand-image" mode="widthFix"></image>
+        <view class="sort-cell {{showSelect ? 'active' : ''}}" bindtap="toggleKey" data-key="showSelect">筛选
+            <image wx:if="{{showSelect}}" class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_pick1.png"></image>
+            <image wx:if="{{!showSelect}}" class="triangle-down" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_pick.png"></image>
+        </view>
+        <view class="sort-select" wx:if="{{showSelect}}">
+            <view class="sort-coupon">
+                可使用抵扣券
+                <switch bindchange="switchChange" class="switch-btn" color="#e52846" checked="{{false}}"/>
+            </view>
+            <view class="sort-title">品牌筛选</view>
+            <view class="now-brand-cell" wx:if="{{false}}">
+                全部
+            </view>
+            <scroll-view scroll-y class="brand-nav">
+                <view class="nav-cell active">全部</view>
+                <view class="nav-cell">零食</view>
+                <view class="nav-cell">酒类</view>
+            </scroll-view>
+            <!--<scroll-view scroll-y class="brand-list2">-->
+            <scroll-view scroll-y class="brand-list">
+                <!--<view class="brand-cell2">全部</view>-->
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+                <view class="brand-cell">全部</view>
+                <view class="brand-cell">零食</view>
+                <view class="brand-cell">酒类</view>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="recommend-list clearfix">
+        <view class="recommend-cell">
+            <image class="product-img" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg"></image>
             <view class="product-info">
-                <view class="product-name">发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破发文件被封为范围哦范围看发颇为绯闻破</view>
-                <view class="product-detail clearfix">
-                    <text class="sell-num">销量：120</text>
-                    <text class="price">￥369.00</text>
+                <view class="product-name">产品名字产品名字产品名字产品名字产品名字</view>
+                <view class="recommend-price-zone clearfix">
+                    <view class="product-price fn-left">￥<text class="price-text">145</text></view>
+                    <view class="product-coupon fn-right">抵扣50%</view>
                 </view>
+                <view class="sell-num">销量666</view>
             </view>
         </view>
     </view>

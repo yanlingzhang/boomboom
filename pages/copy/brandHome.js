@@ -11,12 +11,22 @@ Page({
         }
     },
     data: {
+        scrollTop: 0,
+        showSelect:false
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;
         this.setData({
             [key] : !this.data[key]
         })
+    },
+    goTop: function(e){
+        this.setData({
+            scrollTop: 0
+        })
+    },
+    switchChange:function(){
+
     },
     onLoad: function (options) {
         wx.setNavigationBarTitle({
