@@ -1,18 +1,20 @@
 <view class="container">
     <view class="user-center">
-        <view class="user-center__message">
-          <image class="user-center__head" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner12@2x.png"></image>
-            <view class="user-center__username text-right">
-              用户名
+        <view class="user-center__message bg-main__color">
+          <block>
+            <image class="user-center__head" src="{{userInfo.avatarUrl}}"></image>
+            <view class="user-center__username">
+              {{userInfo.nickName}}
             </view>
+          </block>
         </view>
         <view class="user-center__order">
             <view class="user-center__myorder">
-              <view class="zan-panel">
+              <view class="zan-panel zan-panel--without-border">
                 <view class="zan-cell zan-cell--access">
                   <view class="zan-cell__bd">我的订单</view>
                     <navigator url="/pages/myorder/myorder" navigate>
-                      <view class="zan-cell__ft">查看全部订单</view>
+                      <view class="zan-cell__ft">查看全部</view>
                     </navigator>
                 </view>
               </view>
@@ -21,26 +23,26 @@
               <view class="zan-row">
                 <view class="zan-col zan-col-6">
                   <navigator url="/pages/myorder/myorder" navigate>
-                    <view class="zan-icon zan-icon-close"></view>
-                    <view>待付款</view>
+                    <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_1.png"></image>
+                    <view class="user-center__order__text">待付款</view>
                   </navigator>
                 </view>
                 <view class="zan-col zan-col-6">
                   <navigator url="/pages/myorder/myorder" navigate>
-                    <view class="zan-icon zan-icon-close"></view>
-                    <view>待发货</view>
+                    <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_2.png"></image>
+                    <view class="user-center__order__text">待发货</view>
                   </navigator>
                 </view>
                 <view class="zan-col zan-col-6">
                   <navigator url="/pages/myorder/myorder" navigate>
-                    <view class="zan-icon zan-icon-close"></view>
-                    <view>待收货</view>
+                    <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_3.png"></image>
+                    <view class="user-center__order__text">待收货</view>
                   </navigator>
                 </view>
                 <view class="zan-col zan-col-6">
                   <navigator url="/pages/myorder/myorder" navigate>
-                    <view class="zan-icon zan-icon-close"></view>
-                    <view>退货退款</view>
+                    <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_4.png"></image>
+                    <view class="user-center__order__text">退货退款</view>
                   </navigator>
                 </view>
               </view>
@@ -50,19 +52,19 @@
           <view class="zan-row">
             <view class="zan-col zan-col-8">
               <navigator url="/pages/deductionVolume/deductionVolume" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_5.png"></image>
                 <view>抵扣卷</view>
               </navigator>
             </view>
             <view class="zan-col zan-col-8">
               <navigator url="/pages/giftCard/giftCard" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_6.png"></image>
                 <view>礼品卡</view>
               </navigator>
             </view>
             <view class="zan-col zan-col-8">
               <navigator url="/pages/myCollection/myCollection" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_7.png"></image>
                 <view>我的收藏</view>
               </navigator>
             </view>
@@ -70,19 +72,19 @@
           <view class="zan-row">
             <view class="zan-col zan-col-8">
               <navigator url="/pages/manageAddress/manageAddress" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_8.png"></image>
                 <view>地址管理</view>
               </navigator>
             </view>
             <view class="zan-col zan-col-8">
               <navigator url="/pages/feedback/feedback" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_9.png"></image>
                 <view>意见反馈</view>
               </navigator>
             </view>
             <view class="zan-col zan-col-8">
               <navigator url="/pages/commonProblems/commonProblems" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_10.png"></image>
                 <view>常见问题</view>
               </navigator>
             </view>
@@ -90,13 +92,13 @@
           <view class="zan-row">
             <view class="zan-col zan-col-8">
               <navigator url="/pages/manageAddress/manageAddress" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_11.png"></image>
                 <view>代理佣金</view>
               </navigator>
             </view>
             <view class="zan-col zan-col-8">
               <navigator url="/pages/manageAddress/manageAddress" navigate>
-                <view class="zan-icon zan-icon-close"></view>
+                <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_12.png"></image>
                 <view>平台客服</view>
               </navigator>
             </view>
