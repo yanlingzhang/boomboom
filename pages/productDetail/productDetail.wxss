@@ -1,41 +1,60 @@
 @import "../../common/base.wxss";
 Page{
-    background: #fff;
+    background: #f2f2f2;
+}
+.banner-swiper{
+    height: 750rpx;
+    position: relative;
+    top: -4rpx;
 }
 .banner-img{
-    height: 320rpx;
+    height: 750rpx;
     width: 100%;
 }
 .collect-btn{
     color: #333;
-    width: 100rpx;
-    line-height: 88rpx;
-    height: 88rpx;
+    width: 150rpx;
+    height: 90rpx;
+    font-size: 22rpx;
     text-align: center;
-    border-right: 1px solid #111111;
+    border-right: 1px solid #f2f2f2;
+}
+.collect-btn image{
+    width: 36rpx;
+    height: 34rpx;
+    display: block;
+    margin: 12rpx auto 6rpx;
+}
+.tocart-btn image{
+    width: 42rpx;
+    height: 42rpx;
+    display: block;
+    margin: 8rpx auto 2rpx;
 }
 .tocart-btn{
     color: #333;
-    width: 100rpx;
-    line-height: 88rpx;
-    height: 88rpx;
+    width: 150rpx;
+    font-size: 22rpx;
+    height: 90rpx;
     text-align: center;
 }
 .buy-btn{
-    width: 300rpx;
-    line-height: 88rpx;
-    height: 88rpx;
+    width: 225rpx;
+    line-height: 90rpx;
+    height: 90rpx;
     text-align: center;
     color: #fff;
-    background: #ec5a72;
+    background: #e81738;
+    font-size: 30rpx;
 }
 .cart-btn{
-    background: #f2bf67;
-    width: 250rpx;
-    line-height: 88rpx;
-    height: 88rpx;
+    background: #fd472f;
+    width: 225rpx;
+    line-height: 90rpx;
+    height: 90rpx;
     text-align: center;
     color: #fff;
+    font-size: 30rpx;
 }
 .bottom-btn{
     position: fixed;
@@ -44,8 +63,8 @@ Page{
     left: 0;
     bottom: 0;
     font-size:28rpx;
+    border-top: 1px solid #f2f2f2;
     background: #fff;
-    border-top: 1rpx solid #eee;
 }
 .comment-cell{
     border-bottom: 2rpx solid #eee;
@@ -53,128 +72,202 @@ Page{
     color: #333;
     padding-top: 30rpx;
     padding-bottom: 20rpx;
+    background: #fff;
 }
 .comment-detail{
     padding: 0 24rpx;
 }
 .comment-cont{
+    font-size: 30rpx;
+    margin-top: 10rpx;
     line-height: 42rpx;
 }
 .user-headimg{
-    width: 80rpx;
-    height: 80rpx;
+    width: 65rpx;
+    height: 65rpx;
     margin-right: 20rpx;
 }
 .comment-info{
     width: 600rpx;
 }
 .user-name{
-    margin-right: 30rpx;
+    font-size: 30rpx;
+    color: #999;
+    margin-right: 28rpx;
 }
 .comment-star{
     margin-right: 10rpx;
-    margin-top: -5rpx;
 }
 .star-img{
-    width: 24rpx;
-    height: 24rpx;
-    margin-right: 9rpx;
+    width: 26rpx;
+    height: 26rpx;
+    margin-right: 6rpx;
     float: left;
-}
-.bottom-hints{
-    height: 70rpx;
-    line-height: 70rpx;
-    text-align: center;
-    font-size:30rpx;
-    margin-top: 10rpx;
-    color: #999;
+    padding-top: 6rpx;
+    box-sizing: content-box;
 }
 .comment-total{
-    padding-left: 20rpx;
-    height: 60rpx;
-    line-height: 60rpx;
-    color: #111111;
-    font-size: 24rpx;
-    border-bottom: 1px solid #333;
-    border-top: 10rpx solid #111;
+    background:#fff;
+    padding:0 20rpx;
+    height: 86rpx;
+    line-height: 86rpx;
+    color: #333;
+    font-size: 30rpx;
+    margin-top: 20rpx;
+    margin-bottom: 2rpx;
+    position: relative;
+}
+.show-more-btn image{
+    width: 15rpx;
+    height: 26rpx;
+    position: relative;
+    top: 2rpx;
+}
+.show-more-btn{
+    position: absolute;
+    right: 20rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 30rpx;
+    color: #e76b58;
 }
 .buy-handle{
-    padding: 0 28rpx;
-    font-size: 28rpx;
-    color: #111111;
-    height: 102rpx;
-    line-height: 102rpx;
-    border-top: 10rpx solid #111111;
+    background:#fff;
+    padding: 0 20rpx;
+    font-size: 30rpx;
+    color: #333;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin-top: 10rpx;
 }
 .input-num{
     text-align: center;
-    color: #111;
-    font-size: 26rpx;
-    border: 1px solid #eee;
-    width: 160rpx;
-    height: 52rpx;
-    line-height: 52rpx;
-    margin: 0 20rpx;
+    color: #333;
+    font-size: 30rpx;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    width: 72rpx;
+    box-sizing: border-box;
+    height: 56rpx;
+    line-height: 56rpx;
 }
 .btn-num{
-    border: 1px solid #111111;
-    border-radius: 50%;
-    width: 48rpx;
-    height: 48rpx;
-    text-align: center;
-    font-size: 30rpx;
-    line-height: 48rpx;
+    width: 58rpx;
+    height: 56rpx;
+    border: 1px solid #999;
 }
 .buy-zone{
-    margin-top: 30rpx;
+    margin-top: 22rpx;
 }
 .product-info{
-    padding: 30rpx;
+    padding: 10rpx 20rpx 20rpx 20rpx;
     position: relative;
+    background:#fff;
+    top: -4rpx;
 }
 .product-price{
-    font-size: 27rpx;
-    color: #111111;
-    margin-right: 30rpx;
+    font-size: 30rpx;
+    color: #e52845;
+    margin-right: 76rpx;
+}
+.price-tag{
+    font-size: 36rpx;
+    font-weight: bold;
 }
 .product-fee{
     font-size: 24rpx;
-    color: #666;
+    color: #333;
     margin-right: 30rpx;
 }
-.product-coupon{
-    color: red;
-    font-size: 28rpx;
+.product-sell{
+    font-size: 24rpx;
+    color: #999;
     margin-top: 10rpx;
-    margin-bottom: 10rpx;
+}
+.product-coupon{
+    color: #e52845;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+    margin-bottom: 15rpx;
 }
 .product-name{
-    font-size: 28rpx;
+    font-size: 30rpx;
     line-height: 40rpx;
-    width: 610rpx;
+    width: 600rpx;
+    color: #333;
+    margin-top: 4rpx;
+    padding-right: 20rpx;
+    box-sizing: border-box;
+    border-right: 1px solid #f2f2f2;
 }
-.share-img{
+.shop-share{
+    width:40rpx;
+    height:40rpx;
+    position:absolute;
+    z-index:10;
+    top:33rpx;
+    right:48rpx;
+    padding:0;
+    margin:0;
+    border-radius:0;
+    border:0px;
+    line-height:0;
+    background:none;
+    box-sizing: border-box;
+}
+button[plain]{
+    border: 0;
+}
+.shop-share image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.container{
+    padding-bottom: 90rpx;
+}
+.cart-handle-zone{
+    background: #fff;
+    width: 100%;
+}
+.float-cart-btn{
+    background: #fd472f;
+    width:750rpx;
+    line-height: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+}
+.float-product-detail{
+    height: 116rpx;
+    margin:0 20rpx;
+    padding-left: 180rpx;
+    padding-top:16rpx;
+    border-bottom: 1px solid #ccc;
+}
+.float-product-detail-img {
+    width: 162rpx;
+    box-sizing: border-box;
+    border: 4rpx solid #fff;
+    height: 162rpx;
     position: absolute;
-    top: 30rpx;
-    right: 30rpx;
     z-index: 10;
-    width: 48rpx;
-    height: 48rpx;
-    padding: 10rpx;
+    left: 20rpx;
+    top: -71rpx;
 }
-.textimg-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #999999;
-    padding: 30rpx 0;
+.float-sell-num{
+    font-size: 24rpx;
+    color: #333;
 }
-.line{
-    width: 280rpx;
-    height: 1rpx;
-    background: #111111;
+.float-product-detail-close{
+    width: 36rpx;
+    height: 36rpx;
+    top: 20rpx;
+    position: absolute;
+    z-index: 10;
+    right: 20 rpx;
 }
-.textimg-word{
-    font-size: 26rpx;
-    margin: 0 20rpx;
+.product-desc-info{
+    padding: 60rpx 24rpx ;
 }

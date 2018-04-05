@@ -1,67 +1,90 @@
 <view class="container">
-    <swiper autoplay="{{true}}" indicator-dots="{{true}}">
+    <swiper autoplay="{{true}}" indicator-dots="{{true}}"  indicator-color="rgba(255,255,255,.3)" indicator-active-color="rgba(255,255,255,1)" class="banner-swiper">
         <block wx:for="{{bannerData}}" wx:key="">
             <swiper-item>
-                <image class="banner-img" src="{{item.url}}"></image>
+                <image class="banner-img" src="{{item.url}}" mode="aspectFit"></image>
             </swiper-item>
         </block>
     </swiper>
     <view class="product-info">
-        <image class="share-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
+        <button open-type='share' plain="{{true}}" class="shop-share">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_share.png"></image>
+        </button>
         <view class="product-name">正宗低糖5斤花雕绍兴黄酒瓶坛装整箱装手工陈年酿老酒糯米酒礼酒</view>
-        <view class="product-coupon">可用券抵扣50%</view>
+        <view class="product-coupon">抵扣券可抵扣50%</view>
         <view class="product-detail">
-            <text class="product-price">￥450.00</text>
+            <text class="product-price">￥<text class="price-tag">450.00</text></text>
             <text class="product-fee">运费 0</text>
-            <text class="product-fee">销量1823</text>
+            <text class="product-sell fn-right">销量1823</text>
         </view>
     </view>
     <view class="buy-handle">
-        购买数量
+        请选择购买数量
         <view class="fn-right clearfix buy-zone">
-            <text class="fn-left btn-num">－</text>
+            <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
             <input type="text" value="{{selectNum}}" class="fn-left input-num"/>
-            <text class="fn-left btn-num">＋</text>
+            <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
         </view>
     </view>
     <view class="comment-total">
-        评论（9999）
+        评论(9999)
+        <navigator url="/pages/commentList/commentList" class="show-more-btn">查看更多
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/appraise_icon_enter.png"></image></navigator>
     </view>
     <view class="comment-cell">
         <view class="comment-detail clearfix">
-            <image class="user-headimg fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png"></image>
+            <image class="user-headimg fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_milk.png"></image>
             <view class="comment-info fn-left">
                 <view class="comment-star clearfix">
-                    <text class="user-name fn-left">xxxxx</text>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
-                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_star@2x.png"></image>
+                    <text class="user-name fn-left">小小</text>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/appraise_icon_sel.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/appraise_icon_sel.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/appraise_icon_sel.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/appraise_icon_sel.png"></image>
+                    <image class="star-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/appraise_icon_sel.png"></image>
                 </view>
-                <view class="comment-cont">加入购物车加入购物车加入加入购物车加入购物车加入</view>
+                <view class="comment-cont">很养生哦，还会继续购买</view>
             </view>
         </view>
     </view>
-    <navigator url="">
-        <view class="bottom-hints">
-            查看更多
-        </view>
-    </navigator>
-    <view class="bottom-hints" wx:if="{{commentCount == 0}}">
-        暂无评价
+    <view class="comment-total">
+        商品详情
     </view>
-    <view class="product-textimg">
-        <view class="textimg-title">
-            <text class="line"></text>
-            <text class="textimg-word">图文详情</text>
-            <text class="line"></text>
-        </view>
+    <view class="product-desc-info">
+        <rich-text nodes="{{content}}"></rich-text>
     </view>
     <view class="bottom-btn clearfix">
-        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png" class="collect-btn fn-left" bindtap="collect"></image>
-        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/close_btn.png" class="tocart-btn fn-left" bindtap="tocart"></image>
-        <view class="cart-btn fn-left" bindtap="addToCart">加入购物车</view>
+        <view class="collect-btn fn-left" bindtap="collect">
+            <image wx:if="{{true}}" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_collect.png"></image>
+            <image wx:if="{{false}}" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_collect1.png"></image>
+            <view>收藏</view>
+        </view>
+        <view  class="tocart-btn fn-left" bindtap="tocart">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_shopcar.png"></image>
+            <view>购物车</view>
+        </view>
+        <view class="cart-btn fn-left" bindtap="toggleKey" data-key="showCartZone">加入购物车</view>
         <view class="buy-btn fn-left" bindtap="buyNow">立即购买</view>
+    </view>
+    <view class="mask" wx:if="{{showCartZone}}" catchtap="closeMask" data-action="close">
+        <view class="cart-handle-zone float-bottom-zone">
+            <view class="float-product-detail">
+                <view class="product-price">￥<text class="price-tag">450.00</text></view>
+                <view class="float-sell-num">
+                    销量1823
+                </view>
+                <image bindtap="toggleKey" data-key="showCartZone" class="float-product-detail-close" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_close.png"></image>
+                <image class="float-product-detail-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/productDetail_01.jpg"></image>
+            </view>
+            <view class="buy-handle">
+                请选择购买数量
+                <view class="fn-right clearfix buy-zone">
+                    <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                    <input type="text" value="{{selectNum}}" class="fn-left input-num"/>
+                    <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                </view>
+            </view>
+            <view class="float-cart-btn" bindtap="addToCart">加入购物车</view>
+        </view>
     </view>
 </view>

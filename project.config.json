@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -41,18 +41,6 @@
 					"id": -1,
 					"name": "classification",
 					"pathName": "pages/classification/classification",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "productList",
-					"pathName": "pages/productList/productList",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "singleproductList",
-					"pathName": "pages/singleProductList/singleProductList",
 					"query": ""
 				},
 				{
