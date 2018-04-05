@@ -32,6 +32,8 @@
     overflow: hidden;
     _zoom: 1;
 }
+.fn-clear:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.fn-clear{zoom:1}
 
 .imgfull {
     width: 100%
