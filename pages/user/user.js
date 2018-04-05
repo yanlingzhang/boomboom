@@ -5,29 +5,23 @@ const util = require('../../utils/util.js');
 const app = getApp()
 Page({
     onShareAppMessage: function (res) {
-        return {
-            title: '纹饰美容',
-            path: '/pages/index/index'
-        }
+      return {
+        title: '我的喜炮',
+        path: '/pages/user/user'
+      }
     },
     data: {
-        showPopup: true,
+      userInfo: {}
     },
-    togglePopup() {
-        this.setData({
-            showPopup: !this.data.showPopup
-        })
-    },
-    toggleKey: function (event) {
-        var key = event.currentTarget.dataset.key;
-        this.setData({
-            [key] : !this.data[key]
-        })
-    },
-    onLoad: function (options) {
-        // wx.setNavigationBarTitle({
-        //     title: '我的喜炮'
-        // })
+    onLoad: function () {
+      wx.getUserInfo({
+        success: res => {
+          console.log(res,'res')
+          this.setData({
+            userInfo: res.userInfo
+          })
+        }
+      })
     },
     onReady: function () {
         // 页面渲染完成
