@@ -69,8 +69,8 @@
 				},
 				{
 					"id": -1,
-					"name": "myorder",
-					"pathName": "pages/myorder/myorder",
+					"name": "myorderDetail",
+					"pathName": "pages/myorderDetail/myorderDetail",
 					"query": ""
 				}
 			]

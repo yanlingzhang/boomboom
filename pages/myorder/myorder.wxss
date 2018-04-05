@@ -20,6 +20,11 @@ Page{
   background: #fcfcfc;
 }
 
+.myorder-tabs__status .zan-card .zan-card__thumb{
+  width: 150rpx;
+  height: 150rpx;
+}
+
 .myorder-tabs__status .zan-card__detail-row{
   font-size: 26rpx;
 }
@@ -34,4 +39,20 @@ Page{
 
 .myorder-tabs__status .zan-card__detail{
   margin-left: 15rpx;
+}
+
+.myorder-number__no{
+  width: auto;
+  height: auto;
+  margin: 50% auto 0;
+  text-align: center;
+  transform: translateY(-50%);
+  font-size: 28rpx;
+}
+
+.myorder-number__no image{
+  width: 86rpx;
+  height: 86rpx;
+  margin: 0 auto;
+  display: block;
 }

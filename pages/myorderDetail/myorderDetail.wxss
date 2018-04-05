@@ -1,0 +1,49 @@
+Page{
+    background: #f7f7f7;
+}
+
+.order-detail__status{
+  padding: 0 26rpx 0 64rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+}
+
+.order-detail__status .order-detail__status__pay{
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.order-detail__status image{
+  width: 100rpx;
+  height: 100rpx;
+  float: right;
+  margin-top: 50rpx;
+}
+
+.order-detail .zan-card__img{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.order-detail .zan-card{
+  background: #fcfcfc;
+  padding: 30rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-detail .zan-card:last-child{
+  border-bottom: none;
+}
+
+.order-detail .zan-card .zan-card__thumb{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.order-detail .zan-card__detail-row{
+  font-size: 26rpx;
+}
+
+.order-detail .zan-card__detail{
+  margin-left: 15rpx;
+}

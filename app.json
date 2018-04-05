@@ -20,7 +20,8 @@
     "pages/editAddress/editAddress",
     "pages/addAddress/addAddress",
     "pages/manageAddress/manageAddress",
-    "pages/commonProblems/commonProblems"
+    "pages/commonProblems/commonProblems",
+    "pages/myorderDetail/myorderDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
