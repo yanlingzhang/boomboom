@@ -6,8 +6,8 @@ const app = getApp()
 Page({
     onShareAppMessage: function (res) {
       return {
-        title: '纹饰美容',
-        path: '/pages/index/index'
+        title: '我的喜炮',
+        path: '/pages/user/user'
       }
     },
     data: {
@@ -22,17 +22,6 @@ Page({
           })
         }
       })
-    },
-    togglePopup() {
-      this.setData({
-        showPopup: !this.data.showPopup
-      })
-    },
-    toggleKey: function (event) {
-        var key = event.currentTarget.dataset.key;
-        this.setData({
-            [key] : !this.data[key]
-        })
     },
     onReady: function () {
         // 页面渲染完成

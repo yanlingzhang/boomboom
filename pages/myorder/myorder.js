@@ -30,7 +30,39 @@ Page(extend({}, Tab, {
           title: '已完成'
         }],
         selectedId: 'all'
-      }
+      },
+      order: [
+        {
+          'number': '123',
+          'status': '1',
+          'shop': [
+            {
+              'name': '1红烧牛肉【虚拟商品】【有库存】【有sku】',
+              'img': '2',
+              'price': '$989.00',
+              'desc': '4',
+            },
+            {
+              'name': '2红烧牛肉【虚拟商品】【有库存】【有sku】',
+              'img': '2',
+              'price': '$987.00',
+              'desc': '4',
+            }
+          ]
+        },
+        {
+          'number': '123',
+          'status': '1',
+          'shop': [
+            {
+              'name': '2红烧牛肉【虚拟商品】【有库存】【有sku】',
+              'img': '2',
+              'price': '$999.00',
+              'desc': '4',
+            }
+          ]
+        }
+      ]
     },
     handleZanTabChange(e) {
       var componentId = e.componentId;
@@ -40,16 +72,8 @@ Page(extend({}, Tab, {
         [`${componentId}.selectedId`]: selectedId
       });
     },
-    toggleKey: function (event) {
-        var key = event.currentTarget.dataset.key;
-        this.setData({
-            [key] : !this.data[key]
-        })
-    },
     onLoad: function (options) {
-        // wx.setNavigationBarTitle({
-        //     title: '我的喜炮'
-        // })
+       
     },
     onReady: function () {
         // 页面渲染完成

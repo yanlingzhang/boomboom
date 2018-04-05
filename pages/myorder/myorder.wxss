@@ -1,3 +1,37 @@
 Page{
     background: #f7f7f7;
 }
+
+.myorder-tabs__status{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.myorder-tabs__status .zan-panel{
+  margin-top: 0;
+}
+
+.myorder-tabs__status .zan-card__img{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.myorder-tabs__status .zan-card{
+  background: #fcfcfc;
+}
+
+.myorder-tabs__status .zan-card__detail-row{
+  font-size: 26rpx;
+}
+
+.myorder-tabs__status .myorder-tabs__shop__mes{
+  padding: 0 15rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: right;
+  font-size: 26rpx;
+}
+
+.myorder-tabs__status .zan-card__detail{
+  margin-left: 15rpx;
+}

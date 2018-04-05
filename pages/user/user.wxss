@@ -47,7 +47,7 @@ Page{
   height: 140rpx;
   text-align: center;
   background: #fff;
-  margin-top: 4rpx;
+  margin-top: 8rpx;
   padding: 20rpx;
 }
 
