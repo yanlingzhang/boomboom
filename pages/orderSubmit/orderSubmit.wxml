@@ -1,55 +1,74 @@
 <view class="container" scroll-y>
     <view class="address-detail">
-        <image class="tri-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png"></image>
+        <image class="tri-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_right_choose.png"></image>
+        <image class="loc-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_address.png"></image>
         <view class="address-user">
             收货人：鹿天天
             <text class="address-tel">1312222222</text>
         </view>
         <view class="address-info">
-            <image class="loc-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png"></image>
-            广州发发的弗兰克马施蒂利克
+            收货地址：广州发发的弗兰克马施蒂利克广州发发的弗兰克马施蒂利克广州发发的弗兰克马施蒂利克
         </view>
     </view>
     <view class="cart-list">
-        <view class="cart-cell">
-            <view class="border-zone clearfix">
-                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png" mode="aspectFit"></image>
+        <view class="cart-cell fn-clear">
+            <view class="border-zone fn-left">
+                <image class="order-product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
                 <view class="fn-left product-info">
-                    <view class="product-name clearfix">
-                        <view class="product-name-text fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
-                        <view class="product-price fn-right">¥ 65</view>
+                    <view class="product-name-zone fn-clear">
+                        <view class="product-name fn-left">
+                            产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名
+                        </view>
+                        <text class="product-price fn-right">￥<text class="price-tag">450.00</text></text>
                     </view>
-                    <view class="product-brand">xxx品牌</view>
-                    <view class="product-style">
-                        <view class="fn-left">代金券最多抵扣50%</view>
-                        <view class="handle-section fn-right">
-                            <view class="handle-zone">
-                                <view class="cut">-</view>
-                                <input value="1" class="number" disabled="true" type="number" />
-                                <view class="add">+</view>
-                            </view>
+                    <view class="product-style fn-clear">
+                        <text class="fn-left">可用券抵扣50%</text>
+                        <view class="fn-right fn-clear buy-zone">
+                            <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                            <input type="text" value="1" class="fn-left input-num"/>
+                            <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
                         </view>
                     </view>
                 </view>
             </view>
         </view>
-        <view class="cart-cell">
-            <view class="border-zone clearfix">
-                <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn_xzxz_k@2x.png" mode="aspectFit"></image>
+        <view class="cart-cell fn-clear">
+            <view class="border-zone fn-left">
+                <image class="order-product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
                 <view class="fn-left product-info">
-                    <view class="product-name clearfix">
-                        <view class="product-name-text fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
-                        <view class="product-price fn-right">¥ 65</view>
+                    <view class="product-name-zone fn-clear">
+                        <view class="product-name fn-left">
+                            产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名
+                        </view>
+                        <text class="product-price fn-right">￥<text class="price-tag">450.00</text></text>
                     </view>
-                    <view class="product-brand">xxx品牌</view>
-                    <view class="product-style">
-                        <view class="fn-left">代金券最多抵扣50%</view>
-                        <view class="handle-section fn-right">
-                            <view class="handle-zone">
-                                <view class="cut">-</view>
-                                <input value="1" class="number" disabled="true" type="number" />
-                                <view class="add">+</view>
-                            </view>
+                    <view class="product-style fn-clear">
+                        <text class="fn-left">可用券抵扣50%</text>
+                        <view class="fn-right fn-clear buy-zone">
+                            <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                            <input type="text" value="1" class="fn-left input-num"/>
+                            <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="cart-cell fn-clear">
+            <view class="border-zone fn-left">
+                <image class="order-product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
+                <view class="fn-left product-info">
+                    <view class="product-name-zone fn-clear">
+                        <view class="product-name fn-left">
+                            产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名
+                        </view>
+                        <text class="product-price fn-right">￥<text class="price-tag">450.00</text></text>
+                    </view>
+                    <view class="product-style fn-clear">
+                        <text class="fn-left">可用券抵扣50%</text>
+                        <view class="fn-right fn-clear buy-zone">
+                            <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                            <input type="text" value="1" class="fn-left input-num"/>
+                            <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
                         </view>
                     </view>
                 </view>
@@ -69,14 +88,14 @@
             <view class="price-type">运费</view>
             <view class="price-detail">¥ 10</view>
         </view>
-        <view class="price-cell">
-            <view class="price-type">实付款</view>
-            <view class="price-detail">¥ 43.80</view>
+        <view class="price-cell active">
+            <view class="price-type active">实付款</view>
+            <view class="price-detail active">¥ 43.80</view>
         </view>
     </view>
 </view>
 <view class="submit-zone">
-    <text class="price-all">¥ 43.80</text>（已优惠￥10）
+    <text class="price-all">合计：<text class="price-tag">¥ 43.80</text></text>
     <view class="submit-btn fn-right">
         提交订单
     </view>
