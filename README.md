@@ -17,11 +17,12 @@ fu
 * index 首页
 * brandHome 品牌
 * classification 分类
-* productList 全部商品
 * commentList 产品评价
 * productDetail 产品详情
-* singleProductList 单个品牌全部商品
 * cart 购物车
 * orderPay 购物车-支付订单
 * orderSubmit 购物车-提交订单
 * paySuccess 支付成功
+* oneShot 来一发
+* presentGetPage 生成我的礼包分享页面
+* sharePresentGetPage 通过分享进入领取礼包页面

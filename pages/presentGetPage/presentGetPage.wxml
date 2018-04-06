@@ -1,72 +1,17 @@
 <view class="container">
-    <swiper autoplay="{{true}}" indicator-dots="{{true}}" indicator-color="#d3d2d2" indicator-active-color="#e52846">
-        <block wx:for="{{bannerData}}" wx:key="">
-            <swiper-item>
-                <image class="banner-img" src="{{item.url}}" data-content="{{item.content}}"></image>
-            </swiper-item>
-        </block>
-    </swiper>
-    <swiper autoplay="{{false}}" class="brand-list" indicator-dots="{{true}}" indicator-color="#f2f2f2" indicator-active-color="#cccccc">
-        <swiper-item>
-            <view class="brand-cell" wx:for="{{brandData}}" wx:key="">
-                <navigator openType="switchTab" url="/pages/classification/classification">
-                    <image src="{{item.url}}"></image>
-                    <text>{{item.name}}</text>
-                </navigator>
-            </view>
-        </swiper-item>
-        <swiper-item>
-            <view class="brand-cell" wx:for="{{brandData}}" wx:key="">
-                <navigator url="/pages/classification/classification">
-                    <image src="{{item.url}}"></image>
-                    <text>{{item.name}}</text>
-                </navigator>
-            </view>
-        </swiper-item>
-    </swiper>
-    <view class="title-cell">
-        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/header-1.jpg" class="header-img"></image>
+    <image class="red-bg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/bg_pic_red.png"></image>
+    <image class="user-headimg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_milk.png"></image>
+    <view class="red-hints">XXX给你发了个礼包</view>
+    <view class="red-word">恭喜发财，大吉大利</view>
+    <image class="btn-open" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/pic_qiang.png"></image>
+    <view class="share-zone">
+        <button open-type='share' class="share-btn">转发给好友</button>
+        <view class="share-hints">转发给微信好友抢礼包吧~ <!--已领取平台奖励--></view>
+        <view class="share-hints2">再次分享还有机会获得额外奖励~</view>
     </view>
-    <scroll-view class="shop-list" scroll-x>
-        <view class="shop-cell" wx:for="{{scrollShopData}}" wx:key="">
-            <navigator url="">
-                <image src="{{item.url}}"></image>
-            </navigator>
-        </view>
-    </scroll-view>
-    <view class="title-cell">
-        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/header-2.jpg" class="header-img"></image>
-    </view>
-
-    <view class="recommend-list clearfix">
-        <view class="recommend-cell">
-            <image class="product-img" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg"></image>
-            <view class="product-info">
-                <view class="product-name">产品名字产品名字产品名字产品名字产品名字</view>
-                <view class="recommend-price-zone clearfix">
-                    <view class="product-price fn-left">￥<text class="price-text">145</text></view>
-                    <view class="product-coupon fn-right">抵扣50%</view>
-                </view>
-                <view class="sell-num">销量666</view>
-            </view>
-        </view>
-    </view>
-    <view class="mask" wx:if="{{showPresent}}">
-        <view class="present-zone float-zone">
-            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png" class="img-present-bg"></image>
-            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_unpack.png" class="img-open"></image>
-            <view class="present-text-zone2">
-                <view>欢迎来到粤通商城</view>
-                <view>赶快来领取您的新人礼包吧~</view>
-            </view>
-            <view class="present-open-btn" bindtap="openPresent">
-                立即拆开
-            </view>
-            <image bindtap="toggleKey" data-key="showPresent" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
-        </view>
-    </view>
-    <view class="mask" wx:if="{{showPresentResult}}">
-        <view class="present-zone2 float-zone index">
+    <!--第一次转发-->
+    <view class="mask" wx:if="{{showPresentShareOne}}">
+        <view class="present-zone2 float-zone">
             <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop2.png" class="img-present-bg2"></image>
             <view class="present-text-zone">
                 <view>恭喜您获得商城赠送礼品酒</view>
@@ -85,6 +30,32 @@
                         </view>
                         <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" class="img-present fn-right"></image>
                     </view>
+                </view>
+                <button open-type="share" class="present-open-btn2">
+                    分享礼包给好友
+                </button>
+                <view class="share-again-hints">
+                    已放入我的礼品卡，<text>去使用</text>
+                    <view>再次分享有机会获得额外奖励哦~</view>
+                </view>
+            </view>
+            <image bindtap="toggleKey" data-key="showPresentShareOne" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
+        </view>
+    </view>
+    <!--第二次转发-->
+    <view class="mask" wx:if="{{showPresentShareTwo}}">
+        <view class="present-zone2 float-zone">
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop4.png" class="img-present-bg3"></image>
+            <view class="present-text-zone">
+                <view>恭喜您获得商城赠送礼品酒</view>
+                <view class="present-list">
+                    <view class="present-cell clearfix">
+                        <view class="present-name-zone fn-left">
+                            <view class="present-name">新升级 吉祥红兑换券（1瓶）</view>
+                            <view class="present-num">X1</view>
+                        </view>
+                        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" class="img-present fn-right"></image>
+                    </view>
                     <view class="present-cell clearfix">
                         <view class="present-name-zone fn-left">
                             <view class="present-name">新升级 吉祥红兑换券（1瓶）</view>
@@ -93,13 +64,14 @@
                         <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" class="img-present fn-right"></image>
                     </view>
                 </view>
-                <view class="present-open-btn2">
-                    欢迎使用
-                </view>
+                <button open-type="share" class="present-open-btn3">
+                    去使用
+                </button>
             </view>
-            <image bindtap="toggleKey" data-key="showPresentResult" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
+            <image bindtap="toggleKey" data-key="showPresentShareTwo" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
         </view>
     </view>
+    <!--地址填写浮层-->
     <view class="mask" wx:if="{{showForm}}">
         <view class="float-form-zone float-zone">
             <view class="form-title">填写收货信息</view>
@@ -120,7 +92,7 @@
                 <input type="text" placeholder="请输入详细地址" class="form-input fn-right"/>
             </view>
             <view class="present-open-btn4">
-                下一步
+               下一步
             </view>
             <image bindtap="toggleKey" data-key="showForm" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
         </view>

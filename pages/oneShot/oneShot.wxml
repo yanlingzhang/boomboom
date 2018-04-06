@@ -1,0 +1,131 @@
+<view class="container" scroll-y>
+    <view class="img-select-wrap" wx:if="{{showImageSelect}}">
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png" class="present-bg"></image>
+        <!--<input type="text" class="present-mes" placeholder-style="color:#fff;" placeholder="请输入内容"/>-->
+        <view class="hints">选择背景图</view>
+        <scroll-view class="shop-list" scroll-x>
+            <view class="shop-cell" wx:key="">
+                <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png"></image>
+            </view>
+            <view class="shop-cell" wx:key="">
+                <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png"></image>
+            </view>
+            <view class="shop-cell" wx:key="">
+                <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png"></image>
+            </view>
+            <view class="shop-cell" wx:key="">
+                <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png"></image>
+            </view>
+            <view class="shop-cell" wx:key="">
+                <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png"></image>
+            </view>
+        </scroll-view>
+        <view class="btn-zone">
+            下一步
+            <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_next.png" class="icon-next"></image>
+        </view>
+    </view>
+    <view class="card-select-wrap" wx:if="{{showCardSelect}}">
+        <view class="cart-list">
+            <view class="card-cell fn-clear">
+                <view class="select-zone">
+                    <image wx:if="{{false}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_choose_nor.png"></image>
+                    <image wx:if="{{true}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_click.png"></image>
+                </view>
+                <view class="card-detail-zone fn-right">
+                    <view class="card-product-detail fn-clear">
+                        <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
+                        <view class="product-style fn-left">礼品卡</view>
+                        <view class="product-name fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
+                    </view>
+                    <view class="card-handle-zone fn-clear">
+                        <view class="card-own-num fn-left">
+                            数量 2张
+                        </view>
+                        <view class="fn-right fn-clear buy-zone">
+                            <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                            <input type="text" value="1" class="fn-left input-num"/>
+                            <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="card-cell fn-clear">
+                <view class="select-zone">
+                    <image wx:if="{{false}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_choose_nor.png"></image>
+                    <image wx:if="{{true}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_click.png"></image>
+                </view>
+                <view class="card-detail-zone fn-right">
+                    <view class="card-product-detail fn-clear">
+                        <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
+                        <view class="product-style fn-left">礼品卡</view>
+                        <view class="product-name fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
+                    </view>
+                    <view class="card-handle-zone fn-clear">
+                        <view class="card-own-num fn-left">
+                            数量 2张
+                        </view>
+                        <view class="fn-right fn-clear buy-zone">
+                            <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                            <input type="text" value="1" class="fn-left input-num"/>
+                            <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="card-cell fn-clear">
+                <view class="select-zone">
+                    <image wx:if="{{false}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_choose_nor.png"></image>
+                    <image wx:if="{{true}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_click.png"></image>
+                </view>
+                <view class="card-detail-zone fn-right">
+                    <view class="card-product-detail fn-clear">
+                        <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
+                        <view class="product-style fn-left">礼品卡</view>
+                        <view class="product-name fn-left">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
+                    </view>
+                    <view class="card-handle-zone fn-clear">
+                        <view class="card-own-num fn-left">
+                            数量 2张
+                        </view>
+                        <view class="fn-right fn-clear buy-zone">
+                            <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                            <input type="text" value="1" class="fn-left input-num"/>
+                            <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="submit-zone">
+            <text class="price-all">已选择礼品卡：3张</text>
+            <view class="submit-btn fn-right">
+                生成礼包
+            </view>
+        </view>
+    </view>
+    <view class="mask" wx:if="{{showWordZone}}" catchtap="closeMask" data-action="close">
+        <view class="cart-handle-zone float-bottom-zone">
+            <view class="float-hints">
+                已选择礼品卡：3张
+            </view>
+            <view class="float-word-zone fn-clear">
+                <text class="fn-left">祝福语</text>
+                <input type="text" placeholder="恭喜发财，大吉大利" class="fn-right"/>
+            </view>
+            <view class="float-num-zone fn-clear">
+                <text class="fn-left">礼包个数</text>
+                <view class="fn-right fn-clear buy-zone">
+                    <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                    <input type="text" value="1" class="fn-left input-num"/>
+                    <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                </view>
+            </view>
+            <view class="float-small-hints">
+                礼包说明：发放礼包个数不得大于礼品卡数量，每人随机获得不同
+                数量且不同规格的礼品卡
+            </view>
+            <view class="float-cart-btn">生成礼包</view>
+        </view>
+    </view>
+</view>
