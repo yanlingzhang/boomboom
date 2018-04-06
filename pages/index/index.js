@@ -11,6 +11,10 @@ Page({
         }
     },
     data: {
+        showForm:false,
+        showIntro:false,
+        city:undefined,
+        payIng:false,
         showPresent: true,
         showPresentResult:false,
         bannerData: [
@@ -37,6 +41,11 @@ Page({
         var key = event.currentTarget.dataset.key;
         this.setData({
             [key]: !this.data[key]
+        })
+    },
+    citySelect: function (e) {
+        this.setData({
+            city: e.detail.value
         })
     },
     openPresent:function () {

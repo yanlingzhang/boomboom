@@ -1,79 +1,153 @@
 @import "../../common/base.wxss";
-Page{
-    background: #e53b2f;
-}
 .red-bg{
     width: 750rpx;
+}
+.music-btn{
+    position: absolute;
+    z-index: 10;
+    width: 58rpx;
+    height: 58rpx;
+    top: 60rpx;
+    right: 35rpx;
+}
+.bottom-zone-bg{
+    height: 377rpx;
+    width: 750rpx;
+}
+.none .bottom-zone-bg{
     height: 458rpx;
 }
-.user-headimg{
-    width: 111rpx;
-    height: 111rpx;
+.bottom-zone{
     position: absolute;
     z-index: 10;
-    top: 61rpx;
+    width: 100%;
+    bottom: 0;
+}
+.bottom-get-btn{
+    width: 260rpx;
+    height: 260rpx;
+    text-align: center;
+    background: url('https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/pic_open_money.png') no-repeat;
+    background-size: 100% 100%;
+    line-height: 260rpx;
+    position: absolute;
+    z-index: 10;
+    font-family: MStiffHeiPRC;
+    font-size: 99rpx;
+    bottom: 238rpx;
+    color: #bc7c00;
     left: 50%;
     transform: translateX(-50%);
 }
-.red-hints{
-    position: absolute;
-    z-index: 10;
-    top: 189rpx;
-    text-align: center;
-    font-size: 28rpx;
-    width: 100%;
-    color: #ffb99d;
+.none .bottom-get-btn{
+    bottom: 319rpx;
+    font-size: 48rpx;
 }
-.red-word{
+.bottom-con-text{
+    width: 100%;
+    font-size: 48rpx;
+    text-align: center;
     position: absolute;
     z-index: 10;
-    top: 258rpx;
-    text-align: center;
+    bottom: 168rpx;
+    color: #ffbf43;
+}
+.none .bottom-con-text{
+    bottom: 229rpx;
+}
+.bottom-show-other{
     width: 100%;
-    font-size: 44rpx;
+    text-align: center;
+    font-size: 24rpx;
     font-weight: bold;
-    color: #ffb99d;
-}
-.btn-open{
-    width: 195rpx;
-    height: 195rpx;
     position: absolute;
     z-index: 10;
-    top: 358rpx;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 30rpx;
+    color: #9b0800;
 }
-.share-zone{
-    background: #fff;
+.bottom-tri-bg{
+    width: 30rpx;
+    height: 16rpx;
+    margin-top: 10rpx;
+}
+.bottom-share-btn{
+    width: 604rpx;
+    height: 81rpx;
     border-radius: 10rpx;
-    padding-bottom: 40rpx;
-    width: 710rpx;
+    background-color: #f6e832;
+    font-size: 34rpx;
+    font-weight: bold;
     left: 50%;
     position: absolute;
     z-index: 10;
-    top: 618rpx;
-    text-align: center;
+    bottom: 117rpx;
     transform: translateX(-50%);
+    color: #df2113;
 }
-.share-btn{
-    width: 640rpx;
-    height: 80rpx;
-    font-size: 34rpx;
-    color: #fff;
-    line-height: 80rpx;
-    background-color: #4dd964;
-    margin: 48rpx auto 20rpx;
+.float-getDetail-zone{
+    width: 100%;
+    background: #fff;
 }
-.share-hints{
-    font-size: 28rpx;
-    color: #f4193c;
+.unget-hints{
+    height: 85rpx;
+    line-height: 85rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #999999;
 }
-.share-hints2{
-    font-size: 28rpx;
+.float-getDetail-header{
+    padding: 0 20rpx;
+    height: 82rpx;
+    line-height: 82rpx;
+    border-bottom: 1px solid #ccc;
+}
+.friend-hints{
+    font-size: 30rpx;
+    color: #333333;
+}
+.friend-get{
+    font-size: 24rpx;
     color: #999;
 }
+.float-getDetail-list{
+    max-height: 620rpx;
+}
+.float-getDetail-img{
+    width: 62rpx;
+    height: 62rpx;
+    margin-right: 13rpx;
+}
+.float-getDetail-info{
+    width: 630rpx;
+}
+.float-getDetail-cell{
+    padding: 24rpx 20rpx;
+    border-bottom: 1px solid #f2f2f2;
+}
+.float-getDetail-name-zone{
 
-
+}
+.float-getDetail-name{
+    font-size: 28rpx;
+    color: #333333;
+}
+.float-getDetail-time{
+    font-size: 24rpx;
+    color: #666666;
+}
+.float-getDetail-type{
+    color: #666666;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+}
+.float-getDetail-brand{
+    font-size: 22rpx;
+    color: #ffffff;
+    background-color: #f74339;
+    border-radius: 13px;
+    padding: 2rpx 8rpx;
+    margin-right: 10rpx;
+}
 
 /*¡ÏΩ± π”√¬ﬂº≠*/
 .present-zone2{

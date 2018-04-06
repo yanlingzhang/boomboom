@@ -1,13 +1,30 @@
 <view class="container">
-    <image class="red-bg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/bg_pic_red.png"></image>
-    <image class="user-headimg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_milk.png"></image>
-    <view class="red-hints">XXX给你发了个礼包</view>
-    <view class="red-word">恭喜发财，大吉大利</view>
-    <image class="btn-open" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/pic_qiang.png"></image>
-    <view class="share-zone">
-        <button open-type='share' class="share-btn">转发给好友</button>
-        <view class="share-hints">转发给微信好友抢礼包吧~ <!--已领取平台奖励--></view>
-        <view class="share-hints2">再次分享还有机会获得额外奖励~</view>
+    <image class="red-bg" mode="widthFix" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/pic-bg3.png"></image>
+    <image bindtap="toggleMusic" class="music-btn" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_music.png"></image>
+
+    <view class="bottom-zone" wx:if="{{true}}">
+        <view class="bottom-get-btn">
+            抢
+        </view>
+        <view class="bottom-con-text">恭喜发财，大吉大利</view>
+        <view class="bottom-show-other" bindtap="toggleKey" data-key="showOtherGet">
+            <view>看下其他人领了多少</view>
+            <image class="bottom-tri-bg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/red_icon_backup.png"></image>
+        </view>
+        <image class="bottom-zone-bg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/bg_pic_red_1.png"></image>
+    </view>
+
+    <view class="bottom-zone none" wx:if="{{false}}">
+        <view class="bottom-get-btn">
+            已领完<!--已领到-->
+        </view>
+        <view class="bottom-con-text">恭喜发财，大吉大利</view>
+        <view class="bottom-show-other" bindtap="toggleKey" data-key="showOtherGet">
+            <view>看下其他人领了多少</view>
+            <image class="bottom-tri-bg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/red_icon_backup.png"></image>
+        </view>
+        <button class="bottom-share-btn" open-type="share">分享有机会得额外奖励</button>
+        <image class="bottom-zone-bg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/bg_pic_red_tranform.png"></image>
     </view>
     <!--第一次转发-->
     <view class="mask" wx:if="{{showPresentShareOne}}">
@@ -111,6 +128,30 @@
                 立即支付
             </view>
             <image bindtap="toggleKey" data-key="showIntro" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
+        </view>
+    </view>
+    <!--他人领取情况浮层-->
+    <view class="mask" wx:if="{{showOtherGet}}" catchtap="closeMask" data-action="close">
+        <view class="float-getDetail-zone float-bottom-zone">
+            <view class="float-getDetail-header fn-clear">
+                <text class="fn-left friend-hints">已领到好友</text>
+                <text class="fn-right friend-get">已领取4/6</text>
+            </view>
+            <scroll-view class="float-getDetail-list" scroll-y>
+                <view class="float-getDetail-cell fn-clear">
+                    <image class="fn-left float-getDetail-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_milk.png"></image>
+                    <view class="fn-left float-getDetail-info">
+                        <view class="float-getDetail-name-zone fn-clear">
+                            <view class="float-getDetail-name fn-left">犹抱琵琶半遮面</view>
+                            <view class="float-getDetail-time fn-right">12/12  14:20</view>
+                        </view>
+                        <view class="float-getDetail-type">
+                            <text class="float-getDetail-brand">领到</text>红酒兑换券一张、零食兑换券一张
+                        </view>
+                    </view>
+                </view>
+                <view class="unget-hints">还有2个礼包未领取</view>
+            </scroll-view>
         </view>
     </view>
 </view>

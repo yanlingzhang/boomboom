@@ -25,3 +25,4 @@ fu
 * paySuccess 支付成功
 * oneShot 来一发
 * presentGetPage 生成我的礼包分享页面
+* sharePresentGetPage 通过分享进入领取礼包页面

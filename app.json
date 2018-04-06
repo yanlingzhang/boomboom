@@ -19,6 +19,7 @@
     "pages/feedback/feedback",
     "pages/oneShot/oneShot",
     "pages/presentGetPage/presentGetPage",
+    "pages/sharePresentGetPage/sharePresentGetPage",
     "pages/editAddress/editAddress",
     "pages/addAddress/addAddress",
     "pages/manageAddress/manageAddress",

@@ -24,6 +24,7 @@ Page{
 }
 .present-num{
     margin-top: 10rpx;
+    font-weight: bold;
 }
 .present-text-zone2{
     left: 50%;
@@ -58,7 +59,7 @@ Page{
     color: #000;
     background:#f6e832;
 }
-.present-open-btn2{
+.index .present-open-btn2{
     width: 233rpx;
     height: 60rpx;
     line-height: 60rpx;
@@ -226,4 +227,195 @@ Page{
 .header-img{
     width: 750rpx;
     height: 82rpx;
+}
+
+
+
+/*¡ÏΩ± π”√¬ﬂº≠*/
+.present-zone2{
+    width: 581rpx;
+    border-radius: 20rpx;
+    font-size: 30rpx;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.img-present-bg2{
+    width: 100%;
+    height: 720rpx;
+}
+.img-present-bg3{
+    width: 100%;
+    height: 583rpx;
+}
+.present-text-zone{
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:10;
+    top:94rpx;
+    width: 100%;
+    line-height: 40rpx;
+    position: absolute;
+}
+.present-list{
+    margin-top: 40rpx;
+}
+.present-cell{
+    margin: 0 auto 10rpx;
+    width: 535rpx;
+    padding: 25rpx 30rpx 0 30rpx;
+    height: 132rpx;
+    background: url('https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/present_bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+.present-name-zone{
+    text-align: left;
+    color:#e52845;
+}
+.present-num{
+    margin-top: 10rpx;
+    font-weight: bold;
+}
+.img-present{
+    width: 80rpx;
+    height: 80rpx;
+}
+.present-open-btn2{
+    width: 537rpx;
+    height: 81rpx;
+    line-height: 81rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    font-size:34rpx;
+    color: #df2113;
+    margin: 30rpx auto 0;
+    background:#f6e832;
+    font-weight: bold;
+}
+.present-open-btn3{
+    width: 248rpx;
+    height: 81rpx;
+    line-height: 81rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    font-size:34rpx;
+    color: #1d1d1d;
+    margin: 30rpx auto 0;
+    background:#f6e832;
+    font-weight: bold;
+}
+.present-open-btn4{
+    width: 248rpx;
+    height: 59rpx;
+    line-height: 59rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    font-size:34rpx;
+    color: #1d1d1d;
+    margin: 30rpx auto 0;
+    background:#f6e832;
+    font-weight: bold;
+}
+.close-btn{
+    position: absolute;
+    z-index: 1;
+    right: -32rpx;
+    top: -72rpx;
+    width: 64rpx;
+    height: 64rpx;
+}
+.share-again-hints{
+    text-align: center;
+    font-size: 28rpx;
+    color: #ffd8d5;
+    margin-top: 20rpx;
+    line-height: 1.43;
+}
+.share-again-hints text{
+    color: #f6e832;
+}
+.float-form-zone{
+    width: 581rpx;
+    padding-top: 40rpx;
+    text-align: center;
+    color: #fff;
+    border-radius: 40rpx;
+    position: relative;
+    padding-bottom: 47rpx;
+    background-color: #f04f46;
+}
+.form-title{
+    font-size: 34rpx;
+    margin-bottom: 30rpx;
+}
+.form-input{
+    width: 400rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    height: 68rpx;
+    font-size: 32rpx;
+    line-height: 68rpx;
+    color: #333;
+    box-sizing: border-box;
+}
+.form-input.address{
+    background-color: #c4382e;
+    color: #fff;
+    height: auto;
+    padding: 0 30rpx;
+}
+.form-cell{
+    padding: 0 48rpx;
+    font-size: 34rpx;
+    height: 68rpx;
+    line-height: 68rpx;
+    position: relative;
+    margin-bottom: 20rpx;
+}
+.form-cell.address{
+    height: auto;
+    line-height: 1.1;
+}
+.form-cell.address text{
+    padding-top: 20rpx;
+}
+.img-address-tri{
+    position: absolute;
+    top: 50%;
+    width: 16rpx;
+    height: 30rpx;
+    right: 60rpx;
+    transform: translateY(-50%);
+}
+.float-intro-zone{
+    width: 581rpx;
+    padding-top: 60rpx;
+    text-align: center;
+    color: #fff;
+    border-radius: 40rpx;
+    position: relative;
+    padding-bottom: 76rpx;
+    background-color: #f04f46;
+}
+.float-intro-zone .form-title{
+    margin-bottom: 50rpx;
+}
+.float-intro-text{
+    background-color: #de483d;
+    font-size: 26rpx;
+    line-height: 1.54;
+    padding: 37rpx 40rpx 20rpx;
+}
+.intro-cell{
+    margin-bottom: 30rpx;
+}
+.pay-btn{
+    width: 480rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 10rpx;
+    background-color: #4dd964;
+    color: #fff;
+    font-size: 36rpx;
+    margin: 38rpx auto 0;
 }

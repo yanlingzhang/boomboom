@@ -66,7 +66,7 @@
         </view>
     </view>
     <view class="mask" wx:if="{{showPresentResult}}">
-        <view class="present-zone2 float-zone">
+        <view class="present-zone2 float-zone index">
             <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop2.png" class="img-present-bg2"></image>
             <view class="present-text-zone">
                 <view>恭喜您获得商城赠送礼品酒</view>
@@ -98,6 +98,47 @@
                 </view>
             </view>
             <image bindtap="toggleKey" data-key="showPresentResult" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
+        </view>
+    </view>
+    <view class="mask" wx:if="{{showForm}}">
+        <view class="float-form-zone float-zone">
+            <view class="form-title">填写收货信息</view>
+            <view class="form-cell fn-clear">
+                <text class="fn-left">姓名</text>
+                <input type="text" placeholder="请输入你的姓名" class="form-input fn-right"/>
+            </view>
+            <view class="form-cell fn-clear">
+                <text class="fn-left">电话</text>
+                <input type="text" placeholder="请输入电话号码" class="form-input fn-right"/>
+            </view>
+            <view class="form-cell fn-clear address">
+                <text class="fn-left">地址</text>
+                <picker mode="region" bindchange="citySelect" class="form-input fn-right address">{{city ? city : '请选择省市区街道'}}</picker>
+                <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_right_choose_white.png" class="img-address-tri"></image>
+            </view>
+            <view class="form-cell fn-clear">
+                <input type="text" placeholder="请输入详细地址" class="form-input fn-right"/>
+            </view>
+            <view class="present-open-btn4">
+                下一步
+            </view>
+            <image bindtap="toggleKey" data-key="showForm" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
+        </view>
+    </view>
+    <!--说明浮层-->
+    <view class="mask" wx:if="{{showIntro}}">
+        <view class="float-intro-zone float-zone">
+            <view class="form-title">说明</view>
+            <view class="float-intro-text">
+                <view class="intro-cell">1、每瓶支付20元邮费(支付成功后，商城即赠送每瓶20元代金券，可在商城购物使用）
+                </view>
+                <view class="intro-cell">2、可配送到全国各地（西藏，新疆，内蒙古，香港，澳门，台湾除外）
+                </view>
+            </view>
+            <view class="pay-btn">
+                立即支付
+            </view>
+            <image bindtap="toggleKey" data-key="showIntro" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
         </view>
     </view>
 </view>
