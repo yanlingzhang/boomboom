@@ -1,0 +1,239 @@
+@import "../../common/base.wxss";
+Page{
+    background: #f2f2f2;
+}
+.container{
+    position: relative;
+    padding-bottom: 90rpx;
+}
+.present-bg{
+    display: block;
+    width: 528rpx;
+    height: 669rpx;
+    margin: 35rpx auto 25rpx;
+}
+.present-mes{
+    width: 450rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 30rpx;
+    top: 515rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+}
+.hints{
+    height: 72rpx;
+    padding-left: 27rpx;
+    font-size: 24rpx;
+    color: #333;
+    line-height: 72rpx;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.float-hints{
+    height: 90rpx;
+    padding-left: 31rpx;
+    font-size: 30rpx;
+    color: #333;
+    line-height: 90rpx;
+    background: #fff;
+}
+.float-small-hints{
+    font-size: 24rpx;
+    color: #666;
+    padding: 33rpx 29rpx;
+}
+.shop-list{
+    height:175rpx;
+    padding: 17rpx;
+    box-sizing: border-box;
+    width: 100%;
+    white-space: nowrap;
+}
+.shop-cell{
+    width: 137rpx;
+    height: 176rpx;
+    margin-right: 22rpx;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+.shop-cell image{
+    width: 137rpx;
+    border: 2rpx solid #fff;
+    height: 176rpx;
+    box-sizing: border-box;
+}
+.btn-zone{
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    font-size: 30rpx;
+    color: #d03e27;
+}
+.icon-next{
+    width: 50rpx;
+    height: 50rpx;
+    top: 50%;
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-50%);
+    right: 40rpx;
+}
+
+.submit-zone{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    height: 90rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    border-top: 1px solid #d2d2d2;
+}
+.price-all{
+    color: #red;
+    padding-left: 30rpx;
+}
+.submit-btn{
+    font-size:36rpx;
+    background: #e52845;
+    color: #fff;
+    height: 90rpx;
+    width: 310rpx;
+    text-align: center;
+    line-height: 90rpx;
+}
+.select-zone{
+    position: absolute;
+    top:50%;
+    left:21rpx;
+    transform: translateY(-50%);
+    width: 78rpx;
+    height: 50rpx;
+    z-index:100;
+}
+.select-img{
+    width: 38rpx;
+    height: 38rpx;
+}
+.cart-list{
+    padding-top: 16rpx;
+}
+.card-cell{
+    position: relative;
+    padding-right: 20rpx;
+    margin-bottom: 20rpx;
+}
+.card-detail-zone{
+    width: 645rpx;
+    height:199rpx;
+    padding: 25rpx 20rpx 0;
+    background: url('https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_gift_bg1.png') no-repeat;
+    background-size: 100% 100%;
+}
+.input-num{
+    text-align: center;
+    color: #333;
+    font-size: 30rpx;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    width: 72rpx;
+    box-sizing: border-box;
+    height: 48rpx;
+    background: #fff;
+    line-height: 48rpx;
+}
+.btn-num{
+    width: 52rpx;
+    height: 52rpx;
+    border: 1px solid #999;
+}
+.product-img{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 20rpx;
+}
+.product-style{
+    height: 40rpx;
+    line-height: 40rpx;
+    border-radius: 4rpx;
+    background: #e52846;
+    font-size: 24rpx;
+    color: #fff;
+    padding: 0 8rpx;
+    margin-right: 15rpx;
+    margin-top: 20rpx;
+}
+.buy-zone{
+    margin-top: -6rpx;
+}
+.product-name{
+    font-size: 30rpx;
+    color: #333;
+    width: 390rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 20rpx;
+}
+.card-own-num{
+    font-size: 24rpx;
+    color: #999999;
+    height: 46rpx;
+    line-height: 46rpx;
+}
+.card-handle-zone{
+    margin-top: 40rpx;
+}
+.cart-handle-zone{
+    background: #fff;
+    width: 100%;
+}
+.float-cart-btn{
+    background: #e52846;
+    width:750rpx;
+    line-height: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+    border-top: 1px solid #ccc;
+}
+.float-word-zone{
+    font-size: 30rpx;
+    width: 710rpx;
+    height: 86rpx;
+    background: #f2f2f2;
+    border-radius: 10rpx;
+    padding: 0 30rpx;
+    margin: 0 auto 23rpx;
+}
+.float-num-zone{
+    font-size: 30rpx;
+    width: 710rpx;
+    height: 86rpx;
+    background: #f2f2f2;
+    border-radius: 10rpx;
+    padding: 0 30rpx;
+    margin: 0 auto;
+}
+.float-word-zone text,.float-num-zone text{
+    color: #333333;
+    margin-top: 26rpx;
+}
+.float-word-zone input{
+    width: 490rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-top: 14rpx;
+}
+.float-num-zone .buy-zone{
+    margin-top: 18rpx;
+}

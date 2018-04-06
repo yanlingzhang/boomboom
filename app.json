@@ -17,6 +17,8 @@
     "pages/deductionVolume/deductionVolume",
     "pages/myCollection/myCollection",
     "pages/feedback/feedback",
+    "pages/oneShot/oneShot",
+    "pages/presentGetPage/presentGetPage",
     "pages/editAddress/editAddress",
     "pages/addAddress/addAddress",
     "pages/manageAddress/manageAddress",
@@ -49,7 +51,7 @@
         "text": "分类"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/oneShot/oneShot",
         "iconPath": "images/icon_send.png",
         "selectedIconPath": "images/icon_send_1.png",
         "text": "来一发"

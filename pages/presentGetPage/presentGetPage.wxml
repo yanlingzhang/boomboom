@@ -1,0 +1,12 @@
+<view class="container">
+    <image class="red-bg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/bg_pic_red.png"></image>
+    <image class="user-headimg" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_milk.png"></image>
+    <view class="red-hints">XXX给你发了个礼包</view>
+    <view class="red-word">恭喜发财，大吉大利</view>
+    <image class="btn-open" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/pic_qiang.png"></image>
+    <view class="share-zone">
+        <button open-type='share' class="share-btn">转发给好友</button>
+        <view class="share-hints">转发给微信好友抢礼包吧~</view>
+        <view class="share-hints2">再次分享还有机会获得额外奖励~</view>
+    </view>
+</view>

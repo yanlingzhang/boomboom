@@ -1,0 +1,74 @@
+@import "../../common/base.wxss";
+Page{
+    background: #e53b2f;
+}
+.red-bg{
+    width: 750rpx;
+    height: 458rpx;
+}
+.user-headimg{
+    width: 111rpx;
+    height: 111rpx;
+    position: absolute;
+    z-index: 10;
+    top: 61rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.red-hints{
+    position: absolute;
+    z-index: 10;
+    top: 189rpx;
+    text-align: center;
+    font-size: 28rpx;
+    width: 100%;
+    color: #ffb99d;
+}
+.red-word{
+    position: absolute;
+    z-index: 10;
+    top: 258rpx;
+    text-align: center;
+    width: 100%;
+    font-size: 44rpx;
+    font-weight: bold;
+    color: #ffb99d;
+}
+.btn-open{
+    width: 195rpx;
+    height: 195rpx;
+    position: absolute;
+    z-index: 10;
+    top: 358rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.share-zone{
+    background: #fff;
+    border-radius: 10rpx;
+    padding-bottom: 40rpx;
+    width: 710rpx;
+    left: 50%;
+    position: absolute;
+    z-index: 10;
+    top: 618rpx;
+    text-align: center;
+    transform: translateX(-50%);
+}
+.share-btn{
+    width: 640rpx;
+    height: 80rpx;
+    font-size: 34rpx;
+    color: #fff;
+    line-height: 80rpx;
+    background-color: #4dd964;
+    margin: 48rpx auto 20rpx;
+}
+.share-hints{
+    font-size: 28rpx;
+    color: #f4193c;
+}
+.share-hints2{
+    font-size: 28rpx;
+    color: #999;
+}
