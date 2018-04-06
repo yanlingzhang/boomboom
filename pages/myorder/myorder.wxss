@@ -38,7 +38,7 @@ Page{
 }
 
 .myorder-tabs__status .zan-card__detail{
-  margin-left: 15rpx;
+  margin-left: 175rpx;
 }
 
 .myorder-number__no{
@@ -55,4 +55,9 @@ Page{
   height: 86rpx;
   margin: 0 auto;
   display: block;
+}
+
+.myorder-number__no view{
+  font-size: 24rpx;
+  color: #333;
 }

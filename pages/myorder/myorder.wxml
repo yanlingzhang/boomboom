@@ -55,7 +55,7 @@
   </block>
   <block wx:if="{{order.length == 0}}">
     <view class="myorder-number__no">
-      <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/good_icon_shopcar.png"
+      <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_received.png"
               mode="aspectFit"
             ></image>
       <view>你还没有相关订单</view>
