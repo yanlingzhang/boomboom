@@ -1,0 +1,89 @@
+Page{
+    background: #f7f7f7;
+}
+
+.refund-detail__write{
+  padding-bottom: 120rpx;
+}
+
+.refund-detail__write .zan-panel{
+  margin: 0 auto;
+}
+
+.refund-detail__write .zan-card__img{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.refund-detail__write .zan-card{
+  background: #fcfcfc;
+  padding: 30rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.refund-detail__write .zan-card:last-child{
+  border-bottom: none;
+}
+
+.refund-detail__write .zan-card .zan-card__thumb{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.refund-detail__write .zan-card__detail-row{
+  font-size: 26rpx;
+}
+
+.refund-detail__write .zan-card__detail{
+  margin-left: 175rpx;
+}
+
+.refund-detail__write__shop__mes{
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+
+.refund-detail__write__set{
+  background: #fff;
+}
+
+.refund-detail__write__set .zan-panel{
+  margin: 0 auto;
+}
+
+.refund-detail__write__submit{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.refund-detail__write__price{
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: left;
+  padding: 0 30rpx;
+  color: #e52845;
+  font-size: 30rpx;
+}
+
+.refund-detail__write__phone{
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30rpx;
+}
+
+.refund-detail__write__phone .text{
+  line-height: 88rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.refund-detail__write__phone .files{
+  width: 130rpx;
+  height: 130rpx;
+  border: 1px solid #ddd;
+  margin-bottom: 30rpx;
+}

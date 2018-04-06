@@ -1,0 +1,60 @@
+<import src="/zanui/tab/index.wxml" />
+<view class="container">
+  <view class="refund-detail__write">
+    <view class="refund-detail__write__shop__mes">
+      <view class="zan-card">
+        <!-- 卡片左侧商品图片 -->
+        <view class="zan-card__thumb">
+          <image class="zan-card__img"
+            src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            mode="aspectFit"
+          ></image>
+        </view>
+        <!-- 卡片右侧详情描述 -->
+        <view class="zan-card__detail">
+          <!-- 商品标题行 -->
+          <!-- 每行可以使用 zan-card__detail-row 来控制展示区域 -->
+          <!-- 每行里面可以用 zan-card__left-col zan-card__right-col 来控制左右展示 -->
+          <view class="zan-card__detail-row">
+            <view class="zan-card__right-col zan-c-red">价格</view>
+            <view class="zan-card__left-col zan-ellipsis--l2">
+              商品标题行
+            </view>
+          </view>
+          <!-- 商品附属信息展示行 -->
+          <view class="zan-card__detail-row zan-c-gray-darker">
+            <view class="zan-card__right-col">x2</view>
+            <view class="zan-card__left-col">
+              3000克 50%
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="refund-detail__write__set">
+      <view class="zan-panel">
+        <view class="zan-cell zan-cell--access">
+          <view class="zan-cell__bd">货物状态</view>
+          <view class="zan-cell__ft">未收到货</view>
+        </view>
+      </view>
+        <view class="zan-panel">
+        <view class="zan-cell zan-cell--access">
+          <view class="zan-cell__bd">退款原因</view>
+          <view class="zan-cell__ft"></view>
+        </view>
+      </view>
+    </view>
+    <view class="refund-detail__write__price">退款金额：¥69.00</view>
+    <view class="refund-detail__write__phone zan-panel">
+      <view class="text">上传凭证</view>
+      <view class="files">
+        <image></image>
+        <text>0/3</text>
+      </view>
+    </view>
+    <view class="refund-detail__write__submit">
+      <button class="zan-btn zan-btn--danger bg-main__color">提交</button>
+    </view>
+  </view>
+</view>

@@ -69,8 +69,8 @@
 				},
 				{
 					"id": -1,
-					"name": "myorderDetail",
-					"pathName": "pages/myorderDetail/myorderDetail",
+					"name": "refundDetail",
+					"pathName": "pages/refundDetail/refundDetail",
 					"query": ""
 				},
 				{

@@ -24,7 +24,9 @@
     "pages/addAddress/addAddress",
     "pages/manageAddress/manageAddress",
     "pages/commonProblems/commonProblems",
-    "pages/myorderDetail/myorderDetail"
+    "pages/myorderDetail/myorderDetail",
+    "pages/refund/refund",
+    "pages/refundDetail/refundDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
