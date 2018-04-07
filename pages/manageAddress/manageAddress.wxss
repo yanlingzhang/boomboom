@@ -2,50 +2,18 @@ Page{
     background: #f7f7f7;
 }
 
-.add-img{
-    width: 40rpx;
-    height: 40rpx;
-    margin: 0 auto 30rpx;
+.manage-address{
+  padding-bottom: 120rpx;
 }
-.address-list{
-    border-top: 16rpx solid #f7f7f7;
-    border-bottom: 16rpx solid #f7f7f7;
+
+.manage-address__list{
+  margin-bottom: 20rpx;
 }
-.address-add{
-    padding-top: 60rpx;
-    text-align: center;
-    font-size:24rpx;
-    color: #999;
+
+.manage-address__list .zan-panel{
+  margin: 0 auto;
 }
-.address-cell{
-    position: relative;
-    z-index:1;
-    padding: 30rpx 40rpx 30rpx 84rpx;
-    border-bottom: 2rpx solid #eee;
-}
-.status-img{
-    width: 40rpx;
-    height: 40rpx;
-    position: absolute;
-    z-index:10;
-    top:50%;
-    transform: translateY(-50%);
-    left: 24rpx;
-}
-.modify-img{
-    width: 32rpx;
-    height: 33rpx;
-    position: absolute;
-    z-index:10;
-    top:50%;
-    transform: translateY(-50%);
-    right: 40rpx;
-}
-.receive-address{
-    font-size:24rpx;
-    color: #111;
-    width: 556rpx;
-    line-height: 42rpx;
-    max-height: 80rpx;
-    overflow-y: hidden;
+
+.manage-address__list .fn-right{
+  margin-left: 20rpx;
 }

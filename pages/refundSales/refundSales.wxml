@@ -79,7 +79,9 @@
           <view class="zan-cell__icon zan-icon zan-icon-checked zan-c-red"></view>
           <view class="zan-cell__bd">退款成功</view>
           <view class="zan-cell__ft">
-            <button class="zan-btn zan-btn--small">查看详情</button>
+            <navigator url="/pages/refundDetail/refundDetail" navigate>
+              <button class="zan-btn zan-btn--small">查看详情</button>
+            </navigator>
           </view>
         </view>
       </view>

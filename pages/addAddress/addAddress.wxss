@@ -3,8 +3,13 @@ Page{
 }
 
 .zan-panel {
-  padding: 10px;
+  margin: 0;
 }
+
 .zan-switch {
   margin-right: 8px;
+}
+
+.add-address .textarea .zan-field__input{
+  min-height: 100rpx !important;
 }

@@ -1,3 +1,15 @@
 Page{
     background: #f7f7f7;
 }
+
+.zan-panel {
+  margin: 0;
+}
+
+.zan-switch {
+  margin-right: 8px;
+}
+
+.edit-address .textarea .zan-field__input{
+  min-height: 100rpx !important;
+}

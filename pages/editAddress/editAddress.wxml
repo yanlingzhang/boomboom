@@ -1,27 +1,44 @@
 <import src="/zanui/field/index.wxml" />
+<import src="/zanui/switch/index.wxml" />
 <view class="container">
-  <view class="zan-panel">
-    <template
-      is="zan-field"
-      data="{{ title: '收货人', type: 'input', placeholder: '名字', value }}"></template>
-    <template
-      is="zan-field"
-      data="{{ title: '联系电话', type: 'input', placeholder: '手机号码', value }}"></template>
-    <template
-      is="zan-field"
-      data="{{ title: '详细地址', type: 'input', placeholder: '详细地址', value }}"></template>
-  </view>
-  <view class="zan-cell zan-field">
-    <view class="zan-cell__hd zan-field__title">选择区域</view>
-    <picker
-      mode="selector"
-      class="zan-field__input zan-cell__bd"
-      range="{{ area }}"
-      value="{{ areaIndex }}"
-      bindchange="onAreaChange"
-    >
-      {{ area[areaIndex] }}
-    </picker>
-    <button class="zan-btn zan-btn--primary">保存</button>
+  <view class="edit-address">
+    <view class="zan-panel">
+      <template
+        is="zan-field"
+        data="{{ title: '收货人', type: 'input', placeholder: '名字', value }}"></template>
+    </view>
+    <view class="zan-panel">
+      <template
+        is="zan-field"
+        data="{{ title: '联系电话', type: 'input', placeholder: '手机号码', value }}"></template>
+    </view>
+    <view class="zan-panel">
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">所在地区</view>
+        <picker
+          mode="selector"
+          class="zan-field__input zan-cell__bd"
+          range="{{ area }}"
+          value="{{ areaIndex }}"
+          bindchange="onAreaChange"
+        >
+          {{ area[areaIndex] }}
+        </picker>
+      </view>
+    </view>
+    <view class="zan-panel textarea">
+      <template
+        is="zan-field"
+        data="{{ title: '详细地址', type: 'textarea', placeholder: '请输入详细地址信息，如道路、门牌号、小区、栋楼', value }}"></template>
+    </view>
+    <view class="zan-panel">
+      <view class="zan-cell">
+        <view class="zan-cell__bd">设置默认地址</view>
+        <view class="zan-cell__ft">
+          <template is="zan-switch" data="{{ ...sync, componentId: 'sync' }}" />
+        </view>
+      </view>
+    </view>
+    <button class="zan-btn zan-btn--primary position-fixed bg-main__color">保存</button>
   </view>
 </view>

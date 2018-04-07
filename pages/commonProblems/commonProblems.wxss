@@ -1,3 +1,23 @@
 Page{
     background: #f7f7f7;
 }
+.common-problems{
+  margin: 30rpx;
+}
+
+.common-problems__title{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: left;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+}
+
+.common-problems__content{
+  padding: 30rpx 0;
+  text-indent: 30rpx;
+  color: #999;
+  font-size: 24rpx;
+}

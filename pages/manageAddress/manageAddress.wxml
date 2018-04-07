@@ -1,34 +1,90 @@
 <view class="container">
-    <view class="zan-row">
-        <view class="zan-col zan-col-12">
-            小米
-        </view>
-        <view class="zan-col zan-col-12">
-            xxxx
-        </view>
-    </view>
-    <view class="zan-row">
-        <view class="zan-col zan-col-24">
-            小米xxxx
-        </view>
-    </view>
-    <view class="zan-row">
-        <view class="zan-col zan-col-12">
-            <radio></radio>
-            默认地址
-        </view>
-        <view class="zan-col zan-col-12">
-            <view class="zan-col zan-col-12">
-              <navigator url="/pages/editAddress/editAddress" navigate>
-                编辑
-              </navigator>
+    <view class="manage-address">
+        <view class="manage-address__list">
+            <view class="zan-panel">
+              <view class="zan-cell">
+                <view class="zan-cell__bd">
+                  <view class="zan-cell__text">小他天天</view>
+                  <view class="zan-cell__desc">广东省广州市海珠区创展中心大道108号公寓</view>
+                </view>
+                <view class="zan-cell__ft">188888888</view>
+              </view>
             </view>
-            <view class="zan-col zan-col-12">
-                删除
+            <view class="zan-panel">
+              <view class="zan-cell">
+                <view class="zan-cell__icon zan-icon zan-icon-checked zan-c-red"></view>
+                <view class="zan-cell__bd">默认地址</view>
+                <view class="zan-cell__ft">
+                  <view class="fn-right">
+                    <view class="zan-icon zan-icon-delete"></view>
+                    删除
+                  </view>
+                  <view class="fn-right">
+                    <navigator url="/pages/editAddress/editAddress">
+                    <view class="zan-icon zan-icon-edit"></view>
+                    编辑
+                    </navigator>
+                  </view>
+                </view>
+              </view>
             </view>
         </view>
+        <view class="manage-address__list">
+            <view class="zan-panel">
+              <view class="zan-cell">
+                <view class="zan-cell__bd">
+                  <view class="zan-cell__text">小他天天</view>
+                  <view class="zan-cell__desc">广东省广州市海珠区创展中心大道108号公寓</view>
+                </view>
+                <view class="zan-cell__ft">188888888</view>
+              </view>
+            </view>
+            <view class="zan-panel">
+              <view class="zan-cell">
+                <view class="zan-cell__icon zan-icon zan-icon-checked zan-c-red"></view>
+                <view class="zan-cell__bd">默认地址</view>
+                <view class="zan-cell__ft">
+                  <view class="fn-right">
+                    <view class="zan-icon zan-icon-delete"></view>
+                    删除
+                  </view>   
+                  <view class="fn-right">
+                    <view class="zan-icon zan-icon-edit"></view>
+                    编辑
+                  </view>                              
+                </view>
+              </view>
+            </view>
+        </view>
+        <view class="manage-address__list">
+            <view class="zan-panel">
+              <view class="zan-cell">
+                <view class="zan-cell__bd">
+                  <view class="zan-cell__text">小他天天</view>
+                  <view class="zan-cell__desc">广东省广州市海珠区创展中心大道108号公寓</view>
+                </view>
+                <view class="zan-cell__ft">188888888</view>
+              </view>
+            </view>
+            <view class="zan-panel">
+              <view class="zan-cell">
+                <view class="zan-cell__icon zan-icon zan-icon-checked zan-c-red"></view>
+                <view class="zan-cell__bd">默认地址</view>
+                <view class="zan-cell__ft">
+                  <view class="fn-right">
+                    <view class="zan-icon zan-icon-delete"></view>
+                    删除
+                  </view>   
+                  <view class="fn-right">
+                    <view class="zan-icon zan-icon-edit"></view>
+                    编辑
+                  </view>                              
+                </view>
+              </view>
+            </view>
+        </view>
+        <navigator url="/pages/addAddress/addAddress" navigate>
+          <button class="zan-btn zan-btn--danger bg-main__color position-fixed">新增地址</button>
+        </navigator>
     </view>
-    <navigator url="/pages/addAddress/addAddress" navigate>
-      <button>新增地址</button>
-    </navigator>
 </view>

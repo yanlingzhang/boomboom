@@ -1,3 +1,31 @@
 <view class="container">
-    常见问题
+    <view class="common-problems">
+      <view class="common-problems__list">
+        <view class="common-problems__title">
+          <view class="zan-pull-left">粤通天下怎么玩?</view>
+          <view class="zan-icon zan-icon-wap-nav zan-pull-right"></view>
+        </view>
+        <view class="common-problems__content">
+          粤通天下怎么玩?
+        </view>
+      </view>
+      <view class="common-problems__list">
+        <view class="common-problems__title">
+          <view class="zan-pull-left">粤通天下怎么玩?</view>
+          <view class="zan-icon zan-icon-wap-nav zan-pull-right"></view>
+        </view>
+        <view class="common-problems__content">
+          粤通天下怎么玩?
+        </view>
+      </view>
+      <view class="common-problems__list">
+        <view class="common-problems__title">
+          <view class="zan-pull-left">粤通天下怎么玩?</view>
+          <view class="zan-icon zan-icon-wap-nav zan-pull-right"></view>
+        </view>
+        <view class="common-problems__content">
+          粤通天下怎么玩?
+        </view>
+      </view>
+    </view>
 </view>
