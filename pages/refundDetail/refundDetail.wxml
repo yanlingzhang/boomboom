@@ -34,13 +34,13 @@
     <view class="refund-detail__write__set">
       <view class="zan-panel">
         <view class="zan-cell zan-cell--access">
-          <view class="zan-cell__bd">货物状态</view>
-          <view class="zan-cell__ft">未收到货</view>
+          <view class="zan-cell__bd" bindtap="toggleBottomPopupPro">货物状态</view>
+          <view class="zan-cell__ft"></view>
         </view>
       </view>
         <view class="zan-panel">
         <view class="zan-cell zan-cell--access">
-          <view class="zan-cell__bd">退款原因</view>
+          <view class="zan-cell__bd" bindtap="toggleBottomPopupBes">退款原因</view>
           <view class="zan-cell__ft"></view>
         </view>
       </view>
@@ -49,12 +49,78 @@
     <view class="refund-detail__write__phone zan-panel">
       <view class="text">上传凭证</view>
       <view class="files">
-        <image></image>
+        <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_camera.png"></image>
         <text>0/3</text>
       </view>
     </view>
     <view class="refund-detail__write__submit">
       <button class="zan-btn zan-btn--danger bg-main__color">提交</button>
+    </view>
+    <view class="popup-example--bottom zan-popup zan-popup--bottom {{ showBottomPopup__refund__pro ? 'zan-popup--show' : ''}}">
+      <view class="zan-popup__mask" catchtap="toggleBottomPopupPro"></view>
+      <view class="zan-popup__container">
+        <view class="refund-detail__write__shop__status zan-font-18">货物状态</view>
+         <radio-group class="radio-group" bindchange="radioChangeShopStatus">
+          <view class="zan-panel">
+            <view class="zan-cell">
+              <view class="zan-cell__bd">未收到货</view>
+              <view class="zan-cell__ft">
+                <radio color="red" value="0" checked="true"/>
+              </view>
+            </view>
+          </view>
+          <view class="zan-panel">
+            <view class="zan-cell">
+              <view class="zan-cell__bd">已收到货</view>
+              <view class="zan-cell__ft">
+                <radio color="red" value="1" checked=""/>
+              </view>
+            </view>
+          </view>
+        </radio-group>
+        <view class="zan-btns">
+          <button class="zan-btn zan-btn--danger bg-main__color" catchtap="toggleBottomPopupPro">
+            关闭
+          </button>
+        </view>
+      </view>
+    </view>
+    <view class="popup-example--bottom zan-popup zan-popup--bottom {{ showBottomPopup__refund__bes ? 'zan-popup--show' : ''}}">
+      <view class="zan-popup__mask" catchtap="toggleBottomPopupBes"></view>
+      <view class="zan-popup__container">
+        <view class="refund-detail__write__shop__status zan-font-18">退货原因</view>
+        <radio-group class="radio-group" bindchange="radioChangeRefundPro">
+          <view class="zan-panel">
+            <view class="zan-cell">
+              <view class="zan-cell__bd">多拍/拍错/不想要</view>
+              <view class="zan-cell__ft">
+                <radio color="red" value="0" checked="true"/>
+              </view>
+            </view>
+          </view>
+          <view class="zan-panel">
+            <view class="zan-cell">
+              <view class="zan-cell__bd">空包裹/少货/少件/发错</view>
+              <view class="zan-cell__ft">
+                <radio color="red" value="1" checked=""/>
+              </view>
+            </view>
+          </view>
+          <view class="zan-panel">
+            <view class="zan-cell">
+              <view class="zan-cell__bd">其他原因</view>
+              <view class="zan-cell__ft">
+                <radio color="red" value="2" checked=""/>
+              </view>
+            </view>
+          </view>
+        </radio-group>
+        <view class="zan-btns">
+          <button class="zan-btn zan-btn--danger bg-main__color" catchtap="toggleBottomPopupBes">
+            关闭
+          </button>
+        </view>
+      </view>
     </view>
   </view>
 </view>

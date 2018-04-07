@@ -35,8 +35,10 @@
       <view class="zan-panel">
         <view class="zan-cell zan-cell--access">
           <view class="zan-cell__bd">
-            <view class="zan-cell__text">仅退款</view>
-            <view class="zan-cell__desc">未收到货（包含未签收），或者卖家协商同意前提下</view>
+            <navigator url="/pages/refundDetail/refundDetail" navigate>
+              <view class="zan-cell__text">仅退款</view>
+              <view class="zan-cell__desc">未收到货（包含未签收），或者卖家协商同意前提下</view>
+            </navigator>
           </view>
           <view class="zan-cell__ft"></view>
         </view>
@@ -44,8 +46,10 @@
       <view class="zan-panel">
         <view class="zan-cell zan-cell--access">
           <view class="zan-cell__bd">
-            <view class="zan-cell__text">退货退款</view>
-            <view class="zan-cell__desc">已收到货，需要退换已收到的货物，需在24小时内送回货物</view>
+            <navigator url="/pages/refundDetail/refundDetail" navigate>
+              <view class="zan-cell__text">退货退款</view>
+              <view class="zan-cell__desc">已收到货，需要退换已收到的货物，需在24小时内送回货物</view>
+            </navigator>
           </view>
           <view class="zan-cell__ft"></view>
         </view>

@@ -12,6 +12,8 @@ Page(extend({}, Tab, {
       }
     },
     data: {
+      showBottomPopup__refund__pro: false,
+      showBottomPopup__refund__bes: false,
       tab: {
         list: [{
           id: 'all',
@@ -64,6 +66,22 @@ Page(extend({}, Tab, {
           ]
         }
       ]
+    },
+    toggleBottomPopupPro() {
+      this.setData({
+        showBottomPopup__refund__pro: !this.data.showBottomPopup__refund__pro
+      });
+    },
+    toggleBottomPopupBes() {
+      this.setData({
+        showBottomPopup__refund__bes: !this.data.showBottomPopup__refund__bes
+      });
+    },
+    radioChangeShopStatus: function (e) {
+      console.log('radio发生change事件，携带value值为：', e.detail.value)
+    },
+    radioChangeRefundPro: function (e) {
+      console.log('radio发生change事件，携带value值为：', e.detail.value)
     },
     handleZanTabChange(e) {
       var componentId = e.componentId;
