@@ -31,6 +31,8 @@
     "pages/refundDetail/refundDetail",
     "pages/refundSuccess/refundSuccess",
     "pages/refundClose/refundClose",
+    "pages/refundSales/refundSales",
+    "pages/logisticsNumber/logisticsNumber",
     "pages/refundDetailMes/refundDetailMes"
   ],
   "window": {

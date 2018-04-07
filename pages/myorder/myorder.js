@@ -1,15 +1,37 @@
 const api = require('../../config/api.js');
 const util = require('../../utils/util.js');
-const { Tab, extend } = require('../../zanui/index');
+const { Tab, extend, Dialog } = require('../../zanui/index');
 
 //获取应用实例
 const app = getApp()
-Page(extend({}, Tab, {
+Page(extend({}, Tab, Dialog, {
     onShareAppMessage: function (res) {
       return {
         title: '我的订单',
         path: '/pages/myorder/myorder'
       }
+    },
+    toggleBaseDialogClose() {
+      this.showZanDialog({
+        // title: '取消订单',
+        content: '您是否取消订单？',
+        showCancel: true
+      }).then(() => {
+        console.log('=== dialog ===', 'type: confirm');
+      }).catch(() => {
+        console.log('=== dialog ===', 'type: cancel');
+      });
+    },
+    toggleBaseDialog() {
+      this.showZanDialog({
+        // title: '确认收货',
+        content: '您确定已收到货？',
+        showCancel: true
+      }).then(() => {
+        console.log('=== dialog ===', 'type: confirm');
+      }).catch(() => {
+        console.log('=== dialog ===', 'type: cancel');
+      });
     },
     data: {
       tab: {

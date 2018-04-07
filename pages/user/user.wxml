@@ -40,7 +40,7 @@
                   </navigator>
                 </view>
                 <view class="zan-col zan-col-6">
-                  <navigator url="/pages/myorder/myorder" navigate>
+                  <navigator url="/pages/refundSales/refundSales" navigate>
                     <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_4.png"></image>
                     <view class="user-center__order__text">退货退款</view>
                   </navigator>

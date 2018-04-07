@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="logistics-number">
+    <view class="zan-panel" style="margin:0">
+      <view class="zan-cell">
+        <view class="zan-cell__bd">物流单号：1312313</view>
+      </view>
+    </view>
+    <view class="zan-panel" style="margin:0">
+      <view class="zan-cell">
+        <view class="zan-cell__bd">物流公司：顺丰科技</view>
+      </view>
+    </view>
+    <view class="logistics-number__copy">
+      <button class="zan-btn zan-btn--danger bg-main__color">复制物流单号</button>
+    </view>
+  </view>
+</view>

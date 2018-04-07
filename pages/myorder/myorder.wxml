@@ -1,4 +1,5 @@
 <import src="/zanui/tab/index.wxml" />
+<import src="/zanui/dialog/index.wxml" />
 <view class="container">
   <view class="myorder-tabs">
     <template
@@ -48,8 +49,8 @@
       </block>
       <view class="myorder-tabs__shop__mes">共{{item.shop.length}}件商品  合计：<text style="color:#f44">¥138.00</text> (含运费¥5.00)</view>
       <view class="zan-panel" style="padding: 20rpx; text-align: right;">
-        <button class="zan-btn zan-btn--small zan-btn--plain">取消订单</button>
-        <button class="zan-btn zan-btn--small zan-btn--warn zan-btn--plain">确认付款</button>
+        <button class="zan-btn zan-btn--small zan-btn--plain" bindtap="toggleBaseDialogClose">取消订单</button>
+        <button class="zan-btn zan-btn--small zan-btn--warn zan-btn--plain" bindtap="toggleBaseDialog">确认付款</button>
       </view>
     </view>
   </block>
@@ -62,4 +63,6 @@
       <view>快去逛逛吧</view>
     </view>
   </block>
+  <!-- 直接使用 zan-dialog 模板，并且直接传入 zanDialog -->
+  <template is="zan-dialog" data="{{ zanDialog }}"></template>
 </view>

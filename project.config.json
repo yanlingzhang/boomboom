@@ -69,8 +69,8 @@
 				},
 				{
 					"id": -1,
-					"name": "refundClose",
-					"pathName": "pages/refundClose/refundClose",
+					"name": "logisticsNumber",
+					"pathName": "pages/logisticsNumber/logisticsNumber",
 					"query": ""
 				},
 				{
