@@ -115,6 +115,7 @@
                 <input type="text" placeholder="请输入详细地址" class="form-input fn-right" bindblur="contChange" bindinput="contChange" data-key="address"/>
             </view>
             <view class="present-open-btn4" bindtap="finishForm">
+                
                下一步
             </view>
             <image bindtap="toggleKey" data-key="showForm" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
