@@ -2,43 +2,43 @@ Page{
     background: #f7f7f7;
 }
 
-.refund-detail .zan-card__img{
+.refund .zan-card__img{
   width: 150rpx;
   height: 150rpx;
 }
 
-.refund-detail .zan-card{
+.refund .zan-card{
   background: #fcfcfc;
   padding: 30rpx;
   border-bottom: 1px solid #ddd;
 }
 
-.refund-detail .zan-card:last-child{
+.refund .zan-card:last-child{
   border-bottom: none;
 }
 
-.refund-detail .zan-card .zan-card__thumb{
+.refund .zan-card .zan-card__thumb{
   width: 150rpx;
   height: 150rpx;
 }
 
-.refund-detail .zan-card__detail-row{
+.refund .zan-card__detail-row{
   font-size: 26rpx;
 }
 
-.refund-detail .zan-card__detail{
+.refund .zan-card__detail{
   margin-left: 175rpx;
 }
 
-.refund-detail__shop__mes{
+.refund__shop__mes{
   margin-bottom: 20rpx;
   background: #fff;
 }
 
-.refund-detail__set{
+.refund__set{
   background: #fff;
 }
 
-.refund-detail__set .zan-panel{
+.refund__set .zan-panel{
   margin: 0 auto;
 }

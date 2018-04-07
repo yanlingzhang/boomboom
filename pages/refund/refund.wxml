@@ -1,7 +1,7 @@
 <import src="/zanui/tab/index.wxml" />
 <view class="container">
-  <view class="refund-detail">
-    <view class="refund-detail__shop__mes">
+  <view class="refund">
+    <view class="refund__shop__mes">
       <view class="zan-card">
         <!-- 卡片左侧商品图片 -->
         <view class="zan-card__thumb">
@@ -31,7 +31,7 @@
         </view>
       </view>
     </view>
-    <view class="refund-detail__set">
+    <view class="refund__set">
       <view class="zan-panel">
         <view class="zan-cell zan-cell--access">
           <view class="zan-cell__bd">

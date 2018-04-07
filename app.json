@@ -27,7 +27,9 @@
     "pages/myorderDetail/myorderDetail",
     "pages/refund/refund",
     "pages/refundOrder/refundOrder",
-    "pages/refundDetail/refundDetail"
+    "pages/refundOrderMes/refundOrderMes",
+    "pages/refundDetail/refundDetail",
+    "pages/refundDetailMes/refundDetailMes"
   ],
   "window": {
     "backgroundTextStyle": "light",

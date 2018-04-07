@@ -1,0 +1,97 @@
+Page{
+    background: #f7f7f7;
+}
+
+.refund-order__mes{
+  padding-bottom: 120rpx;
+}
+
+.refund-order__mes .zan-panel{
+  margin: 0 auto;
+}
+
+.refund-order__mes .zan-card__img{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.refund-order__mes .zan-card{
+  background: #fcfcfc;
+  padding: 30rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.refund-order__mes .zan-card:last-child{
+  border-bottom: none;
+}
+
+.refund-order__mes .zan-card .zan-card__thumb{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.refund-order__mes .zan-card__detail-row{
+  font-size: 26rpx;
+}
+
+.refund-order__mes .zan-card__detail{
+  margin-left: 175rpx;
+}
+
+.refund-order__mes__shop__mes{
+  background: #fff;
+}
+
+.refund-order__mes__set{
+  background: #fff;
+}
+
+
+.refund-order__mes__submit{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.refund-order__mes__phone{
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30rpx;
+}
+
+.refund-order__mes__phone .text{
+  line-height: 88rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.refund-order__mes__phone .files{
+  width: 130rpx;
+  height: 130rpx;
+  border: 1px dashed #ddd;
+  margin-bottom: 30rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #ccc;
+}
+
+.refund-order__mes__phone .files image{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin: 15rpx auto 0 auto;
+}
+
+.refund-order__mes__shop__status{
+  height: 110rpx;
+  line-height: 110rpx;
+  text-align: center;
+}
+
+.refund-order__mes__user .zan-panel input{
+  color: #333;
+  font-weight: normal;
+}

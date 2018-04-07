@@ -59,7 +59,9 @@
       </view>
     </view>
     <view class="refund-detail__write__submit">
-      <button class="zan-btn zan-btn--danger bg-main__color">提交</button>
+      <button class="zan-btn zan-btn--danger bg-main__color">
+        <navigator url="/pages/refundDetail/refundDetail" navigator>提交</navigator>
+      </button>
     </view>
     <view class="popup-example--bottom zan-popup zan-popup--bottom {{ showBottomPopup__refund__pro ? 'zan-popup--show' : ''}}">
       <view class="zan-popup__mask" catchtap="toggleBottomPopupPro"></view>

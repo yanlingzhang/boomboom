@@ -87,7 +87,11 @@
           </view>
           <view class="zan-card__detail-row zan-c-gray-darker">
             <view class="zan-card__right-col">
-              <button class="zan-btn zan-btn--small zan-btn--plain">退款中</button>
+              <button class="zan-btn zan-btn--small zan-btn--plain">
+                <navigator url="/pages/refundOrderMes/refundOrderMes" navigate>
+                  申请退款成功
+                </navigator>
+              </button>
             </view>
             <view class="zan-card__left-col zan-c-red">
                 折扣描述

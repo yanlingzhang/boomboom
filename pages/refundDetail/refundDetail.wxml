@@ -3,12 +3,12 @@
 <view class="container">
   <view class="refund-detail">
     <view class="refund-detail__status bg-main__color">
-      <view wx:if="{{true}}" class="refund-detail__status__pay__desc zan-cell__bd fn-left">
-        <view class="zan-cell__text">交易状态</view>
+      <view wx:if="{{false}}" class="refund-detail__status__pay__desc zan-cell__bd fn-left">
+        <view class="zan-cell__text">等待商家处理</view>
         <view class="zan-cell__desc">交易原因</view>
       </view>
-      <view wx:if="{{false}}" class="refund-detail__status__pay fn-left">
-        <view>交易状态</view>
+      <view wx:if="{{true}}" class="refund-detail__status__pay fn-left">
+        <view>等待商家处理</view>
       </view>
       <image class="fn-right" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_waitingprocess.png"></image>
     </view>
