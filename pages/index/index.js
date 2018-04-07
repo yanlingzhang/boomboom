@@ -15,8 +15,11 @@ Page({
         showIntro:false,
         city:undefined,
         payIng:false,
-        showPresent: true,
+        showPresent: false,
         showPresentResult:false,
+        name:'',
+        tel:'',
+        address:'',
         bannerData: [
             {url: 'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner_01.jpg'},
             {url: 'https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/banner_01.jpg'},
@@ -48,14 +51,80 @@ Page({
             city: e.detail.value
         })
     },
+    getRed: function(){
+      this.setData({
+          showPresent : true
+      })
+    },
+    usePresent:function(){
+        this.setData({
+            showPresentResult:false,
+            showForm : true
+        })
+    },
+    showMes: function (mes) {
+        wx.showToast({
+            title: mes,
+            icon: 'none',
+            duration: 2000
+        })
+    },
+    finishForm: function () {
+
+        if(this.data.name == '' || !this.data.name){
+            this.showMes('请输入收件人姓名')
+            return;
+        }
+        if(this.data.tel == '' || !this.data.tel){
+            this.showMes('请输入电话')
+            return;
+        }
+        if(!/^1\d{10}$/g.test(this.data.tel)){
+            this.showMes('请输入正确的电话号码')
+            return;
+        }
+        if(this.data.city == '' || !this.data.city){
+            this.showMes('请选择省市区')
+            return;
+        }
+        if(this.data.address == '' || !this.data.address){
+            this.showMes('请输入地址')
+            return;
+        }
+        this.setData({
+            showForm : false,
+            showIntro : true
+        })
+    },
     openPresent:function () {
         this.setData({
-            showPresentResult: !this.data.showPresentResult,
-            showPresent:!this.data.showPresent
+            showPresentResult: true,
+            showPresent:false
+        })
+    },
+    orderPay: function () {
+        this.setData({
+            showIntro : false
+        })
+        wx.requestPayment({
+            'timeStamp': res.data.data.timeStamp,
+            'nonceStr': res.data.data.nonceStr,
+            'package': res.data.data.package,
+            'signType': res.data.data.signType,
+            'paySign': res.data.data.paySign,
+            'success':function(res){
+            },
+            'fail':function(res){
+            }
+        })
+    },
+    contChange: function (e) {
+        this.setData({
+            [e.currentTarget.dataset.key]: e.detail.value
         })
     },
     onLoad: function (options) {
-
+        this.getRed();
     },
     onReady: function () {
         // 页面渲染完成

@@ -35,8 +35,39 @@ Page({
             scrollTop: 0
         })
     },
+    showMes: function (mes) {
+        wx.showModal({
+            title: '',
+            content: mes,
+            showCancel: false
+        })
+    },
     switchChange:function(){
 
+    },
+    finishForm: function () {
+        this.setData({
+            showForm : false,
+            showIntro : true
+        })
+    },
+    orderPay: function () {
+        wx.requestPayment({
+            'timeStamp': res.data.data.timeStamp,
+            'nonceStr': res.data.data.nonceStr,
+            'package': res.data.data.package,
+            'signType': res.data.data.signType,
+            'paySign': res.data.data.paySign,
+            'success':function(res){
+            },
+            'fail':function(res){
+            }
+        })
+    },
+    contChange: function (e) {
+        this.setData({
+            [e.currentTarget.dataset.key]: e.detail.value
+        })
     },
     onLoad: function (options) {
         wx.setNavigationBarTitle({

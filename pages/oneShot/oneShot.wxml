@@ -20,7 +20,7 @@
                 <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_bg_pop1.png"></image>
             </view>
         </scroll-view>
-        <view class="btn-zone">
+        <view class="btn-zone" bindtap="selectNext">
             下一步
             <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_next.png" class="icon-next"></image>
         </view>
@@ -99,7 +99,7 @@
         </view>
         <view class="submit-zone">
             <text class="price-all">已选择礼品卡：3张</text>
-            <view class="submit-btn fn-right">
+            <view class="submit-btn fn-right" bindtap="makePresent">
                 生成礼包
             </view>
         </view>
@@ -111,21 +111,21 @@
             </view>
             <view class="float-word-zone fn-clear">
                 <text class="fn-left">祝福语</text>
-                <input type="text" placeholder="恭喜发财，大吉大利" class="fn-right"/>
+                <input type="text" placeholder="恭喜发财，大吉大利" class="fn-right"  bindblur="contChange" bindinput="contChange" data-key="presentWord"/>
             </view>
             <view class="float-num-zone fn-clear">
                 <text class="fn-left">礼包个数</text>
                 <view class="fn-right fn-clear buy-zone">
-                    <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
-                    <input type="text" value="1" class="fn-left input-num"/>
-                    <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                    <image bindtap="cutPresentNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                    <input type="text" value="{{presentNum}}" class="fn-left input-num"/>
+                    <image bindtap="addPresentNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
                 </view>
             </view>
             <view class="float-small-hints">
                 礼包说明：发放礼包个数不得大于礼品卡数量，每人随机获得不同
                 数量且不同规格的礼品卡
             </view>
-            <view class="float-cart-btn">生成礼包</view>
+            <view class="float-cart-btn" bindtap="submitPresentMake">生成礼包</view>
         </view>
     </view>
 </view>

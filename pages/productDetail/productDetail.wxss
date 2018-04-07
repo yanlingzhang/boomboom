@@ -266,7 +266,7 @@ button[plain]{
     top: 20rpx;
     position: absolute;
     z-index: 10;
-    right: 20 rpx;
+    right: 20rpx;
 }
 .product-desc-info{
     padding: 60rpx 24rpx ;

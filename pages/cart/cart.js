@@ -12,6 +12,22 @@ Page({
     },
     data: {
         productList:[1],
+        edit:false,
+    },
+    gotoDetail: function (event) {
+        var url = event.currentTarget.dataset.url;
+        wx.navigateTo({
+          url: url
+        })
+    },
+    cutNum: function (event) {
+
+    },
+    addNum: function (event) {
+
+    },
+    chosenProduct:function(e){
+
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;

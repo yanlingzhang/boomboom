@@ -15,6 +15,6 @@
     </view>
     <view class="btn-zone clearfix">
         <navigator url="/pages/myorder/myorder" class="fn-left btn-cell">查看我的订单</navigator>
-        <navigator url="/pages/index/index" class="fn-right btn-cell">返回首页</navigator>
+        <navigator open-type="switchTap" url="/pages/index/index" class="fn-right btn-cell">返回首页</navigator>
     </view>
 </view>

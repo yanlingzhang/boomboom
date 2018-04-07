@@ -13,12 +13,50 @@ Page({
     data: {
         showImageSelect:true,
         showWordZone:false,
-        showCardSelect:false
+        showCardSelect:false,
+        presentNum:1,
+        presentWord:undefined
     },
     toggleKey: function (event) {
         var key = event.currentTarget.dataset.key;
         this.setData({
             [key] : !this.data[key]
+        })
+    },
+    cutPresentNum: function () {
+        this.setData({
+            presentNum : this.data.presentNum > 1 ? --this.data.presentNum : 1
+        })
+    },
+    addPresentNum: function () {
+        this.setData({
+            presentNum : ++this.data.presentNum
+        })
+    },
+    showMes: function (mes) {
+        wx.showToast({
+            title: mes,
+            icon: 'none',
+            duration: 2000
+        })
+    },
+    submitPresentMake:function(){
+
+    },
+    contChange: function (e) {
+        this.setData({
+            [e.currentTarget.dataset.key]: e.detail.value
+        })
+    },
+    selectNext:function(){
+        this.setData({
+            showCardSelect : true,
+            showImageSelect: false
+        })
+    },
+    makePresent:function(){
+        this.setData({
+            showWordZone : true
         })
     },
     closeMask:function(event){

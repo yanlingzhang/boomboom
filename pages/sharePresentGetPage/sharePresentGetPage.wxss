@@ -17,6 +17,9 @@
 .none .bottom-zone-bg{
     height: 458rpx;
 }
+.no-card .bottom-zone-bg{
+    height: 335rpx;
+}
 .bottom-zone{
     position: absolute;
     z-index: 10;
@@ -54,6 +57,12 @@
 }
 .none .bottom-con-text{
     bottom: 229rpx;
+}
+.no-card .bottom-con-text{
+    bottom: 190rpx;
+}
+.no-card .bottom-share-btn{
+    bottom: 66rpx;
 }
 .bottom-show-other{
     width: 100%;

@@ -17,7 +17,7 @@
         </swiper-item>
         <swiper-item>
             <view class="brand-cell" wx:for="{{brandData}}" wx:key="">
-                <navigator url="/pages/classification/classification">
+                <navigator openType="switchTab" url="/pages/classification/classification">
                     <image src="{{item.url}}"></image>
                     <text>{{item.name}}</text>
                 </navigator>
@@ -29,7 +29,7 @@
     </view>
     <scroll-view class="shop-list" scroll-x>
         <view class="shop-cell" wx:for="{{scrollShopData}}" wx:key="">
-            <navigator url="">
+            <navigator url="/pages/brandHome/brandHome?id=">
                 <image src="{{item.url}}"></image>
             </navigator>
         </view>
@@ -39,7 +39,7 @@
     </view>
 
     <view class="recommend-list clearfix">
-        <view class="recommend-cell">
+        <navigator url="/pages/productDetail/productDetail?id=" class="recommend-cell">
             <image class="product-img" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg"></image>
             <view class="product-info">
                 <view class="product-name">产品名字产品名字产品名字产品名字产品名字</view>
@@ -49,7 +49,7 @@
                 </view>
                 <view class="sell-num">销量666</view>
             </view>
-        </view>
+        </navigator>
     </view>
     <view class="mask" wx:if="{{showPresent}}">
         <view class="present-zone float-zone">
@@ -93,7 +93,7 @@
                         <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" class="img-present fn-right"></image>
                     </view>
                 </view>
-                <view class="present-open-btn2">
+                <view class="present-open-btn2" bindtap="usePresent">
                     欢迎使用
                 </view>
             </view>
@@ -105,11 +105,11 @@
             <view class="form-title">填写收货信息</view>
             <view class="form-cell fn-clear">
                 <text class="fn-left">姓名</text>
-                <input type="text" placeholder="请输入你的姓名" class="form-input fn-right"/>
+                <input type="text" placeholder="请输入你的姓名" class="form-input fn-right" bindblur="contChange" bindinput="contChange" data-key="name"/>
             </view>
             <view class="form-cell fn-clear">
                 <text class="fn-left">电话</text>
-                <input type="text" placeholder="请输入电话号码" class="form-input fn-right"/>
+                <input type="text" placeholder="请输入电话号码" class="form-input fn-right" bindblur="contChange" bindinput="contChange" data-key="tel"/>
             </view>
             <view class="form-cell fn-clear address">
                 <text class="fn-left">地址</text>
@@ -117,9 +117,9 @@
                 <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_right_choose_white.png" class="img-address-tri"></image>
             </view>
             <view class="form-cell fn-clear">
-                <input type="text" placeholder="请输入详细地址" class="form-input fn-right"/>
+                <input type="text" placeholder="请输入详细地址" class="form-input fn-right" bindblur="contChange" bindinput="contChange" data-key="address"/>
             </view>
-            <view class="present-open-btn4">
+            <view class="present-open-btn4" bindtap="finishForm">
                 下一步
             </view>
             <image bindtap="toggleKey" data-key="showForm" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
@@ -135,7 +135,7 @@
                 <view class="intro-cell">2、可配送到全国各地（西藏，新疆，内蒙古，香港，澳门，台湾除外）
                 </view>
             </view>
-            <view class="pay-btn">
+            <view class="pay-btn" bindtap="orderPay">
                 立即支付
             </view>
             <image bindtap="toggleKey" data-key="showIntro" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>

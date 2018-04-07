@@ -77,11 +77,11 @@
             <view class="form-title">填写收货信息</view>
             <view class="form-cell fn-clear">
                 <text class="fn-left">姓名</text>
-                <input type="text" placeholder="请输入你的姓名" class="form-input fn-right"/>
+                <input type="text" placeholder="请输入你的姓名" class="form-input fn-right" bindblur="contChange" bindinput="contChange" data-key="name"/>
             </view>
             <view class="form-cell fn-clear">
                 <text class="fn-left">电话</text>
-                <input type="text" placeholder="请输入电话号码" class="form-input fn-right"/>
+                <input type="text" placeholder="请输入电话号码" class="form-input fn-right" bindblur="contChange" bindinput="contChange" data-key="tel"/>
             </view>
             <view class="form-cell fn-clear address">
                 <text class="fn-left">地址</text>
@@ -89,9 +89,9 @@
                 <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_right_choose_white.png" class="img-address-tri"></image>
             </view>
             <view class="form-cell fn-clear">
-                <input type="text" placeholder="请输入详细地址" class="form-input fn-right"/>
+                <input type="text" placeholder="请输入详细地址" class="form-input fn-right" bindblur="contChange" bindinput="contChange" data-key="address"/>
             </view>
-            <view class="present-open-btn4">
+            <view class="present-open-btn4" bindtap="finishForm">
                下一步
             </view>
             <image bindtap="toggleKey" data-key="showForm" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>
@@ -107,7 +107,7 @@
                 <view class="intro-cell">2、可配送到全国各地（西藏，新疆，内蒙古，香港，澳门，台湾除外）
                 </view>
             </view>
-            <view class="pay-btn">
+            <view class="pay-btn" bindtap="orderPay">
                 立即支付
             </view>
             <image bindtap="toggleKey" data-key="showIntro" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/home_icon_del.png" class="close-btn"></image>

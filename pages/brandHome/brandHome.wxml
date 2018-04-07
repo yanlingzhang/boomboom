@@ -1,7 +1,7 @@
 <scroll-view class="container bg-red" sroll-y>
     <view class="search-zone">
-        <input placeholder="请输入搜索商品" class="search-input"/>
-        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_search.png" class="icon-search"></image>
+        <input placeholder="请输入搜索商品" class="search-input"  bindblur="contChange" bindinput="contChange" data-key="searchCont"/>
+        <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_search.png" class="icon-search" bindtap="searchCont"></image>
     </view>
     <image bindtap="goTop" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_zdup.png" class="totop-btn"></image>
     <image src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/brand_banner.jpg" class="brand-image" mode="widthFix"></image>
@@ -50,7 +50,7 @@
         </view>
     </view>
     <view class="recommend-list clearfix">
-        <view class="recommend-cell">
+        <navigator url="/pages/productDetail/productDetail?id" class="recommend-cell">
             <image class="product-img" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg"></image>
             <view class="product-info">
                 <view class="product-name">产品名字产品名字产品名字产品名字产品名字</view>
@@ -60,6 +60,6 @@
                 </view>
                 <view class="sell-num">销量666</view>
             </view>
-        </view>
+        </navigator>
     </view>
 </scroll-view>

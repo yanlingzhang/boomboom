@@ -3,7 +3,7 @@
         <view class="select-zone">
             <image wx:if="{{true}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_choose_nor.png"></image><image wx:if="{{false}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_click.png"></image>
         </view>
-        <view class="border-zone fn-left">
+        <view data-url="/pages/productDetail/productDetail?id=" class="border-zone fn-left" bindtap="gotoDetail">
             <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
             <view class="fn-left product-info">
                 <view class="product-name">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
@@ -11,30 +11,9 @@
                 <view class="fn-clear">
                     <text class="product-price fn-left">￥<text class="price-tag">450.00</text></text>
                     <view class="fn-right fn-clear buy-zone">
-                        <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
+                        <image catchtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
                         <input type="text" value="1" class="fn-left input-num"/>
-                        <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
-                    </view>
-                </view>
-            </view>
-        </view>
-    </view>
-    <view class="cart-cell fn-clear">
-        <view class="select-zone">
-            <image wx:if="{{false}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_choose_nor.png"></image>
-            <image wx:if="{{true}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_click.png"></image>
-        </view>
-        <view class="border-zone fn-left">
-            <image class="product-img fn-left" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/product_01.jpg" mode="aspectFit"></image>
-            <view class="fn-left product-info">
-                <view class="product-name">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
-                <view class="product-style">代金券最多抵扣50%</view>
-                <view class="fn-clear">
-                    <text class="product-price fn-left">￥<text class="price-tag">450.00</text></text>
-                    <view class="fn-right fn-clear buy-zone">
-                        <image bindtap="cutNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-cut.jpg" class="fn-left btn-num">－</image>
-                        <input type="text" value="1" class="fn-left input-num"/>
-                        <image bindtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
+                        <image catchtap="addNum" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/btn-add.jpg" class="fn-left btn-num">＋</image>
                     </view>
                 </view>
             </view>
@@ -42,7 +21,7 @@
     </view>
 </scroll-view>
 
-<view class="cal-zone fn-clear" wx:if="{{true}}">
+<view class="cal-zone fn-clear" wx:if="{{!edit}}">
     <view class="select-all fn-left">
         <image wx:if="{{true}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_click.png"></image>
         <image wx:if="{{false}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_choose_nor.png"></image>
@@ -50,14 +29,14 @@
     </view>
     <view class="fn-left price-cal">合计：<text class="price-total">¥ 0</text></view>
     <view class="fn-right go-cal" bindtap="">结算(1)</view>
-    <view class="fn-right btn-edit" bindtap="">编辑</view>
+    <view class="fn-right btn-edit" bindtap="toggleKey" data-key="edit">编辑</view>
 </view>
-<view class="cal-zone fn-clear" wx:if="{{false}}">
+<view class="cal-zone fn-clear" wx:if="{{edit}}">
     <view class="select-all fn-left">
         <image wx:if="{{true}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_click.png"></image>
         <image wx:if="{{false}}" bindtap="chosenProduct" class="select-img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_choose_nor.png"></image>
         全选
     </view>
-    <view class="fn-right go-cal" bindtap="">完成</view>
+    <view class="fn-right go-cal"  bindtap="toggleKey" data-key="edit">完成</view>
     <view class="fn-right btn-edit" bindtap="">删除</view>
 </view>
