@@ -1,4 +1,5 @@
 <import src="/zanui/tab/index.wxml" />
+<import src="/zanui/dialog/index.wxml" />
 <view class="container">
   <view class="refund-detail">
     <view class="refund-detail__status bg-main__color">
@@ -9,126 +10,69 @@
       <view wx:if="{{false}}" class="refund-detail__status__pay fn-left">
         <view>交易状态</view>
       </view>
-      <image class="fn-right" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/order_icon_pay.png"></image>
+      <image class="fn-right" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_waitingprocess.png"></image>
     </view>
-    <view class="refund-detail__address">
-      <view class="refund-detail__address__user">收货人：小米 180000000</view>
-      <view class="refund-detail__address__mes">
-        <image class="refund-detail__address__icon" mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_address.png"></image>
-        <text>广州市白云区</text>
+    <view class="refund-detail__set">
+      <view class="refund-detail__set_top">
+        您已成功发起退款申请，请耐心等待商家处理
+      </view>
+      <view  class="refund-detail__set_down">
+        <view>1、商家同意后，请按照给的退货地址退货，并记录退货运单号</view>
+        <view>2、如商家拒绝，您可以修改申请后再次发起，商家会重新处理</view>
+      </view>
+      <view class="refund-detail__set_btns">
+        <button bindtap="toggleBaseDialog" class="zan-btn zan-btn--small zan-btn--plain">
+          撤销申请
+        </button>
+        <button class="zan-btn zan-btn--small zan-btn--plain zan-btn--warn">
+          <navigator url="/pages/refundOrder/refundOrder" navigate>
+            修改申请
+          </navigator>
+        </button>
       </view>
     </view>
     <view class="refund-detail__shop__mes">
-      <view class="zan-card">
-        <!-- 卡片左侧商品图片 -->
-        <view class="zan-card__thumb">
-          <image class="zan-card__img"
-            src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
-            mode="aspectFit"
-          ></image>
-        </view>
-        <!-- 卡片右侧详情描述 -->
-        <view class="zan-card__detail">
-          <!-- 商品标题行 -->
-          <!-- 每行可以使用 zan-card__detail-row 来控制展示区域 -->
-          <!-- 每行里面可以用 zan-card__left-col zan-card__right-col 来控制左右展示 -->
-          <view class="zan-card__detail-row">
-            <view class="zan-card__right-col zan-c-red">价格</view>
-            <view class="zan-card__left-col zan-ellipsis--l2">
-              商品标题行
-            </view>
+      <view>
+        <view class="zan-card">
+          <!-- 卡片左侧商品图片 -->
+          <view class="zan-card__thumb">
+            <image class="zan-card__img"
+              src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+              mode="aspectFit"
+            ></image>
           </view>
-          <!-- 商品附属信息展示行 -->
-          <view class="zan-card__detail-row zan-c-gray-darker">
-            <view class="zan-card__right-col">x2</view>
-            <view class="zan-card__left-col">
-              3000克 50%
+          <!-- 卡片右侧详情描述 -->
+          <view class="zan-card__detail">
+            <!-- 商品标题行 -->
+            <!-- 每行可以使用 zan-card__detail-row 来控制展示区域 -->
+            <!-- 每行里面可以用 zan-card__left-col zan-card__right-col 来控制左右展示 -->
+            <view class="zan-card__detail-row">
+              <view class="zan-card__right-col zan-c-red">价格</view>
+              <view class="zan-card__left-col zan-ellipsis--l2">
+                商品标题行
+              </view>
             </view>
-          </view>
-          <view class="zan-card__detail-row zan-c-gray-darker">
-            <view class="zan-card__right-col">
-              <button class="zan-btn zan-btn--small zan-btn--plain">
-                <navigator url="/pages/refund/refund" navigate>
-                  申请退款
-                </navigator>
-              </button>
+            <!-- 商品附属信息展示行 -->
+            <view class="zan-card__detail-row zan-c-gray-darker">
+              <view class="zan-card__right-col">x2</view>
+              <view class="zan-card__left-col">
+                3000克 50%
+              </view>
             </view>
-            <view class="zan-card__left-col zan-c-red">
-                折扣描述
+            <view class="zan-card__detail-row zan-c-gray-darker">
+              <view class="zan-card__left-col zan-c-red">
+                  折扣描述
+              </view>
             </view>
           </view>
         </view>
-      </view>
-      <view class="zan-card">
-        <!-- 卡片左侧商品图片 -->
-        <view class="zan-card__thumb">
-          <image class="zan-card__img"
-            src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
-            mode="aspectFit"
-          ></image>
+        <view class="zan-card__desc">
+          <view>退款原因：不喜欢/拍错/效果不好</view>
+          <view>退款金额：¥69.00</view>
         </view>
-        <!-- 卡片右侧详情描述 -->
-        <view class="zan-card__detail">
-          <!-- 商品标题行 -->
-          <!-- 每行可以使用 zan-card__detail-row 来控制展示区域 -->
-          <!-- 每行里面可以用 zan-card__left-col zan-card__right-col 来控制左右展示 -->
-          <view class="zan-card__detail-row">
-            <view class="zan-card__right-col zan-c-red">价格</view>
-            <view class="zan-card__left-col zan-ellipsis--l2">
-              商品标题行
-            </view>
-          </view>
-          <!-- 商品附属信息展示行 -->
-          <view class="zan-card__detail-row zan-c-gray-darker">
-            <view class="zan-card__right-col">x2</view>
-            <view class="zan-card__left-col">
-              3000克 50%
-            </view>
-          </view>
-          <view class="zan-card__detail-row zan-c-gray-darker">
-            <view class="zan-card__right-col">
-              <button class="zan-btn zan-btn--small zan-btn--plain">退款中</button>
-            </view>
-            <view class="zan-card__left-col zan-c-red">
-                折扣描述
-            </view>
-          </view>
-        </view>
-      </view>
+      </view> 
     </view>
-    <view class="refund-detail__price__mes">
-      <view class="zan-panel">
-        <view class="zan-cell">
-          <view class="zan-cell__bd zan-c-black">商品总价</view>
-          <view class="zan-cell__ft zan-c-black">¥69.00</view>
-        </view>
-      </view>
-      <view class="zan-panel">
-        <view class="zan-cell">
-          <view class="zan-cell__bd zan-c-black">兑换卷</view>
-          <view class="zan-cell__ft zan-c-black">-¥200</view>
-        </view>
-      </view>
-      <view class="zan-panel">
-        <view class="zan-cell">
-          <view class="zan-cell__bd zan-c-black">运费</view>
-          <view class="zan-cell__ft zan-c-black">¥10.00</view>
-        </view>
-      </view>
-      <view class="zan-panel">
-        <view class="zan-cell">
-          <view class="zan-cell__bd zan-c-black zan-font-bold">实付款</view>
-          <view class="zan-cell__ft zan-c-red">¥50.00</view>
-        </view>
-      </view>
-      <view class="refund-detail__rules__mes">兑换商品不可申请退款</view>
-    </view>
-    <view class="refund-detail__set__btn">
-      <view class="zan-panel" style="padding: 20rpx; text-align: right;">
-        <button class="zan-btn zan-btn--small zan-btn--plain">联系卖家</button>
-        <button class="zan-btn zan-btn--small zan-btn--plain">物流单号</button>
-        <button class="zan-btn zan-btn--small zan-btn--warn zan-btn--plain">确认收货</button>
-      </view>
-    </view> 
   </view>
+  <!-- 直接使用 zan-dialog 模板，并且直接传入 zanDialog -->
+  <template is="zan-dialog" data="{{ zanDialog }}"></template>
 </view>

@@ -28,6 +28,11 @@
               3000克 50%
             </view>
           </view>
+          <view class="zan-card__detail-row zan-c-gray-darker">
+            <view class="zan-card__left-col zan-c-red">
+              折扣描述
+            </view>
+          </view>
         </view>
       </view>
     </view>

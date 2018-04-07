@@ -26,7 +26,8 @@
     "pages/commonProblems/commonProblems",
     "pages/myorderDetail/myorderDetail",
     "pages/refund/refund",
-    "pages/refundOrder/refundOrder"
+    "pages/refundOrder/refundOrder",
+    "pages/refundDetail/refundDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -7,7 +7,7 @@ const app = getApp()
 Page(extend({}, Tab, {
     onShareAppMessage: function (res) {
       return {
-        title: '填写退款',
+        title: '填写退货信息',
         path: '/pages/refundDetail/refundDetail'
       }
     },

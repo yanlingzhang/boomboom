@@ -1,15 +1,25 @@
 const api = require('../../config/api.js');
 const util = require('../../utils/util.js');
-const { Tab, extend } = require('../../zanui/index');
-
+const { extend, Dialog } = require('../../zanui/index');
 //获取应用实例
 const app = getApp()
-Page(extend({}, Tab, {
+Page(extend({}, Dialog, {
     onShareAppMessage: function (res) {
       return {
         title: '申请退款',
         path: '/pages/refundDetail/refundDetail'
       }
+    },
+    toggleBaseDialog() {
+      this.showZanDialog({
+        title: '确认要撤销？',
+        content: '仅限一次撤销机会，确认后退款关闭',
+        showCancel: true
+      }).then(() => {
+        console.log('=== dialog ===', 'type: confirm');
+      }).catch(() => {
+        console.log('=== dialog ===', 'type: cancel');
+      });
     },
     data: {
       tab: {
