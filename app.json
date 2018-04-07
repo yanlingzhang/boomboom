@@ -29,6 +29,8 @@
     "pages/refundOrder/refundOrder",
     "pages/refundOrderMes/refundOrderMes",
     "pages/refundDetail/refundDetail",
+    "pages/refundSuccess/refundSuccess",
+    "pages/refundClose/refundClose",
     "pages/refundDetailMes/refundDetailMes"
   ],
   "window": {

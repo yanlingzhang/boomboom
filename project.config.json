@@ -69,8 +69,8 @@
 				},
 				{
 					"id": -1,
-					"name": "refundOrderMes",
-					"pathName": "pages/refundOrderMes/refundOrderMes",
+					"name": "refundClose",
+					"pathName": "pages/refundClose/refundClose",
 					"query": ""
 				},
 				{

@@ -1,0 +1,31 @@
+page{
+  background: #f7f7f7;
+}
+
+.refund-success .zan-card__img{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.refund-success .zan-card{
+  background: #fcfcfc;
+  padding: 30rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.refund-success .zan-card:last-child{
+  border-bottom: none;
+}
+
+.refund-success .zan-card .zan-card__thumb{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.refund-success .zan-card__detail-row{
+  font-size: 26rpx;
+}
+
+.refund-success .zan-card__detail{
+  margin-left: 175rpx;
+}
