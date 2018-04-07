@@ -1,10 +1,36 @@
 <view class="container">
-   <view class="zan-cell">
-      <view class="zan-cell__bd">
-        <view class="zan-cell__text">平台赠送</view>
-        <view class="zan-cell__desc">购买茅台</view>
-        <view class="zan-cell__desc">2018-09</view>
+  <view class="records-consumption">
+    <view class="zan-panel">
+      <view class="zan-cell">
+        <view>
+          <image class="records-consumption__img" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" mode="aspectFit"
+          ></image>
+        </view>
+        <view class="zan-cell__bd">
+          <view class="zan-cell__text zan-ellipsis--l2">泸州老窖浓香型白酒 500ml（1瓶）泸州老窖浓香型白酒 500ml（1瓶）泸州老窖浓香型白酒 500ml（1瓶）</view>
+          <view class="zan-cell__desc zan-c-red">2018-09</view>
+        </view>
+        <view class="zan-cell__ft">
+          <view class="zan-cell__text">购买抵扣</view>
+          <view class="zan-cell__desc zan-c-red">-¥5.00</view>
+        </view>
       </view>
-      <view class="zan-cell__ft">¥15</view>
     </view>
+    <view class="zan-panel">
+      <view class="zan-cell">
+        <view>
+          <image class="records-consumption__img" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" mode="aspectFit"
+          ></image>
+        </view>
+        <view class="zan-cell__bd">
+          <view class="zan-cell__text">泸州老窖浓香型白酒 500ml（1瓶）</view>
+          <view class="zan-cell__desc zan-c-red">2018-09</view>
+        </view>
+        <view class="zan-cell__ft">
+          <view class="zan-cell__text">购买抵扣</view>
+          <view class="zan-cell__desc zan-c-red">-¥5.00</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

@@ -1,3 +1,7 @@
 Page{
     background: #f7f7f7;
 }
+
+.feedback .zan-field__input{
+  min-height: 300rpx !important;
+}

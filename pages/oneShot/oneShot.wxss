@@ -98,7 +98,7 @@ Page{
     border-top: 1px solid #d2d2d2;
 }
 .price-all{
-    color: #red;
+    color: red;
     padding-left: 30rpx;
 }
 .submit-btn{

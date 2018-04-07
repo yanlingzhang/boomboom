@@ -1,3 +1,67 @@
 Page{
     background: #f7f7f7;
 }
+
+.gift-card__btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.gift-card__img{
+  width: 80rpx;
+  height: 80rpx;  
+}
+
+.gift-card__list__top__img{
+  float: left;
+  width: 80rpx;
+  height: 80rpx; 
+}
+
+.gift-card__content{
+  margin: 20rpx;
+}
+
+.gift-card__list{
+  background: #fff;  
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.gift-card__list__top{
+  padding: 20rpx;
+}
+.gift-card__list__top .tag{
+  height: 40rpx;
+  line-height: 40rpx;
+  float: left;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 5rpx;
+  margin: 20rpx 15rpx;
+}
+
+.gift-card__list__top .text{
+  height: 80rpx;
+  line-height: 80rpx;
+  float: left;
+  color: #333;
+  font-size: 30rpx;
+}
+
+.gift-card__record{
+  margin-top: 20rpx;
+}
+
+.gift-card__record__list .zan-panel{
+  margin-top: 0;
+}
+
+.gift-card__record__img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 15rpx;
+}

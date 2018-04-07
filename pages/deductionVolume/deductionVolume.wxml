@@ -1,21 +1,29 @@
 <view class="container">
-    <text>抵扣卷余额</text>
-    <text>28</text>
-    <view class="zan-cell">
-      <view class="zan-cell__bd">
-        <navigator url="/pages/obtainRecord/obtainRecord" navigate>
-          <view>获得记录</view>
-          <view class="zan-arrow"></view>
-        </navigator>
+  <view class="deduction-volume">
+    <view class="deduction-volume__top">
+      <view>¥28.00</view>
+      <view>抵扣卷余额</view>
+    </view>
+    <view class="deduction-volume__list">
+      <view class="zan-row">
+        <view class="zan-col zan-col-12 border-right">
+          <navigator url="/pages/obtainRecord/obtainRecord" navigate>
+            <view>获得记录</view>
+          </navigator>
+        </view>
+        <view class="zan-col zan-col-12">
+          <navigator url="/pages/recordsConsumption/recordsConsumption" navigate>
+            <view>消费记录</view>
+          </navigator>
+        </view>
       </view>
     </view>
-    <view class="zan-cell">
-      <view class="zan-cell__bd">
-        <navigator url="/pages/recordsConsumption/recordsConsumption" navigate>
-          <view>消费记录</view>
-          <view class="zan-arrow"></view>
-        </navigator>
-      </view>
+    <view class="deduction-volume__rules">
+      <view>抵扣券使用说明：</view>
+      <view>1、指定商品可使用抵扣券抵扣百分之30%~50%</view>
+      <view>2、抵扣券余额不为0是均可用做抵扣</view>
+      <view>3、抵扣券由平台赠送</view>
+      <view>4、购买商品使用后，申请退款则不退还抵扣金额</view>
     </view>
-    <text>抵扣卷使用说明</text>
+  </view>
 </view>

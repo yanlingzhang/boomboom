@@ -1,3 +1,40 @@
 Page{
     background: #f7f7f7;
 }
+
+.my-collection{
+  padding-bottom: 120rpx;
+}
+
+.my-collection .zan-card__img{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.my-collection .zan-card{
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+
+.my-collection .zan-card .zan-card__thumb{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.my-collection .zan-card__detail-row{
+  font-size: 26rpx;
+}
+
+.my-collection .zan-card__detail{
+  margin-left: 175rpx;
+}
+
+
+.my-collection__btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

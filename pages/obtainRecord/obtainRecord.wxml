@@ -1,9 +1,22 @@
 <view class="container">
-   <view class="zan-cell">
-      <view class="zan-cell__bd">
+  <view class="obtain-record">
+    <view class="zan-panel">
+      <view class="zan-cell">
+        <view class="zan-cell__bd">
         <view class="zan-cell__text">平台赠送</view>
         <view class="zan-cell__desc">2018-09</view>
+        </view>
+        <view class="zan-cell__ft zan-c-red">¥15.00</view>
       </view>
-      <view class="zan-cell__ft">¥15</view>
     </view>
+    <view class="zan-panel">
+      <view class="zan-cell">
+        <view class="zan-cell__bd">
+        <view class="zan-cell__text">平台赠送</view>
+        <view class="zan-cell__desc">2018-09</view>
+        </view>
+        <view class="zan-cell__ft zan-c-red">¥15.00</view>
+      </view>
+    </view>
+  </view>
 </view>

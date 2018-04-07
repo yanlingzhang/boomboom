@@ -20,7 +20,7 @@ Page(extend({}, Tab, {
           title: '我的礼品卡'
         }, {
           id: 'topay',
-          title: '礼包记录'
+          title: '发送礼包记录'
         }],
         selectedId: 'all'
       }

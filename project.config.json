@@ -69,8 +69,8 @@
 				},
 				{
 					"id": -1,
-					"name": "logisticsNumber",
-					"pathName": "pages/logisticsNumber/logisticsNumber",
+					"name": "user",
+					"pathName": "pages/user/user",
 					"query": ""
 				},
 				{

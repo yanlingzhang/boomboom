@@ -1,3 +1,17 @@
 Page{
     background: #f7f7f7;
 }
+
+.records-consumption .zan-panel:first-child{
+  margin: 0;
+}
+
+.records-consumption .zan-panel{
+  padding: 40rpx 0;
+}
+
+.records-consumption__img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 15rpx;
+}

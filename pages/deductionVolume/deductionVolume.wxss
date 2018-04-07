@@ -1,3 +1,44 @@
 Page{
     background: #f7f7f7;
 }
+
+.deduction-volume__top{
+  width: 100%;
+  height: 220rpx;
+  background: #e52845;
+  text-align: center;
+  color: #fff;
+}
+
+.deduction-volume__top view:first-child{
+  font-size: 60rpx;
+}
+
+.deduction-volume__top view:last-child{
+  font-size: 24rpx;
+}
+
+.deduction-volume__list{
+  width: 700rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: #fff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: -40rpx;
+}
+
+.deduction-volume__list .border-right{
+  border-right: 1px solid #f6f6f6;
+}
+
+.deduction-volume__rules{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 50rpx;
+  text-align: left;
+  color: #999999;
+  font-size: 26rpx;
+}

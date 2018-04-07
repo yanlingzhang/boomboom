@@ -1,69 +1,92 @@
 <import src="/zanui/tab/index.wxml" />
 <view class="container">
-    <view style="margin: 20px 0">
-	    <template
-	      is="zan-tab"
-	      data="{{ ...tab, componentId: 'tab' }}">
-	    </template>
-	</view>
-	<view class="zan-cell" wx:if="{{showPopup}}">
-		<view class="zan-cell__bd">
-		<view class="zan-cell__text">茅台</view>
-		<view class="zan-cell__desc">2018-09</view>
-		</view>
-		<view class="zan-cell__ft">
-		<view class="zan-cell__text">x2</view>
-		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
-		</view>
-		</view>
-		<view class="zan-cell">
-		<view class="zan-cell__bd">
-		<view class="zan-cell__text">茅台</view>
-		<view class="zan-cell__desc">2018-09</view>
-		</view>
-		<view class="zan-cell__ft">
-		<view class="zan-cell__text">x2</view>
-		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
-		</view>
-		</view>
-		<view class="zan-cell">
-		<view class="zan-cell__bd">
-		<view class="zan-cell__text">茅台</view>
-		<view class="zan-cell__desc">2018-09</view>
-		</view>
-		<view class="zan-cell__ft">
-		<view class="zan-cell__text">x2</view>
-		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
-		</view>
-	</view>
-	<view class="zan-cell" wx:if="{{showPopups}}">
-		<view class="zan-cell__bd">
-		<view class="zan-cell__text">茅台2</view>
-		<view class="zan-cell__desc">2018-09</view>
-		</view>
-		<view class="zan-cell__ft">
-		<view class="zan-cell__text">x2</view>
-		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
-		</view>
-		</view>
-		<view class="zan-cell">
-		<view class="zan-cell__bd">
-		<view class="zan-cell__text">茅台</view>
-		<view class="zan-cell__desc">2018-09</view>
-		</view>
-		<view class="zan-cell__ft">
-		<view class="zan-cell__text">x2</view>
-		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
-		</view>
-		</view>
-		<view class="zan-cell">
-		<view class="zan-cell__bd">
-		<view class="zan-cell__text">茅台</view>
-		<view class="zan-cell__desc">2018-09</view>
-		</view>
-		<view class="zan-cell__ft">
-		<view class="zan-cell__text">x2</view>
-		<button class="zan-btn zan-btn--mini zan-btn--plain">订单</button>
-		</view>
-	</view>	
+  <view class="gift-card">
+    <view>
+      <template
+        is="zan-tab"
+        data="{{ ...tab, componentId: 'tab' }}">
+      </template>
+    </view>
+    <view class="gift-card__content" wx:if="{{showPopup}}">
+      <block>
+        <view class="gift-card__list">
+          <view class="gift-card__list__top clearfix">
+            <view class="gift-card__list__top__img">
+              <image class="gift-card__img" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" mode="aspectFit"
+            ></image>
+            </view>
+            <view class="tag bg-main__color">礼品卡</view>
+            <view class="text">新升级 吉祥红红酒1瓶</view>
+          </view>
+          <view class="zan-panel" style="margin: 0">
+            <view class="zan-cell">
+              <view class="zan-cell__bd zan-c-gray-darker">数量: 2</view>
+              <view class="zan-cell__ft">
+                <button class="zan-btn zan-btn--mini zan-btn--danger bg-main__color">去兑换</button>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="gift-card__list">
+          <view class="gift-card__list__top clearfix">
+            <view class="gift-card__list__top__img">
+              <image class="gift-card__img" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" mode="aspectFit"
+            ></image>
+            </view>
+            <view class="tag bg-main__color">礼品卡</view>
+            <view class="text">新升级 吉祥红红酒1瓶</view>
+          </view>
+          <view class="zan-panel" style="margin: 0">
+            <view class="zan-cell">
+              <view class="zan-cell__bd zan-c-gray-darker">数量: 2</view>
+              <view class="zan-cell__ft">
+                <button class="zan-btn zan-btn--mini zan-btn--danger bg-main__color">去兑换</button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="gift-card__btn">
+        <button bindtap="selectNext" class="zan-btn zan-btn--danger bg-main__color">转赠</button>
+      </view>
+    </view>
+    <view class="gift-card__record" wx:if="{{showPopups}}">
+      <view class="gift-card__record__list">
+        <view class="zan-panel">
+          <view class="zan-cell">
+            <view>
+              <image class="gift-card__record__img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_gift_1.png" mode="aspectFit"
+              ></image>
+            </view>
+            <view class="zan-cell__bd">
+              <view class="zan-cell__text zan-ellipsis--l2">恭喜发财</view>
+              <view class="zan-cell__desc zan-c-red">12月12号  14:00</view>
+            </view>
+            <view class="zan-cell__ft">
+              <view class="zan-cell__text zan-c-red">5张礼品卡</view>
+              <view class="zan-cell__desc">已领完</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="gift-card__record__list">
+        <view class="zan-panel">
+          <view class="zan-cell">
+            <view>
+              <image class="gift-card__record__img" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/icon_gift_1.png" mode="aspectFit"
+              ></image>
+            </view>
+            <view class="zan-cell__bd">
+              <view class="zan-cell__text zan-ellipsis--l2">恭喜发财</view>
+              <view class="zan-cell__desc zan-c-red">12月12号  14:00</view>
+            </view>
+            <view class="zan-cell__ft">
+              <view class="zan-cell__text zan-c-red">5张礼品卡</view>
+              <view class="zan-cell__desc">已领完</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>	
+  </view>
 </view>

@@ -1,3 +1,11 @@
 Page{
     background: #f7f7f7;
 }
+
+.obtain-record .zan-panel:first-child{
+  margin: 0;
+}
+
+.obtain-record .zan-panel{
+  padding: 30rpx 0;
+}

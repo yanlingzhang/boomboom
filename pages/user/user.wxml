@@ -21,87 +21,88 @@
             </view>
             <view class="user-center__order__list">
               <view class="zan-row">
+              <navigator url="/pages/myorder/myorder" navigate>
                 <view class="zan-col zan-col-6">
-                  <navigator url="/pages/myorder/myorder" navigate>
                     <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_1.png"></image>
                     <view class="user-center__order__text">待付款</view>
-                  </navigator>
                 </view>
+                </navigator>
+                <navigator url="/pages/myorder/myorder" navigate>
                 <view class="zan-col zan-col-6">
-                  <navigator url="/pages/myorder/myorder" navigate>
                     <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_2.png"></image>
                     <view class="user-center__order__text">待发货</view>
-                  </navigator>
                 </view>
+                </navigator>
+                <navigator url="/pages/myorder/myorder" navigate>
                 <view class="zan-col zan-col-6">
-                  <navigator url="/pages/myorder/myorder" navigate>
                     <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_3.png"></image>
                     <view class="user-center__order__text">待收货</view>
-                  </navigator>
                 </view>
+                </navigator>
+                <navigator url="/pages/refundSales/refundSales" navigate>
                 <view class="zan-col zan-col-6">
-                  <navigator url="/pages/refundSales/refundSales" navigate>
                     <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_4.png"></image>
                     <view class="user-center__order__text">退货退款</view>
-                  </navigator>
                 </view>
+                </navigator>
               </view>
             </view>
         </view>
         <view class="user-center__list">
           <view class="zan-row">
+          <navigator url="/pages/deductionVolume/deductionVolume" navigate>
             <view class="zan-col zan-col-8">
-              <navigator url="/pages/deductionVolume/deductionVolume" navigate>
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_5.png"></image>
                 <view>抵扣卷</view>
-              </navigator>
             </view>
+            </navigator>
+            <navigator url="/pages/giftCard/giftCard" navigate>
             <view class="zan-col zan-col-8">
-              <navigator url="/pages/giftCard/giftCard" navigate>
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_6.png"></image>
                 <view>礼品卡</view>
-              </navigator>
             </view>
+            </navigator>
+            <navigator url="/pages/myCollection/myCollection" navigate>
             <view class="zan-col zan-col-8">
-              <navigator url="/pages/myCollection/myCollection" navigate>
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_7.png"></image>
                 <view>我的收藏</view>
-              </navigator>
             </view>
+            </navigator>
           </view>
           <view class="zan-row">
+          <navigator url="/pages/manageAddress/manageAddress" navigate>
             <view class="zan-col zan-col-8">
-              <navigator url="/pages/manageAddress/manageAddress" navigate>
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_8.png"></image>
                 <view>地址管理</view>
-              </navigator>
             </view>
+            </navigator>
+            <navigator url="/pages/feedback/feedback" navigate>
             <view class="zan-col zan-col-8">
-              <navigator url="/pages/feedback/feedback" navigate>
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_9.png"></image>
                 <view>意见反馈</view>
-              </navigator>
             </view>
-            <view class="zan-col zan-col-8">
+            </navigator>
               <navigator url="/pages/commonProblems/commonProblems" navigate>
+              <view class="zan-col zan-col-8">
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_10.png"></image>
                 <view>常见问题</view>
+                </view>
               </navigator>
-            </view>
           </view>
           <view class="zan-row">
-            <view class="zan-col zan-col-8">
-              <navigator url="/pages/manageAddress/manageAddress" navigate>
+              <navigator url="/pages/obtainRecord/obtainRecord" navigate>
+              <view class="zan-col zan-col-8">
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_11.png"></image>
                 <view>代理佣金</view>
+                </view>
               </navigator>
-            </view>
+            
+            <navigator url="/pages/manageAddress/manageAddress" navigate>
             <view class="zan-col zan-col-8">
-              <navigator url="/pages/manageAddress/manageAddress" navigate>
                 <image mode="aspectFit" src="https://www.weiyoutong.cn/wyttest/Public/Home/images/boom/personal_icon_12.png"></image>
                 <view>平台客服</view>
-              </navigator>
             </view>
+            </navigator>
             <view class="zan-col zan-col-8">
             </view>
           </view>
